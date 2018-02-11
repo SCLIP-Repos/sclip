@@ -1,85 +1,110 @@
 ﻿using System;
-using System.Text;
 using System.IO;
-
+using System.Text;
 
 namespace FSys
 {
+
     public class Reader
     {
-        public string Err { get; private set; }
-
-
-        private FileStream _fileStream;
-
-        private StreamReader _streamReader;
+        
+        private FileStream _fileStream = null;
 
 
         public Reader()
         {
-            if(_fileStream != null)
-            {
-                Err = "FIleStream is not closed.";
-                return;
-            }
+            Excepter.Clear();
         }
+
 
         public void Open(string FilePath)
         {
             try
             {
-                _fileStream = new FileStream(FilePath, FileMode.Open, FileAccess.Read);
+                _fileStream = new FileStream(FilePath, FileMode.Open, FileAccess.Read);    
             }
-            catch
+            catch(Exception ex)
             {
-                Err = "Could not open file.";
+                Excepter.Except = ex.ToString();
+
+                Excepter.Err = "Could not open up the file.";
+            }
+            finally
+            {
+                Close();
             }
         }
+
 
 
         public string Read()
         {
-            using(_streamReader = new StreamReader(_fileStream,Encoding.UTF8))
+            return Read(Encoding.UTF8, 2500);
+        }
+
+
+        public string Read(Encoding encode)
+        {
+            return Read(encode,2500);
+        }
+
+        public string Read(Encoding encode,int BufSize)
+        {
+            try
             {
-                try
+                using (StreamReader streamRead = new StreamReader(_fileStream,encode,false,BufSize))
                 {
-                    return _streamReader.ReadToEnd();
-                }
-                catch
-                {
-                    return null;
+                    return streamRead.ReadToEnd();
                 }
             }
+            catch(Exception ex)
+            {
+                Excepter.Except = ex.ToString();
+
+                Excepter.Err = "Failed to read the file.";
+
+                return null;
+            }
         }
+
+
 
         public string ReadLine()
         {
-            using(_streamReader = new StreamReader(_fileStream,Encoding.UTF8))
+            return ReadLine(Encoding.UTF8,2500);
+        }
+
+        public string ReadLine(Encoding encode)
+        {
+            return ReadLine(encode,2500);
+        }
+
+        public string ReadLine(Encoding encode,int BufSize)
+        {
+            try
             {
-                try
+                using (StreamReader streamRead = new StreamReader(_fileStream, encode, false, BufSize))
                 {
-                    return _streamReader.ReadLine();   
-                }
-                catch
-                {
-                    return null;
+                    return streamRead.ReadLine();
                 }
             }
-        }
-
-        public byte[] ReadBytes()
-        {
-            string Tmp = Read();
-
-            if(Tmp == null)
+            catch
+            {
                 return null;
-            
-
-            return Encoding.UTF8.GetBytes(Tmp);
+            }            
         }
 
 
-        public void Close() => _fileStream.Dispose();
+
+        /*
+        public void ReadAsync()
+        {
+            
+        }
+        */
+
+
+        public void Close() => _fileStream.Close();
 
 
     }
