@@ -32,6 +32,23 @@ namespace FSys
         }
 
 
+        public static void Copy(string DirectoryPath)
+        {
+            
+        }
+
+
+        public static void Move(string DirectoryPath)
+        {
+            
+        }
+
+
+        public static void Delete(string DirectoryPath)
+        {
+            
+        }
+
 
     }
 

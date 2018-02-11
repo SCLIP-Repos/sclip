@@ -4,21 +4,13 @@ using System.IO;
 
 namespace FSys
 {
-    public class Writer
+    public partial class Writer
     {
         private FileStream _fileStream = null;
 
 
-        public Writer()
-        {
-            Excepter.Clear();
-        }
+        public Writer() => Excepter.Clear();
 
-
-        public enum Mode
-        {
-            Open,Create,Append
-        }
 
 
         public void Open(string FilePath)
@@ -101,6 +93,42 @@ namespace FSys
             }
         }
 
+
+
+        public virtual void ASyncWrite(string isString)
+        {
+
+        }
+
+
+        public virtual void ASyncWrite(string isString, Encoding encode)
+        {
+            try
+            {
+                using (StreamWriter streamWriter = new StreamWriter(_fileStream, encode))
+                {
+                    streamWriter.WriteAsync(isString);
+                }
+            }
+            catch (IOException ex)
+            {
+                Excepter.Except = ex.ToString();
+
+                Excepter.Err = "Writing to the file failed.";
+            }
+        }
+
+
+        public virtual void ASyncWriteLine(string isString)
+        {
+
+        }
+
+
+        public virtual void ASyncWriteLine(string isString, Encoding encode)
+        {
+
+        }
 
 
 
