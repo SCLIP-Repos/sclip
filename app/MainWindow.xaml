@@ -1,0 +1,24 @@
+﻿<Window x:Class="$safeprojectname$.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:$safeprojectname$"
+        mc:Ignorable="d"
+        Title="$safeprojectname$ Beta" Height="908.667" Width="1482.667">
+    <Grid Background="#FF2C2C2C">
+        <Expander Header="STAR" HorizontalAlignment="Left" Width="148" Height="148" VerticalAlignment="Top" Background="#FF2C2C2C" Foreground="White">
+            <Grid Background="#FF252525">
+                <ListBox x:Name="Star_ListBox" HorizontalAlignment="Left" Height="123.667" Margin="8,0,0,0" VerticalAlignment="Top" Width="138" Background="#FF252525" BorderBrush="{x:Null}"/>
+            </Grid>
+        </Expander>
+        <Expander Header="DIRECTORYS" HorizontalAlignment="Left" Width="148" Margin="0,153,0,0" Background="#FF2C2C2C" Foreground="White">
+            <Grid Background="#FF252525">
+                <ListBox x:Name="Directorys_ListBox"  HorizontalAlignment="Left" Margin="8,0,0,10" Width="138" Background="#FF252525" BorderBrush="{x:Null}"/>
+            </Grid>
+        </Expander>
+        <Grid x:Name="PageView_Grid" Margin="153,26.48,0,0"/>
+        <Button Content="←" HorizontalAlignment="Left" Margin="153,1.52,0,0" VerticalAlignment="Top" Width="75" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Height="24.96" FontWeight="Bold" FontSize="13.333" FontFamily="HGSoeiKakupoptai" x:Name="Back_Button"/>
+        <Button Content="→" HorizontalAlignment="Left" Margin="228,1.52,0,0" VerticalAlignment="Top" Width="75" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Height="24.96" FontWeight="Bold" FontSize="13.333" FontFamily="HGSoeiKakupoptai" x:Name="Go_Button"/>
+    </Grid>
+</Window>
