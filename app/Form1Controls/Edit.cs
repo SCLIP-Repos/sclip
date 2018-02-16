@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace $safeprojectname$.Form1Controls
 {
-    public partial class Add : UserControl
+    public partial class Edit : UserControl
     {
-        public Add()
+        public Edit()
         {
             InitializeComponent();
         }
-
     }
 }

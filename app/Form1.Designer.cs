@@ -61,7 +61,7 @@
             this.DirectoryList_listView.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.DirectoryList_listView.Location = new System.Drawing.Point(2, 2);
             this.DirectoryList_listView.Name = "DirectoryList_listView";
-            this.DirectoryList_listView.Size = new System.Drawing.Size(150, 520);
+            this.DirectoryList_listView.Size = new System.Drawing.Size(139, 520);
             this.DirectoryList_listView.TabIndex = 6;
             this.DirectoryList_listView.UseCompatibleStateImageBehavior = false;
             this.DirectoryList_listView.View = System.Windows.Forms.View.List;

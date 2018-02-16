@@ -23,6 +23,15 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Add.cs">Add.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Add.Designer.cs">Add.Designer.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Add.resx">Add.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Edit.cs">Edit.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Edit.Designer.cs">Edit.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Edit.resx">Edit.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Lock.cs">Lock.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Lock.Designer.cs">Lock.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Lock.resx">Lock.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="View.cs">View.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="View.Designer.cs">View.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="View.resx">View.resx</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">

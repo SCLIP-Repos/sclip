@@ -16,6 +16,7 @@ namespace $safeprojectname$
 
         private static Form1Controls.Add _add = new Form1Controls.Add();
 
+        private static Form1Controls.View _view = new Form1Controls.View();
 
 
         public Form1()
@@ -32,7 +33,7 @@ namespace $safeprojectname$
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Mode(1);
+            Mode(2);
 
             DirectoryList_listView.Items.Add("Ryuji");
             ItemList_listView.Items.Add("AMAZON");
@@ -59,6 +60,8 @@ namespace $safeprojectname$
         private void InitControls()
         {
             Base_Panel.Controls.Add(_add);
+            Base_Panel.Controls.Add(_view);
+
         }
 
         internal static void Mode(short N)
@@ -79,6 +82,7 @@ namespace $safeprojectname$
                     //Edit
                 case 2:
                     Mode(0);
+                    _view.Visible = true;
                     break;
                     
             }

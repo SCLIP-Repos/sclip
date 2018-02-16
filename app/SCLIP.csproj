@@ -57,6 +57,24 @@
     <Compile Include="Form1Controls\Add.Designer.cs">
       <DependentUpon>Add.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1Controls\Edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1Controls\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1Controls\Lock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1Controls\Lock.Designer.cs">
+      <DependentUpon>Lock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1Controls\View.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1Controls\View.Designer.cs">
+      <DependentUpon>View.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -64,6 +82,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1Controls\Add.resx">
       <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1Controls\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1Controls\Lock.resx">
+      <DependentUpon>Lock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1Controls\View.resx">
+      <DependentUpon>View.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
