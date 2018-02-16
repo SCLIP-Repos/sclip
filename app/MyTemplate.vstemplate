@@ -23,9 +23,6 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Add.cs">Add.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Add.Designer.cs">Add.Designer.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Add.resx">Add.resx</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="List.cs">List.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="List.Designer.cs">List.Designer.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="List.resx">List.resx</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">

@@ -28,63 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Add_Button = new System.Windows.Forms.Button();
-            this.Edit_Button = new System.Windows.Forms.Button();
-            this.Delete_Button = new System.Windows.Forms.Button();
             this.Base_Panel = new System.Windows.Forms.Panel();
+            this.ItemList_listView = new System.Windows.Forms.ListView();
+            this.DirectoryList_listView = new System.Windows.Forms.ListView();
             this.SuspendLayout();
-            // 
-            // Add_Button
-            // 
-            this.Add_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add_Button.Location = new System.Drawing.Point(1, 0);
-            this.Add_Button.Name = "Add_Button";
-            this.Add_Button.Size = new System.Drawing.Size(93, 40);
-            this.Add_Button.TabIndex = 0;
-            this.Add_Button.Text = "ADD TO";
-            this.Add_Button.UseVisualStyleBackColor = true;
-            this.Add_Button.Click += new System.EventHandler(this.Add_Button_Click);
-            // 
-            // Edit_Button
-            // 
-            this.Edit_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edit_Button.Location = new System.Drawing.Point(100, 0);
-            this.Edit_Button.Name = "Edit_Button";
-            this.Edit_Button.Size = new System.Drawing.Size(93, 40);
-            this.Edit_Button.TabIndex = 1;
-            this.Edit_Button.Text = "EDIT";
-            this.Edit_Button.UseVisualStyleBackColor = true;
-            this.Edit_Button.Click += new System.EventHandler(this.Edit_Button_Click);
-            // 
-            // Delete_Button
-            // 
-            this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete_Button.Location = new System.Drawing.Point(199, 0);
-            this.Delete_Button.Name = "Delete_Button";
-            this.Delete_Button.Size = new System.Drawing.Size(93, 40);
-            this.Delete_Button.TabIndex = 2;
-            this.Delete_Button.Text = "DELETE";
-            this.Delete_Button.UseVisualStyleBackColor = true;
-            this.Delete_Button.Click += new System.EventHandler(this.Delete_Button_Click);
             // 
             // Base_Panel
             // 
-            this.Base_Panel.Location = new System.Drawing.Point(1, 46);
+            this.Base_Panel.Location = new System.Drawing.Point(345, 2);
             this.Base_Panel.Name = "Base_Panel";
-            this.Base_Panel.Size = new System.Drawing.Size(638, 479);
+            this.Base_Panel.Size = new System.Drawing.Size(638, 520);
             this.Base_Panel.TabIndex = 3;
+            // 
+            // ItemList_listView
+            // 
+            this.ItemList_listView.BackColor = System.Drawing.Color.White;
+            this.ItemList_listView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ItemList_listView.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ItemList_listView.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.ItemList_listView.Location = new System.Drawing.Point(158, 2);
+            this.ItemList_listView.Name = "ItemList_listView";
+            this.ItemList_listView.Size = new System.Drawing.Size(181, 520);
+            this.ItemList_listView.TabIndex = 5;
+            this.ItemList_listView.UseCompatibleStateImageBehavior = false;
+            this.ItemList_listView.View = System.Windows.Forms.View.List;
+            // 
+            // DirectoryList_listView
+            // 
+            this.DirectoryList_listView.BackColor = System.Drawing.Color.White;
+            this.DirectoryList_listView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DirectoryList_listView.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DirectoryList_listView.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.DirectoryList_listView.Location = new System.Drawing.Point(2, 2);
+            this.DirectoryList_listView.Name = "DirectoryList_listView";
+            this.DirectoryList_listView.Size = new System.Drawing.Size(150, 520);
+            this.DirectoryList_listView.TabIndex = 6;
+            this.DirectoryList_listView.UseCompatibleStateImageBehavior = false;
+            this.DirectoryList_listView.View = System.Windows.Forms.View.List;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(640, 526);
+            this.ClientSize = new System.Drawing.Size(985, 526);
+            this.Controls.Add(this.DirectoryList_listView);
+            this.Controls.Add(this.ItemList_listView);
             this.Controls.Add(this.Base_Panel);
-            this.Controls.Add(this.Delete_Button);
-            this.Controls.Add(this.Edit_Button);
-            this.Controls.Add(this.Add_Button);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
@@ -95,11 +86,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Add_Button;
-        private System.Windows.Forms.Button Edit_Button;
-        private System.Windows.Forms.Button Delete_Button;
         private System.Windows.Forms.Panel Base_Panel;
+        private System.Windows.Forms.ListView ItemList_listView;
+        private System.Windows.Forms.ListView DirectoryList_listView;
     }
 }
 

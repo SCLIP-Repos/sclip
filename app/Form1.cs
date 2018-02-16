@@ -13,7 +13,6 @@ namespace $safeprojectname$
     public partial class Form1 : Form
     {
 
-        private static Form1Controls.List _list = new Form1Controls.List();
 
         private static Form1Controls.Add _add = new Form1Controls.Add();
 
@@ -34,6 +33,9 @@ namespace $safeprojectname$
         private void Form1_Load(object sender, EventArgs e)
         {
             Mode(1);
+
+            DirectoryList_listView.Items.Add("Ryuji");
+            ItemList_listView.Items.Add("AMAZON");
         }
 
 
@@ -56,7 +58,6 @@ namespace $safeprojectname$
         //WINDOW MODE
         private void InitControls()
         {
-            Base_Panel.Controls.Add(_list);
             Base_Panel.Controls.Add(_add);
         }
 
@@ -65,24 +66,18 @@ namespace $safeprojectname$
             switch(N)
             {
                 case 0:
-                    _list.Visible = false;
+                    
                     _add.Visible = false;
                     break;
-
-                    //List
+                   
+                    //Add
                 case 1:
                     Mode(0);
-                    _list.Visible = true;
-                    break;
-
-                    //Add
-                case 2:
                     _add.Visible = true;
-                    Mode(0);
                     break;
 
                     //Edit
-                case 3:
+                case 2:
                     Mode(0);
                     break;
                     
