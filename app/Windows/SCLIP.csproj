@@ -51,6 +51,12 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CipherModule">
+      <HintPath>..\..\CipherModule\CipherModule\bin\Debug\CipherModule.dll</HintPath>
+    </Reference>
+    <Reference Include="FSys">
+      <HintPath>..\FSys\bin\Debug\FSys.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -94,6 +100,7 @@
     <Compile Include="Form1Controls\View.Designer.cs">
       <DependentUpon>View.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItemAct.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

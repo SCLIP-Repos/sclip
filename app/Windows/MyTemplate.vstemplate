@@ -33,6 +33,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="View.Designer.cs">View.Designer.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="View.resx">View.resx</ProjectItem>
       </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ItemAct.cs">ItemAct.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>

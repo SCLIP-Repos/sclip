@@ -17,5 +17,7 @@ namespace $safeprojectname$.Form1Controls
             InitializeComponent();
         }
 
+
+
     }
 }
