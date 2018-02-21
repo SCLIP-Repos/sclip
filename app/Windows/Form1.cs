@@ -20,6 +20,7 @@ namespace $safeprojectname$
         private static Form1Controls.View _view = new Form1Controls.View();
 
 
+
         public Form1()
         {
             InitializeComponent();

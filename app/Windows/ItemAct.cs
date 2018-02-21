@@ -14,7 +14,7 @@ namespace $safeprojectname$
     {
         public void Load()
         {
-
+            
         }
 
 
@@ -66,7 +66,7 @@ namespace $safeprojectname$
         {
             public void Create(string ItemDirectoryName)
             {
-            
+
             }
 
             public void Delete(string ItemDirectoryName)
