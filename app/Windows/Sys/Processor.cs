@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace $safeprojectname$.Sys
 {
-    class Processor
+    partial class Processor
     {
+        public void Run(Enum @enum)
+        {
+            switch (@enum)
+            {
+                case RunProc.Updater:
+                    break;
+
+                case RunProc.Uninstaller:
+                    break;
+            }
+
+        }
     }
 }

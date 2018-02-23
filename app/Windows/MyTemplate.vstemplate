@@ -38,6 +38,7 @@
       </Folder>
       <Folder Name="Sys" TargetFolderName="Sys">
         <ProjectItem ReplaceParameters="true" TargetFileName="Processor.cs">Processor.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Processor.RunProc.cs">Processor.RunProc.cs</ProjectItem>
       </Folder>
     </Project>
   </TemplateContent>
