@@ -15,70 +15,34 @@ namespace $safeprojectname$.Form1UserControls
         public ItemControl()
         {
             InitializeComponent();
-            InitItemControl();
         }
 
 
 
-        /*REF INTERNAL ASM*/
-        internal static void SwitchItemControlMode(Enum ItemControlMode)
-        {
-            switch(ItemControlMode)
-            {
-                case Mode.Init:
-                    break;
-
-                case Mode.Add:
-                    break;
-
-                case Mode.Edit:
-                    break;
-
-                case Mode.View:
-                    break;
-            }
-        }
-
-
-        /*PRIVATE*/
-        private void InitItemControl()
-        {
-            SwitchItemControlMode(Mode.Init);
-        }
-            
-
-            
         /*EVENT DRIVE*/
 
-
-        private void Save_button_Click(object sender, EventArgs e)
+        private void OK_button_Click(object sender, EventArgs e)
         {
-            if(ServiceName_textBox.Text == null || ServiceName_textBox.Text == String.Empty)
+            if(Service_textBox.Text == String.Empty)
             {
-                ServiceName_textBox.BackColor = Color.OrangeRed;
-                MessageBox.Show("You must enter a service name.");
+                Service_textBox.BackColor = Color.Red;
                 return;
             }
 
-            InitItemControl();
+            
         }
 
-        private void Cancel_button_Click(object sender, EventArgs e)
+        private void Cancel_Click(object sender, EventArgs e)
         {
-            InitItemControl();
+            Form1.SwitchUserControl(Form1.Mode.Init);
         }
 
-
-
-
-
-        private void ServiceName_textBox_Click(object sender, EventArgs e)
+        private void Service_textBox_Click(object sender, EventArgs e)
         {
-            if(ServiceName_textBox.BackColor == Color.OrangeRed)
+            if (Service_textBox.BackColor == Color.Red)
             {
-                ServiceName_textBox.BackColor = Color.White;
+                Service_textBox.BackColor = Color.White;
             }
         }
-
     }
 }

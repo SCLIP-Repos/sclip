@@ -24,7 +24,9 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="ItemControl.cs">ItemControl.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="ItemControl.Designer.cs">ItemControl.Designer.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="ItemControl.resx">ItemControl.resx</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="ItemControl.Mode.cs">ItemControl.Mode.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Login.cs">Login.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Login.Designer.cs">Login.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Login.resx">Login.resx</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
@@ -33,6 +35,9 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Resources.Designer.cs">Resources.Designer.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Sys" TargetFolderName="Sys">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Processor.cs">Processor.cs</ProjectItem>
       </Folder>
     </Project>
   </TemplateContent>

@@ -13,69 +13,103 @@ namespace $safeprojectname$
     public partial class Form1 : Form
     {
 
-
         private static Form1UserControls.ItemControl _itemControl = new Form1UserControls.ItemControl();
 
-
+        private static Form1UserControls.Login _login = new Form1UserControls.Login();
 
 
         public Form1()
         {
             InitializeComponent();
 
-            InitForm1UserControls();
-            
+            InitForm1UserControl();
+
         }
 
 
+        /*INTERNAL*/
 
-
-
-
-        /*REF INTERNAL ASM*/
-
-
-        internal static void SwitchForm1UserControl(Enum Form1UserControlMode)
+        internal static void SwitchUserControl(Enum @enum)
         {
-
-
-            switch(Form1UserControlMode)
+            switch(@enum)
             {
                 case Mode.Init:
                     _itemControl.Visible = false;
+                    _login.Visible = false;
+                    break;
+
+                case Mode.Login:
+                    SwitchUserControl(Mode.Init);
+                    _login.Visible = true;
                     break;
 
                 case Mode.ItemControl:
-                    SwitchForm1UserControl(Mode.Init);
+                    SwitchUserControl(Mode.Init);
                     _itemControl.Visible = true;
                     break;
             }
         }
 
 
-
-
         /*PRIVATE*/
-        
 
-        private void InitForm1UserControls()
+        private void InitForm1UserControl()
         {
-            UserControlsView_panel.Controls.Add(_itemControl);
+            UserControlBase_panel.Controls.Add(_itemControl);
 
-            SwitchForm1UserControl(Mode.Init);
+            UserControlBase_panel.Controls.Add(_login);
+
+            SwitchUserControl(Mode.Init);
         }
-
 
 
 
         /*EVENT DRIVE*/
-        
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            SwitchForm1UserControl(Mode.ItemControl);
+            SwitchUserControl(Mode.Login);
+
+            
+
         }
 
-        
+        private void ItemDirectory_listView_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+        }
 
+        private void Item_listView_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+            
+        }
     }
 }
+
+
+/*
+        private const int WM_CONTEXTMENU = 0x7B;
+
+            protected override void WndProc(ref Message m)
+        {
+            switch (m.Msg)
+            {
+                case WM_CONTEXTMENU:
+                    break;
+            }
+            base.WndProc(ref m);
+        }
+
+
+
+    private void ItemDirectory_listView_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                if ( false)
+                    ItemDirectory_listView.ContextMenu = new ContextMenu();
+        }
+
+
+
+*/
