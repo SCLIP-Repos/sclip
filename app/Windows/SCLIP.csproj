@@ -68,6 +68,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sys\Paths.cs" />
     <Compile Include="Sys\Processor.cs" />
     <Compile Include="Sys\Processor.RunProc.cs" />
     <EmbeddedResource Include="Form1.resx">

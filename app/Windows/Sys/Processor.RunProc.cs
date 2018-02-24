@@ -4,7 +4,7 @@
     {
         internal enum RunProc
         {
-            Updater,Uninstaller
+            Updater,Installer,Uninstaller,Cleaner
         }
     }
 }

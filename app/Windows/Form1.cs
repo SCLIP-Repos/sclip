@@ -26,6 +26,7 @@ namespace $safeprojectname$
 
         }
 
+        
 
         /*INTERNAL*/
 
@@ -69,8 +70,9 @@ namespace $safeprojectname$
         private void Form1_Load(object sender, EventArgs e)
         {
             SwitchUserControl(Mode.Login);
+            //ItemDirectory_listView.ContextMenuStrip = this.contextMenuStrip1;
+            //ItemDirectory_listView.ContextMenuStrip = null;
 
-            
 
         }
 
