@@ -8,9 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace $safeprojectname$
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form 
     {
 
         private static Form1UserControls.ItemControl _itemControl = new Form1UserControls.ItemControl();
@@ -78,7 +79,7 @@ namespace $safeprojectname$
 
         private void ItemDirectory_listView_MouseDown(object sender, MouseEventArgs e)
         {
-            
+   
         }
 
         private void Item_listView_MouseDown(object sender, MouseEventArgs e)

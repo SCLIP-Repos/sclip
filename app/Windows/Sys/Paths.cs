@@ -11,17 +11,43 @@ namespace $safeprojectname$.Sys
     class Paths
     {
 
-        internal class ProcLocation
+        internal static readonly string[] Directory =
         {
-            internal readonly string UpdaterPath = ThisLocation() + "Updater.exe";
+            UserDocuments + @"$safeprojectname$\Save\",
 
-            internal readonly string Installer = ThisLocation() + "Installer.exe";
+            UserDocuments + @"$safeprojectname$\Logs",
 
-            internal readonly string Uninstaller = ThisLocation() + "Uninstaller.exe";
+            UserDocuments + @"$safeprojectname$\TMP"
+        };
 
-            internal readonly string Cleaner = ThisLocation() + "Cleaner.exe";
+        internal static readonly string[] File =
+        {
+            //Key , BackupKey
+            ThisLocation() + "0",
+
+            //Sys Key , 
+            ThisLocation() + "1",
+
+            //User sets
+            ThisLocation() + "User"
+        };
+
+
+        internal static class SCLIPtools
+        {
+            internal static readonly string UpdaterPath = ThisLocation() + "Updater.exe";
+
+            internal static readonly string Installer = ThisLocation() + "Installer.exe";
+
+            internal static readonly string Uninstaller = ThisLocation() + "Uninstaller.exe";
+
+            internal static readonly string Cleaner = ThisLocation() + "Cleaner.exe";
+
+            internal static readonly string SimpleView = ThisLocation() + "SimpleView.exe";
 
         }
+
+        private static string UserDocuments = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\";
 
         private static string ThisLocation()
         {

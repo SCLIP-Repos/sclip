@@ -36,6 +36,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
       </Folder>
+      <Folder Name="Security" TargetFolderName="Security" />
       <Folder Name="Sys" TargetFolderName="Sys">
         <ProjectItem ReplaceParameters="true" TargetFileName="Paths.cs">Paths.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Processor.cs">Processor.cs</ProjectItem>
