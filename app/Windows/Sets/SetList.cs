@@ -4,16 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using CipherModule;
-
-
-
-namespace $safeprojectname$.Security
+namespace $safeprojectname$.Sets
 {
-    public class Login
-    {
-
-
-
-    }
+    
 }

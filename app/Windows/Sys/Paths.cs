@@ -44,7 +44,6 @@ namespace $safeprojectname$.Sys
             internal static readonly string Cleaner = ThisLocation() + "Cleaner.exe";
 
             internal static readonly string SimpleView = ThisLocation() + "SimpleView.exe";
-
         }
 
         private static string UserDocuments = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\";
