@@ -83,6 +83,7 @@
     <Compile Include="Form1UserControls\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeneralVersatilityParts\Encoder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -90,12 +91,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Security\Login.cs" />
-    <Compile Include="Sets\SetList.cs" />
-    <Compile Include="Sets\SetsAct.cs" />
     <Compile Include="Sys\Paths.cs" />
-    <Compile Include="Sys\Processor.cs" />
-    <Compile Include="Sys\Processor.RunProc.cs" />
+    <Compile Include="Sys\ProcessControl.cs" />
+    <Compile Include="Sys\ProcessControl.ProcList.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +120,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GeneralVersatilityParts\README.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

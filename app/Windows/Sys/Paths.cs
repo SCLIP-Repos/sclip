@@ -1,8 +1,8 @@
 ﻿using System;
-using System.IO;
-using System.Reflection;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,9 +10,8 @@ namespace $safeprojectname$.Sys
 {
     class Paths
     {
-
         internal static readonly string[] Directory =
-        {
+         {
             UserDocuments + @"$safeprojectname$\Save\",
 
             UserDocuments + @"$safeprojectname$\Logs",
@@ -33,7 +32,8 @@ namespace $safeprojectname$.Sys
         };
 
 
-        internal static class SCLIPtools
+
+            internal static class SCLIPtools
         {
             internal static readonly string UpdaterPath = ThisLocation() + "Updater.exe";
 
@@ -46,12 +46,15 @@ namespace $safeprojectname$.Sys
             internal static readonly string SimpleView = ThisLocation() + "SimpleView.exe";
         }
 
+
+
+
         private static string UserDocuments = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\";
 
         private static string ThisLocation()
         {
             string FullPath = Assembly.GetEntryAssembly().Location;
-            
+
             return FullPath.Remove(FullPath.Length - Path.GetFileName(FullPath).Length);
         }
     }

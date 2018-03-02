@@ -28,6 +28,10 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Login.Designer.cs">Login.Designer.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Login.resx">Login.resx</ProjectItem>
       </Folder>
+      <Folder Name="GeneralVersatilityParts" TargetFolderName="GeneralVersatilityParts">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Encoder.cs">Encoder.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="README.txt">README.txt</ProjectItem>
+      </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
@@ -36,17 +40,10 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
       </Folder>
-      <Folder Name="Security" TargetFolderName="Security">
-        <ProjectItem ReplaceParameters="true" TargetFileName="Login.cs">Login.cs</ProjectItem>
-      </Folder>
-      <Folder Name="Sets" TargetFolderName="Sets">
-        <ProjectItem ReplaceParameters="true" TargetFileName="SetList.cs">SetList.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="SetsAct.cs">SetsAct.cs</ProjectItem>
-      </Folder>
       <Folder Name="Sys" TargetFolderName="Sys">
         <ProjectItem ReplaceParameters="true" TargetFileName="Paths.cs">Paths.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Processor.cs">Processor.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Processor.RunProc.cs">Processor.RunProc.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProcessControl.cs">ProcessControl.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProcessControl.ProcList.cs">ProcessControl.ProcList.cs</ProjectItem>
       </Folder>
     </Project>
   </TemplateContent>

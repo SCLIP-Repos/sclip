@@ -1,0 +1,1 @@
+﻿Independent parts independent of the system.
