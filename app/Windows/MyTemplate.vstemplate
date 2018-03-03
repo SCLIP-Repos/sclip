@@ -16,6 +16,7 @@
   <TemplateContent>
     <Project TargetFileName="SCLIP.csproj" File="SCLIP.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+      <Folder Name="Contents" TargetFolderName="Contents" />
       <ProjectItem ReplaceParameters="true" TargetFileName="Form1.cs">Form1.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Form1.Designer.cs">Form1.Designer.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Form1.resx">Form1.resx</ProjectItem>
@@ -29,6 +30,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Login.resx">Login.resx</ProjectItem>
       </Folder>
       <Folder Name="GeneralVersatilityParts" TargetFolderName="GeneralVersatilityParts">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Cipher.cs">Cipher.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Encoder.cs">Encoder.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="README.txt">README.txt</ProjectItem>
       </Folder>
@@ -44,6 +46,12 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Paths.cs">Paths.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="ProcessControl.cs">ProcessControl.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="ProcessControl.ProcList.cs">ProcessControl.ProcList.cs</ProjectItem>
+        <Folder Name="Security" TargetFolderName="Security">
+          <ProjectItem ReplaceParameters="true" TargetFileName="KeyTmp.cs">KeyTmp.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Login.cs">Login.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Sets.cs">Sets.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Sets.List.cs">Sets.List.cs</ProjectItem>
       </Folder>
     </Project>
   </TemplateContent>

@@ -10,30 +10,40 @@ namespace $safeprojectname$.Sys
 {
     class Paths
     {
+        
         internal static readonly string[] Directory =
          {
             UserDocuments + @"$safeprojectname$\Save\",
 
-            UserDocuments + @"$safeprojectname$\Logs",
+            UserDocuments + @"$safeprojectname$\Logs\",
 
-            UserDocuments + @"$safeprojectname$\TMP"
+            UserDocuments + @"$safeprojectname$\TMP\"
         };
+
 
         internal static readonly string[] File =
         {
-            //Key , BackupKey
-            ThisLocation() + "0",
+            //LoginKey , LoginBackupKey
+            ThisLocation() + "0", //0
+            
+            //MainKey
+            ThisLocation() + "1", //0
+            
+            //LoginKeySalt,BackupKeySalt
+            ThisLocation() + "2", //0
+            
+            //CloudSets
+            //ThisLocation() + "C",
 
-            //Sys Key , 
-            ThisLocation() + "1",
-
-            //User sets
-            ThisLocation() + "User"
+            //CleanTiming,AutoUpdateCheck,SimpleView(enable?)
+            ThisLocation() + "UserSets" //2
         };
 
 
 
-            internal static class SCLIPtools
+
+
+        internal static class SCLIPtools
         {
             internal static readonly string UpdaterPath = ThisLocation() + "Updater.exe";
 
@@ -51,6 +61,7 @@ namespace $safeprojectname$.Sys
 
         private static string UserDocuments = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\";
 
+        
         private static string ThisLocation()
         {
             string FullPath = Assembly.GetEntryAssembly().Location;

@@ -83,6 +83,7 @@
     <Compile Include="Form1UserControls\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeneralVersatilityParts\Cipher.cs" />
     <Compile Include="GeneralVersatilityParts\Encoder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -94,6 +95,10 @@
     <Compile Include="Sys\Paths.cs" />
     <Compile Include="Sys\ProcessControl.cs" />
     <Compile Include="Sys\ProcessControl.ProcList.cs" />
+    <Compile Include="Sys\Security\KeyTmp.cs" />
+    <Compile Include="Sys\Security\Login.cs" />
+    <Compile Include="Sys\Sets.cs" />
+    <Compile Include="Sys\Sets.List.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +129,8 @@
   <ItemGroup>
     <Content Include="GeneralVersatilityParts\README.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Contents\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

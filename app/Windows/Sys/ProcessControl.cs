@@ -35,25 +35,6 @@ namespace $safeprojectname$.Sys
             }
         }
 
-        public void Close(Enum @enum)
-        {
-            switch (@enum)
-            {
-                case RunProc.Installer:
-                    break;
-
-                case RunProc.Updater:
-                    break;
-
-                case RunProc.Uninstaller:
-                    break;
-
-                case RunProc.Cleaner:
-                    break;
-
-                case RunProc.SimpleView:
-                    break;
-            }
-        }
+    
     }
 }

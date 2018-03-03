@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace $safeprojectname$.Sets
+namespace $safeprojectname$.Sys
 {
-    class SetsAct
+    partial class Sets
     {
     }
 }
