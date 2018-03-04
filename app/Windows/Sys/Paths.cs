@@ -10,9 +10,8 @@ namespace $safeprojectname$.Sys
 {
     class Paths
     {
-        
-        internal static readonly string[] Directory =
-         {
+       internal static readonly string[] Directory =
+       {
             UserDocuments + @"$safeprojectname$\Save\",
 
             UserDocuments + @"$safeprojectname$\Logs\",
@@ -23,22 +22,15 @@ namespace $safeprojectname$.Sys
 
         internal static readonly string[] File =
         {
-            //LoginKey , LoginBackupKey
-            ThisLocation() + "0", //0
-            
-            //MainKey
-            ThisLocation() + "1", //0
-            
-            //LoginKeySalt,BackupKeySalt
-            ThisLocation() + "2", //0
-            
-            //CloudSets
-            //ThisLocation() + "C",
+            //Security
+            ThisLocation() + "0",
 
-            //CleanTiming,AutoUpdateCheck,SimpleView(enable?)
-            ThisLocation() + "UserSets" //2
+            //User
+            ThisLocation() + "1"
+
+                //CLOUD
+            //ThisLocation()+ "2"
         };
-
 
 
 
@@ -61,7 +53,6 @@ namespace $safeprojectname$.Sys
 
         private static string UserDocuments = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\";
 
-        
         private static string ThisLocation()
         {
             string FullPath = Assembly.GetEntryAssembly().Location;

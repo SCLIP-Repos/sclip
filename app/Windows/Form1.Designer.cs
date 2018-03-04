@@ -32,13 +32,18 @@
             System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
             System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
             this.ItemDirectory_listView = new System.Windows.Forms.ListView();
-            this.Item_listView = new System.Windows.Forms.ListView();
-            this.UserControlBase_panel = new System.Windows.Forms.Panel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Item_listView = new System.Windows.Forms.ListView();
+            this.UserControlBase_panel = new System.Windows.Forms.Panel();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
+            this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // ItemDirectory_listView
@@ -57,30 +62,6 @@
             this.ItemDirectory_listView.UseCompatibleStateImageBehavior = false;
             this.ItemDirectory_listView.View = System.Windows.Forms.View.SmallIcon;
             this.ItemDirectory_listView.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ItemDirectory_listView_MouseDown);
-            // 
-            // Item_listView
-            // 
-            this.Item_listView.BackColor = System.Drawing.Color.White;
-            this.Item_listView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Item_listView.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Item_listView.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Item_listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
-            this.Item_listView.Location = new System.Drawing.Point(146, 0);
-            this.Item_listView.Name = "Item_listView";
-            this.Item_listView.Size = new System.Drawing.Size(146, 641);
-            this.Item_listView.TabIndex = 1;
-            this.Item_listView.UseCompatibleStateImageBehavior = false;
-            this.Item_listView.View = System.Windows.Forms.View.List;
-            this.Item_listView.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Item_listView_MouseDown);
-            // 
-            // UserControlBase_panel
-            // 
-            this.UserControlBase_panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.UserControlBase_panel.Location = new System.Drawing.Point(328, 0);
-            this.UserControlBase_panel.Name = "UserControlBase_panel";
-            this.UserControlBase_panel.Size = new System.Drawing.Size(743, 641);
-            this.UserControlBase_panel.TabIndex = 2;
             // 
             // contextMenuStrip1
             // 
@@ -113,6 +94,62 @@
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
+            // Item_listView
+            // 
+            this.Item_listView.BackColor = System.Drawing.Color.White;
+            this.Item_listView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Item_listView.ContextMenuStrip = this.contextMenuStrip2;
+            this.Item_listView.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Item_listView.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Item_listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem2});
+            this.Item_listView.Location = new System.Drawing.Point(146, 0);
+            this.Item_listView.Name = "Item_listView";
+            this.Item_listView.Size = new System.Drawing.Size(146, 641);
+            this.Item_listView.TabIndex = 1;
+            this.Item_listView.UseCompatibleStateImageBehavior = false;
+            this.Item_listView.View = System.Windows.Forms.View.List;
+            this.Item_listView.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Item_listView_MouseDown);
+            // 
+            // UserControlBase_panel
+            // 
+            this.UserControlBase_panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.UserControlBase_panel.Location = new System.Drawing.Point(328, 0);
+            this.UserControlBase_panel.Name = "UserControlBase_panel";
+            this.UserControlBase_panel.Size = new System.Drawing.Size(743, 641);
+            this.UserControlBase_panel.TabIndex = 2;
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.BackColor = System.Drawing.Color.White;
+            this.contextMenuStrip2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.contextMenuStrip2.Font = new System.Drawing.Font("Segoe UI Emoji", 10F);
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3});
+            this.contextMenuStrip2.Name = "contextMenuStrip1";
+            this.contextMenuStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.contextMenuStrip2.Size = new System.Drawing.Size(118, 76);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(117, 24);
+            this.toolStripMenuItem1.Text = "New";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(117, 24);
+            this.toolStripMenuItem2.Text = "Edit";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(117, 24);
+            this.toolStripMenuItem3.Text = "Delete";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -129,6 +166,7 @@
             this.Text = "$safeprojectname$ β";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
+            this.contextMenuStrip2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -142,6 +180,10 @@
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
     }
 }
 

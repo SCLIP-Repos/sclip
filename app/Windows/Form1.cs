@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using FSys;
 
 namespace $safeprojectname$
 {
@@ -23,11 +24,17 @@ namespace $safeprojectname$
         {
             InitializeComponent();
 
-            InitForm1UserControl();
 
+
+            RegistrationForm1UserControl();
+
+
+
+            ItemDirectory_listView.ContextMenuStrip = null;
+            Item_listView.ContextMenuStrip = null;
         }
 
-        
+
 
         /*INTERNAL*/
 
@@ -55,7 +62,7 @@ namespace $safeprojectname$
 
         /*PRIVATE*/
 
-        private void InitForm1UserControl()
+        private void RegistrationForm1UserControl()
         {
             UserControlBase_panel.Controls.Add(_itemControl);
 
@@ -70,16 +77,24 @@ namespace $safeprojectname$
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if(!FileSt.Exists(Sys.Paths.File[0]) || !FileSt.Exists(Sys.Paths.File[1]))
+            {
+                Setup setup = new Setup();
+
+                setup.ShowDialog();
+            }
+
             SwitchUserControl(Mode.Login);
-            //ItemDirectory_listView.ContextMenuStrip = this.contextMenuStrip1;
-            //ItemDirectory_listView.ContextMenuStrip = null;
-
-
+            
+            
         }
 
         private void ItemDirectory_listView_MouseDown(object sender, MouseEventArgs e)
         {
-   
+            //ItemDirectory_listView.ContextMenuStrip = this.contextMenuStrip1;
+
+            //Item_listView.ContextMenuStrip = this.contextMenuStrip2;
+
         }
 
         private void Item_listView_MouseDown(object sender, MouseEventArgs e)
