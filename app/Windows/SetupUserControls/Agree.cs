@@ -10,16 +10,23 @@ using System.Windows.Forms;
 
 namespace $safeprojectname$.SetupUserControls
 {
-    public partial class Welcome : UserControl
+    public partial class Agree : UserControl
     {
-        public Welcome()
+        public Agree()
         {
             InitializeComponent();
         }
 
         private void Next1_button_Click(object sender, EventArgs e)
         {
-            Setup.SwitchUserControl(Setup.Mode.Agree);
+            if(Agree_checkBox.Checked == true)
+            {
+                Setup.SwitchUserControl(Setup.Mode.InitialSetting);
+            }
+            else
+            {
+                MessageBox.Show("You can not use without agreeing to the license.");
+            }
         }
     }
 }

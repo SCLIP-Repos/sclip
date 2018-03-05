@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace $safeprojectname$.SetupUserControls
 {
-    public partial class Welcome : UserControl
+    public partial class InitialSetting : UserControl
     {
-        public Welcome()
+        public InitialSetting()
         {
             InitializeComponent();
-        }
-
-        private void Next1_button_Click(object sender, EventArgs e)
-        {
-            Setup.SwitchUserControl(Setup.Mode.Agree);
         }
     }
 }

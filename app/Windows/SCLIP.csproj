@@ -102,6 +102,18 @@
     <Compile Include="Setup.Mode.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SetupUserControls\Agree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetupUserControls\Agree.Designer.cs">
+      <DependentUpon>Agree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupUserControls\InitialSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SetupUserControls\InitialSetting.Designer.cs">
+      <DependentUpon>InitialSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="SetupUserControls\Welcome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -127,6 +139,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Setup.resx">
       <DependentUpon>Setup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupUserControls\Agree.resx">
+      <DependentUpon>Agree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupUserControls\InitialSetting.resx">
+      <DependentUpon>InitialSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SetupUserControls\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>

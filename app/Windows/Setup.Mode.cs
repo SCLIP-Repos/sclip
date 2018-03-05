@@ -2,7 +2,7 @@
 {
     public partial class Setup
     {
-        enum Mode
+        public enum Mode
         {
             Init,Welcome,Agree,InitialSetting,Finish
 

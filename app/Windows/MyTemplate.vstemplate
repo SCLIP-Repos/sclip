@@ -51,6 +51,12 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="Setup.resx">Setup.resx</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Setup.Mode.cs">Setup.Mode.cs</ProjectItem>
       <Folder Name="SetupUserControls" TargetFolderName="SetupUserControls">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Agree.cs">Agree.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Agree.Designer.cs">Agree.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Agree.resx">Agree.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InitialSetting.cs">InitialSetting.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InitialSetting.Designer.cs">InitialSetting.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InitialSetting.resx">InitialSetting.resx</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.cs">Welcome.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.Designer.cs">Welcome.Designer.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.resx">Welcome.resx</ProjectItem>

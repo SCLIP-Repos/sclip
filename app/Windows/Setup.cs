@@ -13,7 +13,11 @@ namespace $safeprojectname$
     public partial class Setup : Form
     {
         private static SetupUserControls.Welcome _welcome = new SetupUserControls.Welcome();
-        
+
+        private static SetupUserControls.Agree _agree = new SetupUserControls.Agree();
+
+        private static SetupUserControls.InitialSetting _initialSetting = new SetupUserControls.InitialSetting();
+
 
 
         private static bool Setuped = false;
@@ -38,6 +42,8 @@ namespace $safeprojectname$
             {
                 case Mode.Init:
                     _welcome.Visible = false;
+                    _agree.Visible = false;
+                    _initialSetting.Visible = false;
                     break;
                 case Mode.Welcome:
                     SwitchUserControl(Mode.Init);
@@ -45,9 +51,13 @@ namespace $safeprojectname$
                     break;
 
                 case Mode.Agree:
+                    SwitchUserControl(Mode.Init);
+                    _agree.Visible = true;
                     break;
 
                 case Mode.InitialSetting:
+                    SwitchUserControl(Mode.Init);
+                    _initialSetting.Visible = true;
                     break;
 
                 case Mode.Finish:
@@ -62,6 +72,9 @@ namespace $safeprojectname$
         {
             Base_panel.Controls.Add(_welcome);
 
+            Base_panel.Controls.Add(_agree);
+
+            Base_panel.Controls.Add(_initialSetting);
 
             SwitchUserControl(Mode.Init);
         }
