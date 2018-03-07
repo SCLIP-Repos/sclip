@@ -20,18 +20,6 @@ namespace $safeprojectname$.Sys
         };
 
 
-        internal static readonly string[] File =
-        {
-            //Security
-            ThisLocation() + "0",
-
-            //User
-            ThisLocation() + "1"
-
-                //CLOUD
-            //ThisLocation()+ "2"
-        };
-
 
 
 

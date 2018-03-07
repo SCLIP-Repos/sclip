@@ -10,55 +10,19 @@ namespace $safeprojectname$.Sys
 {
     partial class Configuration
     {
-        public void Create()
-        {
-            Create(Type.SecurityConf);
+        
 
-            Create(Type.UserConf);
+        public void Save()
+        {
+
         }
 
-        public void Create(Enum @enum)
-        {
-            switch(@enum)
-            {
-                case Type.SecurityConf:
-                    break;
 
-                case Type.UserConf:
-                    break;
-            }
+        public void Load()
+        {
+
         }
 
-        public string Load(Enum @enum)
-        {
-            Reader reader = new Reader();
-
-            switch (@enum)
-            {
-                case Type.SecurityConf:
-                    //reader.Open();
-                    //reader.Read();
-                    return "";
-
-                case Type.UserConf:
-                    //reader.Open();
-                    //reader.Read();
-                    return "";
-
-                default:
-                    reader.Close();
-                    return null;
-            }
-        }
 
     }
 }
-/*
- 読み込んで
- 書き換えて　保存する
-
-    Read
-    Tmp
-    Tmp[0] = aaaa
-    Save
-     */

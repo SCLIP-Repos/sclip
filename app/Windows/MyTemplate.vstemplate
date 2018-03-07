@@ -34,6 +34,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Encoder.cs">Encoder.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="README.txt">README.txt</ProjectItem>
       </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
@@ -62,8 +63,13 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.resx">Welcome.resx</ProjectItem>
       </Folder>
       <Folder Name="Sys" TargetFolderName="Sys">
+        <Folder Name="Configuration" TargetFolderName="Configuration">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Security.settings">Security.settings</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Security.Designer.cs">Security.Designer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="User.settings">User.settings</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="User.Designer.cs">User.Designer.cs</ProjectItem>
+        </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="Configuration.cs">Configuration.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Configuration.Type.cs">Configuration.Type.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Paths.cs">Paths.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="README.txt">README.txt</ProjectItem>
       </Folder>
