@@ -5,7 +5,7 @@
         /*PRIVATE*/
         internal enum Mode
         {
-            Init,ItemControl,Login
+            Init,ItemControl,Login,Top
         }
     }
 }

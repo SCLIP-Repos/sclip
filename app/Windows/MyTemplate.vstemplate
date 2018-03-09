@@ -74,6 +74,7 @@
             <ProjectItem ReplaceParameters="true" TargetFileName="Salt.settings">Salt.settings</ProjectItem>
             <ProjectItem ReplaceParameters="true" TargetFileName="Salt.Designer.cs">Salt.Designer.cs</ProjectItem>
           </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Tmp.cs">Tmp.cs</ProjectItem>
         </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="Paths.cs">Paths.cs</ProjectItem>
       </Folder>

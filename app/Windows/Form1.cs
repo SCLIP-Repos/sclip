@@ -19,6 +19,9 @@ namespace $safeprojectname$
 
         private static Form1UserControls.Login _login = new Form1UserControls.Login();
 
+        private static Form1UserControls.Top _top = new Form1UserControls.Top();
+
+
 
         public Form1()
         {
@@ -56,6 +59,11 @@ namespace $safeprojectname$
                     SwitchUserControl(Mode.Init);
                     _itemControl.Visible = true;
                     break;
+
+                case Mode.Top:
+                    SwitchUserControl(Mode.Init);
+                    _top.Visible = true;
+                    break;
             }
         }
 
@@ -68,6 +76,8 @@ namespace $safeprojectname$
 
             UserControlBase_panel.Controls.Add(_login);
 
+            UserControlBase_panel.Controls.Add(_top);
+
             SwitchUserControl(Mode.Init);
         }
 
@@ -77,18 +87,15 @@ namespace $safeprojectname$
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            /*
-            if(!FileSt.Exists(Sys.Paths.File[0]) || !FileSt.Exists(Sys.Paths.File[1]))
+            if(!FSysDirectory.Exists(@"C:\Users\" + Environment.UserName + @"\AppData\Local\$safeprojectname$"))
             {
                 Setup setup = new Setup();
 
                 setup.ShowDialog();
             }
-            */
-            Setup setup = new Setup();
+            
 
-            setup.ShowDialog();
-            SwitchUserControl(Mode.Login);
+             SwitchUserControl(Mode.Login);
             
             
         }

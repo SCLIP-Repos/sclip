@@ -30,10 +30,36 @@ namespace $safeprojectname$.SetupUserControls
                 MessageBox.Show("! Password must be 5 digits or more. !");
                 return;
             }
-            
-           
+
+
+
+            //Iv 
+            Sys.Configuration.Security.Iv.Default.LoginIv = GeneralVersatilityParts.Cipher.Random();
+
+            Sys.Configuration.Security.Iv.Default.Save();
+
+            //Salt
+            Sys.Configuration.Security.Salt.Default.LoginSalt = GeneralVersatilityParts.Cipher.Random();
+
+            Sys.Configuration.Security.Salt.Default.Save();
+
+
+            //Key
+            string encryptKey = GeneralVersatilityParts.Cipher.Random();
+
+            encryptKey = 
+                GeneralVersatilityParts.Cipher.Encrypt(encryptKey,Psw_textBox.Text,Sys.Configuration.Security.Iv.Default.LoginIv);
+
+
+            Sys.Configuration.Security.Key.Default.EncryptKey = encryptKey;
+
+            Sys.Configuration.Security.Key.Default.LoginKey = 
+                GeneralVersatilityParts.Cipher.HashCompute(Psw_textBox.Text,Sys.Configuration.Security.Salt.Default.LoginSalt);
             
 
+            Sys.Configuration.Security.Key.Default.Save();
+
+            Application.Restart();
         }
     }
 }

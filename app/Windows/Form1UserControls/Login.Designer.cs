@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.Psw_textBox = new System.Windows.Forms.TextBox();
             this.Login_button = new System.Windows.Forms.Button();
-            this.ResetPsw_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.splitter1 = new System.Windows.Forms.Splitter();
@@ -60,18 +59,6 @@
             this.Login_button.Text = "LOGIN";
             this.Login_button.UseVisualStyleBackColor = true;
             this.Login_button.Click += new System.EventHandler(this.Login_button_Click);
-            // 
-            // ResetPsw_label
-            // 
-            this.ResetPsw_label.AutoSize = true;
-            this.ResetPsw_label.Font = new System.Drawing.Font("Segoe UI Emoji", 7F);
-            this.ResetPsw_label.ForeColor = System.Drawing.Color.Teal;
-            this.ResetPsw_label.Location = new System.Drawing.Point(669, 627);
-            this.ResetPsw_label.Name = "ResetPsw_label";
-            this.ResetPsw_label.Size = new System.Drawing.Size(74, 14);
-            this.ResetPsw_label.TabIndex = 3;
-            this.ResetPsw_label.Text = "Reset password";
-            this.ResetPsw_label.Click += new System.EventHandler(this.ResetPsw_label_Click);
             // 
             // pictureBox1
             // 
@@ -108,7 +95,6 @@
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.ResetPsw_label);
             this.Controls.Add(this.Login_button);
             this.Controls.Add(this.Psw_textBox);
             this.Name = "Login";
@@ -124,7 +110,6 @@
 
         private System.Windows.Forms.TextBox Psw_textBox;
         private System.Windows.Forms.Button Login_button;
-        private System.Windows.Forms.Label ResetPsw_label;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Splitter splitter1;

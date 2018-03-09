@@ -147,6 +147,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Salt.settings</DependentUpon>
     </Compile>
+    <Compile Include="Sys\Configuration\Tmp.cs" />
     <Compile Include="Sys\Paths.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

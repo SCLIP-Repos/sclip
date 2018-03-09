@@ -20,6 +20,7 @@ namespace $safeprojectname$.GeneralVersatilityParts
 
             aes.Encyrpt(Origin);
 
+
             return aes.Print();
         }
 

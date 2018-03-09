@@ -34,17 +34,5 @@ namespace $safeprojectname$.Sys.Configuration.Security {
                 this["LoginIv"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string EncryptIv {
-            get {
-                return ((string)(this["EncryptIv"]));
-            }
-            set {
-                this["EncryptIv"] = value;
-            }
-        }
     }
 }
