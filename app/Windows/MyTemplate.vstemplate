@@ -70,6 +70,8 @@
       <Folder Name="Sys" TargetFolderName="Sys">
         <Folder Name="Configuration" TargetFolderName="Configuration">
           <ProjectItem ReplaceParameters="true" TargetFileName="ConfigurationControl.cs">ConfigurationControl.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ConfigurationControl.Security.Type.cs">ConfigurationControl.Security.Type.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ConfigurationControl.User.Type.cs">ConfigurationControl.User.Type.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="Security.settings">Security.settings</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="Security.Designer.cs">Security.Designer.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="User.settings">User.settings</ProjectItem>

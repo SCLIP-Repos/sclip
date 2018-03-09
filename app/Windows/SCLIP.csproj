@@ -136,6 +136,8 @@
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
     <Compile Include="Sys\Configuration\ConfigurationControl.cs" />
+    <Compile Include="Sys\Configuration\ConfigurationControl.Security.Type.cs" />
+    <Compile Include="Sys\Configuration\ConfigurationControl.User.Type.cs" />
     <Compile Include="Sys\Configuration\Security.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>

@@ -6,16 +6,50 @@ using System.Threading.Tasks;
 
 namespace $safeprojectname$.Sys.Configuration
 {
-    class ConfigurationControl
+    partial class ConfigurationControl
     {
-        public class Security
+        public partial class Security
         {
 
+            public void Save(string s,Enum @enum)
+            {
+                switch(@enum)
+                {
+                    case Type.LoginKey:
+                        break;
+
+                    case Type.MainKey:
+                        break;
+
+                    case Type.BackupKey:
+                        break;
+
+                    case Type.LoginKeySalt:
+                        break;
+                }
+
+                Sys.Configuration.Security.Default.Save();
+            }
         }
 
-        public class User
+        public partial class User
         {
+            public void Save(bool b, Enum @enum)
+            {
+                switch (@enum)
+                {
+                    case Type.AutoUpddateCheck:
+                        break;
 
+                    case Type.AutoCleanup:
+                        break;
+
+                    case Type.SimpleView:
+                        break;
+                }
+
+                Sys.Configuration.User.Default.Save();
+            }
         }
 
         public class Cloud
