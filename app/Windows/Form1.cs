@@ -77,13 +77,17 @@ namespace $safeprojectname$
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            /*
             if(!FileSt.Exists(Sys.Paths.File[0]) || !FileSt.Exists(Sys.Paths.File[1]))
             {
                 Setup setup = new Setup();
 
                 setup.ShowDialog();
             }
+            */
+            Setup setup = new Setup();
 
+            setup.ShowDialog();
             SwitchUserControl(Mode.Login);
             
             

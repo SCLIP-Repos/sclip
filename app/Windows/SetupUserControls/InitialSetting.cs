@@ -16,5 +16,39 @@ namespace $safeprojectname$.SetupUserControls
         {
             InitializeComponent();
         }
+
+        private void OK_button_Click(object sender, EventArgs e)
+        {
+            if(Psw_textBox.Text != RePsw_textBox.Text)
+            {
+                MessageBox.Show("! Passwords do not match !");
+                return;
+            }
+
+            if (Psw_textBox.Text.Length < 5)
+            {
+                MessageBox.Show("! Password must be 5 digits or more. !");
+                return;
+            }
+            
+
+            
+
+            //psw set
+
+            
+            /*
+            Sys.Configuration.Security.Default.LoginKey =
+                GeneralVersatilityParts.Cipher.HashCompute(Psw_textBox.Text, GeneralVersatilityParts.Cipher.Random());
+            
+            Sys.Configuration.Security.Default.Save();
+
+
+
+            Sys.Configuration.Tmp.Row_LoginKey = Psw_textBox.Text;
+
+            */
+
+        }
     }
 }

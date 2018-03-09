@@ -28,5 +28,7 @@ namespace $safeprojectname$.SetupUserControls
                 MessageBox.Show("You can not use without agreeing to the license.");
             }
         }
+
+ 
     }
 }

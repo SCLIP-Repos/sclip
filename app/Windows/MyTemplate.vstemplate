@@ -28,6 +28,8 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Login.cs">Login.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Login.Designer.cs">Login.Designer.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Login.resx">Login.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Top.cs">Top.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Top.Designer.cs">Top.Designer.cs</ProjectItem>
       </Folder>
       <Folder Name="GeneralVersatilityParts" TargetFolderName="GeneralVersatilityParts">
         <ProjectItem ReplaceParameters="true" TargetFileName="Cipher.cs">Cipher.cs</ProjectItem>
@@ -47,6 +49,9 @@
         <ProjectItem ReplaceParameters="false" TargetFileName="IMG_0870.JPG">IMG_0870.JPG</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="IMG_08701.JPG">IMG_08701.JPG</ProjectItem>
       </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Sets.cs">Sets.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Sets.Designer.cs">Sets.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Sets.resx">Sets.resx</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Setup.cs">Setup.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Setup.Designer.cs">Setup.Designer.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Setup.resx">Setup.resx</ProjectItem>
@@ -64,12 +69,12 @@
       </Folder>
       <Folder Name="Sys" TargetFolderName="Sys">
         <Folder Name="Configuration" TargetFolderName="Configuration">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ConfigurationControl.cs">ConfigurationControl.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="Security.settings">Security.settings</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="Security.Designer.cs">Security.Designer.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="User.settings">User.settings</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="User.Designer.cs">User.Designer.cs</ProjectItem>
         </Folder>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Configuration.cs">Configuration.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Paths.cs">Paths.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="README.txt">README.txt</ProjectItem>
       </Folder>

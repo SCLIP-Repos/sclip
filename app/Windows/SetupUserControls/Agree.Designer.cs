@@ -32,6 +32,7 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.Agree_checkBox = new System.Windows.Forms.CheckBox();
             this.Next1_button = new System.Windows.Forms.Button();
+            
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -69,6 +70,7 @@
             this.Next1_button.Text = "NEXT";
             this.Next1_button.UseVisualStyleBackColor = true;
             this.Next1_button.Click += new System.EventHandler(this.Next1_button_Click);
+
             // 
             // Agree
             // 

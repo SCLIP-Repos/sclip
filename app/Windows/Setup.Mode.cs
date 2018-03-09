@@ -5,7 +5,6 @@
         public enum Mode
         {
             Init,Welcome,Agree,InitialSetting,Finish
-
         }
     }
 }

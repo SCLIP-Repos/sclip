@@ -87,6 +87,12 @@
     <Compile Include="Form1UserControls\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1UserControls\Top.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1UserControls\Top.Designer.cs">
+      <DependentUpon>Top.cs</DependentUpon>
+    </Compile>
     <Compile Include="GeneralVersatilityParts\Cipher.cs" />
     <Compile Include="GeneralVersatilityParts\Encoder.cs" />
     <Compile Include="Program.cs" />
@@ -95,6 +101,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sets.Designer.cs">
+      <DependentUpon>Sets.cs</DependentUpon>
     </Compile>
     <Compile Include="Setup.cs">
       <SubType>Form</SubType>
@@ -123,7 +135,7 @@
     <Compile Include="SetupUserControls\Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sys\Configuration.cs" />
+    <Compile Include="Sys\Configuration\ConfigurationControl.cs" />
     <Compile Include="Sys\Configuration\Security.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -148,6 +160,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sets.resx">
+      <DependentUpon>Sets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Setup.resx">
       <DependentUpon>Setup.cs</DependentUpon>
