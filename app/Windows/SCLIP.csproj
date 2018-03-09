@@ -138,11 +138,6 @@
     <Compile Include="Sys\Configuration\ConfigurationControl.cs" />
     <Compile Include="Sys\Configuration\ConfigurationControl.Security.Type.cs" />
     <Compile Include="Sys\Configuration\ConfigurationControl.User.Type.cs" />
-    <Compile Include="Sys\Configuration\Security.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Security.settings</DependentUpon>
-    </Compile>
     <Compile Include="Sys\Configuration\User.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -188,9 +183,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Sys\Configuration\Security.settings">
+    <None Include="Sys\Configuration\Security-Iv.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Security.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Sys\Configuration\Security-Key.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+    </None>
+    <None Include="Sys\Configuration\Security-Salt.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
     </None>
     <None Include="Sys\Configuration\User.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

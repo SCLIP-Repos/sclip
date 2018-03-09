@@ -6,7 +6,7 @@
         {
             public enum Type
             {
-                LoginKey,MainKey,BackupKey,LoginKeySalt,backupKeuSalt
+                LoginKey,MainKey,MainKey_bu,BackupKey,LoginKeySalt,BackupKeySalt
             }
         }
     }

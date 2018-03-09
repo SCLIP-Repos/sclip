@@ -72,8 +72,9 @@
           <ProjectItem ReplaceParameters="true" TargetFileName="ConfigurationControl.cs">ConfigurationControl.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="ConfigurationControl.Security.Type.cs">ConfigurationControl.Security.Type.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="ConfigurationControl.User.Type.cs">ConfigurationControl.User.Type.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="Security.settings">Security.settings</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="Security.Designer.cs">Security.Designer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Security-Iv.settings">Security-Iv.settings</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Security-Key.settings">Security-Key.settings</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Security-Salt.settings">Security-Salt.settings</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="User.settings">User.settings</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="User.Designer.cs">User.Designer.cs</ProjectItem>
         </Folder>
