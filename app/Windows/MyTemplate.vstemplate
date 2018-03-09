@@ -16,6 +16,11 @@
   <TemplateContent>
     <Project TargetFileName="SCLIP.csproj" File="SCLIP.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+      <Folder Name="Configuration" TargetFolderName="Configuration">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Security-iv.settings">Security-iv.settings</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Security-key.settings">Security-key.settings</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Security-salt.settings">Security-salt.settings</ProjectItem>
+      </Folder>
       <Folder Name="Contents" TargetFolderName="Contents" />
       <ProjectItem ReplaceParameters="true" TargetFileName="Form1.cs">Form1.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Form1.Designer.cs">Form1.Designer.cs</ProjectItem>
@@ -68,16 +73,6 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.resx">Welcome.resx</ProjectItem>
       </Folder>
       <Folder Name="Sys" TargetFolderName="Sys">
-        <Folder Name="Configuration" TargetFolderName="Configuration">
-          <ProjectItem ReplaceParameters="true" TargetFileName="ConfigurationControl.cs">ConfigurationControl.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="ConfigurationControl.Security.Type.cs">ConfigurationControl.Security.Type.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="ConfigurationControl.User.Type.cs">ConfigurationControl.User.Type.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="Security-Iv.settings">Security-Iv.settings</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="Security-Key.settings">Security-Key.settings</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="Security-Salt.settings">Security-Salt.settings</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="User.settings">User.settings</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="User.Designer.cs">User.Designer.cs</ProjectItem>
-        </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="Paths.cs">Paths.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="README.txt">README.txt</ProjectItem>
       </Folder>

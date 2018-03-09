@@ -1,14 +1,11 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="$safeprojectname$.Sys.Configuration" GeneratedClassName="Security-Iv">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="$safeprojectname$.Configuration" GeneratedClassName="Security-iv">
   <Profiles />
   <Settings>
     <Setting Name="LoginIv" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="EncryptIv" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="BackupIv" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>

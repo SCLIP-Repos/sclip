@@ -21,8 +21,6 @@ namespace $safeprojectname$.Sys
 
 
 
-
-
         internal static class SCLIPtools
         {
             internal static readonly string UpdaterPath = ThisLocation() + "Updater.exe";

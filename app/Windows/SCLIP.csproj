@@ -135,14 +135,6 @@
     <Compile Include="SetupUserControls\Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sys\Configuration\ConfigurationControl.cs" />
-    <Compile Include="Sys\Configuration\ConfigurationControl.Security.Type.cs" />
-    <Compile Include="Sys\Configuration\ConfigurationControl.User.Type.cs" />
-    <Compile Include="Sys\Configuration\User.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>User.settings</DependentUpon>
-    </Compile>
     <Compile Include="Sys\Paths.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -173,6 +165,15 @@
     <EmbeddedResource Include="SetupUserControls\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Configuration\Security-iv.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+    </None>
+    <None Include="Configuration\Security-key.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+    </None>
+    <None Include="Configuration\Security-salt.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -183,19 +184,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Sys\Configuration\Security-Iv.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-    </None>
-    <None Include="Sys\Configuration\Security-Key.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-    </None>
-    <None Include="Sys\Configuration\Security-Salt.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-    </None>
-    <None Include="Sys\Configuration\User.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>User.Designer.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
