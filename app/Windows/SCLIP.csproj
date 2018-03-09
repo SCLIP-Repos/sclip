@@ -50,9 +50,6 @@
     <Reference Include="Logger">
       <HintPath>..\Logger\bin\Release\Logger.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -135,6 +132,21 @@
     <Compile Include="SetupUserControls\Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sys\Configuration\Security\Iv.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Iv.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\Configuration\Security\Key.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Key.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\Configuration\Security\Salt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Salt.settings</DependentUpon>
+    </Compile>
     <Compile Include="Sys\Paths.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -165,34 +177,24 @@
     <EmbeddedResource Include="SetupUserControls\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Configuration\Security-iv.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-    </None>
-    <None Include="Configuration\Security-key.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-    </None>
-    <None Include="Configuration\Security-salt.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-    </None>
-    <None Include="packages.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="GeneralVersatilityParts\README.txt" />
+    <None Include="app.config" />
     <None Include="Resources\IMG_0870.JPG" />
     <None Include="Resources\IMG_08701.JPG" />
-    <Content Include="Sys\README.txt" />
+    <None Include="Sys\Configuration\Security\Iv.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Iv.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Sys\Configuration\Security\Key.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Key.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Sys\Configuration\Security\Salt.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Salt.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contents\" />

@@ -15,12 +15,7 @@
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="SCLIP.csproj" File="SCLIP.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
-      <Folder Name="Configuration" TargetFolderName="Configuration">
-        <ProjectItem ReplaceParameters="true" TargetFileName="Security-iv.settings">Security-iv.settings</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Security-key.settings">Security-key.settings</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Security-salt.settings">Security-salt.settings</ProjectItem>
-      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
       <Folder Name="Contents" TargetFolderName="Contents" />
       <ProjectItem ReplaceParameters="true" TargetFileName="Form1.cs">Form1.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Form1.Designer.cs">Form1.Designer.cs</ProjectItem>
@@ -41,14 +36,11 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Encoder.cs">Encoder.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="README.txt">README.txt</ProjectItem>
       </Folder>
-      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Resources.resx">Resources.resx</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Resources.Designer.cs">Resources.Designer.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
       </Folder>
       <Folder Name="Resources" TargetFolderName="Resources">
         <ProjectItem ReplaceParameters="false" TargetFileName="IMG_0870.JPG">IMG_0870.JPG</ProjectItem>
@@ -73,8 +65,17 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.resx">Welcome.resx</ProjectItem>
       </Folder>
       <Folder Name="Sys" TargetFolderName="Sys">
+        <Folder Name="Configuration" TargetFolderName="Configuration">
+          <Folder Name="Security" TargetFolderName="Security">
+            <ProjectItem ReplaceParameters="true" TargetFileName="Iv.settings">Iv.settings</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Iv.Designer.cs">Iv.Designer.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Key.settings">Key.settings</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Key.Designer.cs">Key.Designer.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Salt.settings">Salt.settings</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Salt.Designer.cs">Salt.Designer.cs</ProjectItem>
+          </Folder>
+        </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="Paths.cs">Paths.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="README.txt">README.txt</ProjectItem>
       </Folder>
     </Project>
   </TemplateContent>
