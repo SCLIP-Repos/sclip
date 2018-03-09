@@ -19,8 +19,7 @@ namespace $safeprojectname$.Sys
             UserDocuments + @"$safeprojectname$\TMP\"
         };
 
-
-
+        /*
         internal static class SCLIPtools
         {
             internal static readonly string UpdaterPath = ThisLocation() + "Updater.exe";
@@ -34,8 +33,9 @@ namespace $safeprojectname$.Sys
             internal static readonly string SimpleView = ThisLocation() + "SimpleView.exe";
         }
 
+        */
 
-
+        internal static readonly string UserDesktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\";
 
         private static string UserDocuments = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\";
 

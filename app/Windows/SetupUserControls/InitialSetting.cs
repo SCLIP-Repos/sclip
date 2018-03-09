@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using FSys;
+
 namespace $safeprojectname$.SetupUserControls
 {
     public partial class InitialSetting : UserControl
@@ -30,6 +32,21 @@ namespace $safeprojectname$.SetupUserControls
                 MessageBox.Show("! Password must be 5 digits or more. !");
                 return;
             }
+
+
+            //Key Ecport
+            MessageBox.Show("! $safeprojectname$ exported the password to the desktop. Please keep it securely by another storage method such as printing. Also, please do not lose it !");
+
+            Writer writer = new Writer();
+
+            writer.Open(Sys.Paths.UserDesktop + "LoginKey.txt",Writer.Mode.Create);
+
+            writer.Write(Psw_textBox.Text);
+
+            writer.Close();
+
+
+
 
 
 

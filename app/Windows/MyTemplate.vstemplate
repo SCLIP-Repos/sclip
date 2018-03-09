@@ -30,6 +30,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Login.resx">Login.resx</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Top.cs">Top.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Top.Designer.cs">Top.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Top.resx">Top.resx</ProjectItem>
       </Folder>
       <Folder Name="GeneralVersatilityParts" TargetFolderName="GeneralVersatilityParts">
         <ProjectItem ReplaceParameters="true" TargetFileName="Cipher.cs">Cipher.cs</ProjectItem>
