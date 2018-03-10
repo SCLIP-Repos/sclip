@@ -90,6 +90,8 @@ namespace $safeprojectname$.Form1UserControls
 
 
                 Form1.SwitchUserControl(Form1.Mode.Top);
+
+                Psw_textBox.Text = null;
             }
             else
             {

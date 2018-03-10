@@ -10,5 +10,11 @@ namespace $safeprojectname$.Sys.Configuration
     {
         public static string LoginKey;
         public static string EncryptKey;
+
+        public static void Clear()
+        {
+            LoginKey = null;
+            EncryptKey = null;
+        }
     }
 }

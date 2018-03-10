@@ -50,7 +50,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Setup";
-            this.Text = "SETUP";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Setup_FormClosing);
             this.ResumeLayout(false);
 
