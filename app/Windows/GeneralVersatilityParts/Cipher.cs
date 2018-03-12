@@ -12,45 +12,60 @@ namespace $safeprojectname$.GeneralVersatilityParts
 {
     class Cipher
     {
-        public static string Encrypt(string Origin,string Key,string Iv)
+        
+
+        public static string Encrypt(string s,string Key,string Iv)
         {
+            string tmp;
+
+
             AES aes = new AES();
 
-            aes.SET(Key,Iv,256,"CBC");
+            aes.SET(Key,Iv, 256, "CBC");
 
-            aes.Encyrpt(Origin);
+            aes.Encyrpt(s);
 
+            tmp = aes.Print();
 
-            return aes.Print();
+            aes.Close();
+
+            return tmp;
         }
 
-        public static string Decrypt(string Origin, string Key, string Iv)
+        public static string Decrypt(string s, string Key, string Iv)
         {
+            string tmp;
+
+
             AES aes = new AES();
 
             aes.SET(Key, Iv, 256, "CBC");
 
-            aes.Decrypt(Origin);
+            aes.Decrypt(s);
 
-            return aes.Print();
-        }
+            tmp = aes.Print();
 
+            aes.Close();
 
-        public static string HashCompute(string Origin,string Salt)
-        {
-            string Tmp;
-
-            Tmp = SHA.SHA_256(Origin + Salt);
-
-            for (int i = 0; i < 3000; i++)
-                Tmp = SHA.SHA_256(Tmp + (Origin + Salt));
-
-            return Tmp;
+            return tmp;
         }
 
         public static string Random()
         {
             return SimpleRandom.Create(12);
+        }
+
+        public static string HashCompute(string s,string Salt)
+        {
+            string tmp = SHA.SHA_256(s + Salt);
+            
+
+            for(int i = 0; i < 3000; i++)
+            {
+                tmp = SHA.SHA_256(tmp + Salt);
+            }
+            
+            return tmp;
         }
     }
 }

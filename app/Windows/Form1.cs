@@ -8,18 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using FSys;
-
 namespace $safeprojectname$
 {
-    public partial class Form1 : Form 
+    public partial class Form1 : Form
     {
+        private static View.Form1.Top _topView = new View.Form1.Top();
 
-        private static Form1UserControls.ItemControl _itemControl = new Form1UserControls.ItemControl();
+        private static View.Form1.ItemView _itemviewView = new View.Form1.ItemView();
 
-        private static Form1UserControls.Login _login = new Form1UserControls.Login();
-
-        private static Form1UserControls.Top _top = new Form1UserControls.Top();
+        private static View.Form1.Login _loginView = new View.Form1.Login();
 
 
 
@@ -27,118 +24,154 @@ namespace $safeprojectname$
         {
             InitializeComponent();
 
+            View_Registration();
 
-
-            RegistrationForm1UserControl();
-
-
-
-            ItemDirectory_listView.ContextMenuStrip = null;
-            Item_listView.ContextMenuStrip = null;
+            View_Switch(View_Chanel.Init);
         }
 
 
 
-        /*INTERNAL*/
 
-        internal static void SwitchUserControl(Enum @enum)
+
+        public static void View_Switch(Enum @enum)
         {
             switch(@enum)
             {
-                case Mode.Init:
-                    _itemControl.Visible = false;
-                    _login.Visible = false;
+                case View_Chanel.Init:
+                    _topView.Visible = false;
+
+                    _itemviewView.Visible = false;
+
+                    _loginView.Visible = false;
+
                     break;
 
-                case Mode.Login:
-                    SwitchUserControl(Mode.Init);
-                    _login.Visible = true;
+                case View_Chanel.Top:
+                    if (Act.Security.Login.LoginInfo.LoginSt == true)
+                    {
+                        View_Switch(View_Chanel.Init);
+                        _topView.Visible = true;
+                    }
+                    else
+                        MessageBox.Show("An unknown error occurred.");
+
                     break;
 
-                case Mode.ItemControl:
-                    SwitchUserControl(Mode.Init);
-                    _itemControl.Visible = true;
+                case View_Chanel.ItemView:
+                    View_Switch(View_Chanel.Init);
+
+                    _itemviewView.Visible = true;
+
                     break;
 
-                case Mode.Top:
-                    SwitchUserControl(Mode.Init);
-                    _top.Visible = true;
+                case View_Chanel.Login:
+                    if (Act.Security.Login.LoginInfo.LoginSt == false)
+                    {
+
+                        View_Switch(View_Chanel.Init);
+
+                        _loginView.Visible = true;
+                    }
+                    else
+                        MessageBox.Show("An unknown error occurred.");
+
+
                     break;
+                    
+
             }
         }
 
 
+
+
         /*PRIVATE*/
-
-        private void RegistrationForm1UserControl()
+        private void View_Registration()
         {
-            UserControlBase_panel.Controls.Add(_itemControl);
+            Base_panel.Controls.Add(_topView);
 
-            UserControlBase_panel.Controls.Add(_login);
+            Base_panel.Controls.Add(_itemviewView);
 
-            UserControlBase_panel.Controls.Add(_top);
+            Base_panel.Controls.Add(_loginView);
+        }
+        
 
-            SwitchUserControl(Mode.Init);
+
+        private bool isSelectDirectoryList()
+        {
+            if (Directory_listView.SelectedItems.Count != 0)
+                return true;
+
+            MessageBox.Show("Item is not selected.");
+            return false;
         }
 
+
+        private bool isSelectItemList()
+        {
+            if (Item_listView.SelectedItems.Count != 0)
+                return true;
+
+            MessageBox.Show("Item is not selected.");
+            return false;
+        }
 
 
         /*EVENT DRIVE*/
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if(!FSysDirectory.Exists(@"C:\Users\" + Environment.UserName + @"\AppData\Local\$safeprojectname$"))
-            {
-                Setup setup = new Setup();
-
-                setup.ShowDialog();
-            }
-            
-
-             SwitchUserControl(Mode.Login);
-            
-            
         }
 
-        private void ItemDirectory_listView_MouseDown(object sender, MouseEventArgs e)
+
+
+
+
+        //Directory operation
+ 
+        private void NewDirectory_toolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //ItemDirectory_listView.ContextMenuStrip = this.contextMenuStrip1;
-
-            //Item_listView.ContextMenuStrip = this.contextMenuStrip2;
-
-        }
-
-        private void Item_listView_MouseDown(object sender, MouseEventArgs e)
-        {
-            
            
         }
+
+        private void EditDirectory_toolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(isSelectDirectoryList() == false)
+                return;
+
+
+        }
+
+        private void DeleteDirectory_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (isSelectDirectoryList() == false)
+                return;
+
+
+        }
+
+
+
+        //Item operation
+        private void NewItem_toolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void EditItem_toolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (isSelectItemList() == false)
+                return;
+        }
+
+
+        private void DeleteItem_toolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (isSelectItemList() == false)
+                return;
+        }
+
+
     }
 }
-
-
-/*
-        private const int WM_CONTEXTMENU = 0x7B;
-
-            protected override void WndProc(ref Message m)
-        {
-            switch (m.Msg)
-            {
-                case WM_CONTEXTMENU:
-                    break;
-            }
-            base.WndProc(ref m);
-        }
-
-
-
-    private void ItemDirectory_listView_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Right)
-                if ( false)
-                    ItemDirectory_listView.ContextMenu = new ContextMenu();
-        }
-
-
-
-*/

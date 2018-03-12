@@ -15,69 +15,54 @@
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="SCLIP.csproj" File="SCLIP.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
-      <Folder Name="Contents" TargetFolderName="Contents" />
+      <Folder Name="Act" TargetFolderName="Act">
+        <Folder Name="Security" TargetFolderName="Security">
+          <Folder Name="Configuration" TargetFolderName="Configuration">
+            <ProjectItem ReplaceParameters="true" TargetFileName="Iv.settings">Iv.settings</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Iv1.Designer.cs">Iv1.Designer.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Key.settings">Key.settings</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Key.Designer.cs">Key.Designer.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Salt.settings">Salt.settings</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Salt.Designer.cs">Salt.Designer.cs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Login.cs">Login.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Form1.cs">Form1.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Form1.Designer.cs">Form1.Designer.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Form1.resx">Form1.resx</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Form1.Mode.cs">Form1.Mode.cs</ProjectItem>
-      <Folder Name="Form1UserControls" TargetFolderName="Form1UserControls">
-        <ProjectItem ReplaceParameters="true" TargetFileName="ItemControl.cs">ItemControl.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="ItemControl.Designer.cs">ItemControl.Designer.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="ItemControl.resx">ItemControl.resx</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Login.cs">Login.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Login.Designer.cs">Login.Designer.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Login.resx">Login.resx</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Top.cs">Top.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Top.Designer.cs">Top.Designer.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Top.resx">Top.resx</ProjectItem>
-      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Form1.View_Chanel.cs">Form1.View_Chanel.cs</ProjectItem>
       <Folder Name="GeneralVersatilityParts" TargetFolderName="GeneralVersatilityParts">
         <ProjectItem ReplaceParameters="true" TargetFileName="Cipher.cs">Cipher.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Encoder.cs">Encoder.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="README.txt">README.txt</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Resources.resx">Resources.resx</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Resources.Designer.cs">Resources.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
       </Folder>
-      <Folder Name="Resources" TargetFolderName="Resources">
-        <ProjectItem ReplaceParameters="false" TargetFileName="IMG_0870.JPG">IMG_0870.JPG</ProjectItem>
-        <ProjectItem ReplaceParameters="false" TargetFileName="IMG_08701.JPG">IMG_08701.JPG</ProjectItem>
-      </Folder>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Sets.cs">Sets.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Sets.Designer.cs">Sets.Designer.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Sets.resx">Sets.resx</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Setup.cs">Setup.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Setup.Designer.cs">Setup.Designer.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Setup.resx">Setup.resx</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Setup.Mode.cs">Setup.Mode.cs</ProjectItem>
-      <Folder Name="SetupUserControls" TargetFolderName="SetupUserControls">
-        <ProjectItem ReplaceParameters="true" TargetFileName="Agree.cs">Agree.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Agree.Designer.cs">Agree.Designer.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Agree.resx">Agree.resx</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="InitialSetting.cs">InitialSetting.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="InitialSetting.Designer.cs">InitialSetting.Designer.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="InitialSetting.resx">InitialSetting.resx</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.cs">Welcome.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.Designer.cs">Welcome.Designer.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.resx">Welcome.resx</ProjectItem>
-      </Folder>
-      <Folder Name="Sys" TargetFolderName="Sys">
-        <Folder Name="Configuration" TargetFolderName="Configuration">
-          <Folder Name="Security" TargetFolderName="Security">
-            <ProjectItem ReplaceParameters="true" TargetFileName="Iv.settings">Iv.settings</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="Iv.Designer.cs">Iv.Designer.cs</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="Key.settings">Key.settings</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="Key.Designer.cs">Key.Designer.cs</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="Salt.settings">Salt.settings</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="Salt.Designer.cs">Salt.Designer.cs</ProjectItem>
-          </Folder>
-          <ProjectItem ReplaceParameters="true" TargetFileName="Tmp.cs">Tmp.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="SubView.cs">SubView.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="SubView.Designer.cs">SubView.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="TRASH.cs">TRASH.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="TRASH.Designer.cs">TRASH.Designer.cs</ProjectItem>
+      <Folder Name="View" TargetFolderName="View">
+        <Folder Name="Form1" TargetFolderName="Form1">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ItemView.cs">ItemView.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ItemView.Designer.cs">ItemView.Designer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ItemView.resx">ItemView.resx</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Login.cs">Login.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Login.Designer.cs">Login.Designer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Login.resx">Login.resx</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Top.cs">Top.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Top.Designer.cs">Top.Designer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Top.resx">Top.resx</ProjectItem>
         </Folder>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Paths.cs">Paths.cs</ProjectItem>
+        <Folder Name="Sets" TargetFolderName="Sets" />
+        <Folder Name="Setup" TargetFolderName="Setup" />
+        <Folder Name="SubView" TargetFolderName="SubView" />
       </Folder>
     </Project>
   </TemplateContent>
