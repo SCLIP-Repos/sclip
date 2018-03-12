@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace $safeprojectname$.Act.Security
 {
@@ -11,10 +12,12 @@ namespace $safeprojectname$.Act.Security
 
         public bool Try(string s)
         {
+
             string load = GeneralVersatilityParts.Cipher.HashCompute(s,Configuration.Salt.Default.LoginSalt);
             
-            if (load == GeneralVersatilityParts.Cipher.HashCompute(s,Configuration.Salt.Default.LoginSalt))
+            if (load == Configuration.Key.Default.LoginKey)
             {
+
 
                 //Decrypt (encryptkey)
                 LoginInfo.EncryptKey =
@@ -40,15 +43,18 @@ namespace $safeprojectname$.Act.Security
                 Configuration.Key.Default.Save();
 
 
+
+                LoginInfo.LoginSt = true;
+
                 Form1.View_Switch(Form1.View_Chanel.Top);
 
-                return LoginInfo.LoginSt = true;
+                return true;
             }
 
 
-            
 
-            return LoginInfo.LoginSt = false;
+            LoginInfo.LoginSt = false;
+            return false;
         }
 
 

@@ -27,6 +27,7 @@
           </Folder>
           <ProjectItem ReplaceParameters="true" TargetFileName="Login.cs">Login.cs</ProjectItem>
         </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Setup.cs">Setup.cs</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Form1.cs">Form1.cs</ProjectItem>
@@ -44,6 +45,10 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
       </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Setup.cs">Setup.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Setup.Designer.cs">Setup.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Setup.resx">Setup.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Setup.View_Chanel.cs">Setup.View_Chanel.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="SubView.cs">SubView.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="SubView.Designer.cs">SubView.Designer.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="TRASH.cs">TRASH.cs</ProjectItem>
@@ -61,7 +66,17 @@
           <ProjectItem ReplaceParameters="true" TargetFileName="Top.resx">Top.resx</ProjectItem>
         </Folder>
         <Folder Name="Sets" TargetFolderName="Sets" />
-        <Folder Name="Setup" TargetFolderName="Setup" />
+        <Folder Name="Setup" TargetFolderName="Setup">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Agree.cs">Agree.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Agree.Designer.cs">Agree.Designer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Agree.resx">Agree.resx</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PasswdSet.cs">PasswdSet.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PasswdSet.Designer.cs">PasswdSet.Designer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PasswdSet.resx">PasswdSet.resx</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.cs">Welcome.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.Designer.cs">Welcome.Designer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Welcome.resx">Welcome.resx</ProjectItem>
+        </Folder>
         <Folder Name="SubView" TargetFolderName="SubView" />
       </Folder>
     </Project>

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using FSys;
+
 namespace $safeprojectname$
 {
     public partial class Form1 : Form
@@ -47,13 +49,8 @@ namespace $safeprojectname$
                     break;
 
                 case View_Chanel.Top:
-                    if (Act.Security.Login.LoginInfo.LoginSt == true)
-                    {
-                        View_Switch(View_Chanel.Init);
-                        _topView.Visible = true;
-                    }
-                    else
-                        MessageBox.Show("An unknown error occurred.");
+                    View_Switch(View_Chanel.Init);
+                    _topView.Visible = true;
 
                     break;
 
@@ -65,16 +62,10 @@ namespace $safeprojectname$
                     break;
 
                 case View_Chanel.Login:
-                    if (Act.Security.Login.LoginInfo.LoginSt == false)
-                    {
+                    
+                    View_Switch(View_Chanel.Init);
 
-                        View_Switch(View_Chanel.Init);
-
-                        _loginView.Visible = true;
-                    }
-                    else
-                        MessageBox.Show("An unknown error occurred.");
-
+                    _loginView.Visible = true;
 
                     break;
                     
@@ -121,6 +112,17 @@ namespace $safeprojectname$
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if(!FSysDirectory.Exists(@"C:\Users\" + Environment.UserName + @"\AppData\Local\$safeprojectname$") )
+            {
+                Setup.View_Switch(Setup.View_Chanel.Welcome);
+
+                Setup setup = new Setup();
+
+                setup.ShowDialog();
+            }
+
+            View_Switch(View_Chanel.Login);
+            
         }
 
 

@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -34,6 +34,9 @@
   <ItemGroup>
     <Reference Include="CipherModule">
       <HintPath>..\..\CipherModule\CipherModule\bin\Release\CipherModule.dll</HintPath>
+    </Reference>
+    <Reference Include="FSys">
+      <HintPath>..\..\old\SCLIP\FSys\bin\Release\FSys.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -64,6 +67,7 @@
       <DependentUpon>Salt.settings</DependentUpon>
     </Compile>
     <Compile Include="Act\Security\Login.cs" />
+    <Compile Include="Act\Setup.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +84,15 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup.Designer.cs">
+      <DependentUpon>Setup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setup.View_Chanel.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="SubView.cs">
       <SubType>Form</SubType>
@@ -111,6 +124,24 @@
     <Compile Include="View\Form1\ItemView.Designer.cs">
       <DependentUpon>ItemView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Setup\Agree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Setup\Agree.Designer.cs">
+      <DependentUpon>Agree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Setup\PasswdSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Setup\PasswdSet.Designer.cs">
+      <DependentUpon>PasswdSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Setup\Welcome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Setup\Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +149,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup.resx">
+      <DependentUpon>Setup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Form1\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -127,6 +161,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Form1\ItemView.resx">
       <DependentUpon>ItemView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Setup\Agree.resx">
+      <DependentUpon>Agree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Setup\PasswdSet.resx">
+      <DependentUpon>PasswdSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Setup\Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Act\Security\Configuration\Iv.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -155,7 +198,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="View\Sets\" />
-    <Folder Include="View\Setup\" />
     <Folder Include="View\SubView\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
