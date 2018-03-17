@@ -3,57 +3,86 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+using CipherModule;
+using CipherModule.Fake;
+
 using FSys;
 
 namespace $safeprojectname$.Act
 {
-    class Setup
+    partial class Setup
     {
-        public void Save(string s)
+
+        //Tmpはパーシャルを用いて分割しています。
+
+        public void FastSetup()
         {
+            //ログインキー + Salt
+            $safeprojectname$.Act.Configuration.Security.SaveOfLoginKey
+            (
+                Act.GeneralPurpose.Cipher.HashCompute
+                (
+                    Tmp.LoginKey, Tmp.LoginSalt
+                )
+            );
 
-            //Salt
-            Act.Security.Configuration.Salt.Default.LoginSalt = GeneralVersatilityParts.Cipher.Random();
-
-            Act.Security.Configuration.Salt.Default.Save();
 
 
-            //LoginKey save
-            Act.Security.Configuration.Key.Default.LoginKey = GeneralVersatilityParts.Cipher.HashCompute(s, Act.Security.Configuration.Salt.Default.LoginSalt);
-
-            Act.Security.Configuration.Key.Default.Save();
+            //loginSalt
+            $safeprojectname$.Act.Configuration.Security.SaveOfLoginSalt
+            (
+                 Tmp.LoginSalt
+            );
 
 
 
             //EncryptKey
-            string Key = GeneralVersatilityParts.Cipher.Random() + GeneralVersatilityParts.Cipher.Random();
-
-            string Iv = GeneralVersatilityParts.Cipher.Random() + GeneralVersatilityParts.Cipher.Random();
-
-            Act.Security.Configuration.Key.Default.EncryptKey =
-                GeneralVersatilityParts.Cipher.Encrypt(Key, s, Iv);
-
-            Act.Security.Configuration.Key.Default.Save();
-
-
-
-            Act.Security.Configuration.Iv.Default.EncryptIv = Iv;
-
-            Act.Security.Configuration.Iv.Default.Save();
+            $safeprojectname$.Act.Configuration.Security.SaveOfEncryptKey
+            (
+                Act.GeneralPurpose.Cipher.Encrypt
+                (
+                    Tmp.LoginKey,
+                    Tmp.EncryptIv,
+                    Tmp.EncryptKey
+                )
+            );
 
 
+            //EncryptIV
+            $safeprojectname$.Act.Configuration.Security.SaveOfEncryptIv
+            (
+                Tmp.EncryptIv
+            );
 
 
-            //Export
+
+            
+            Act.Configuration.User.SaveOfLog(false);
+            
+            for(int i = 0; i < Paths.Directory.Length; i++)
+                FSysDirectory.MkDir(Paths.Directory[i]);
+            
+
+        }
+
+
+        public void ExportKey(string psw,bool Encode)
+        {
             Writer writer = new Writer();
 
-            writer.Open(@"C:\Users\" + Environment.UserName + @"\Desktop\LoginKey.txt",Writer.Mode.Create);
+            writer.Open(@"C:\Users\" + Environment.UserName + @"\Desktop\$safeprojectname$.txt",Writer.Mode.Create);
 
-            writer.Write(s);
+            if(Encode)
+                writer.Write(Convert.ToBase64String(Encoding.UTF8.GetBytes(psw)));
+            else
+                writer.Write(psw);
+
 
             writer.Close();
 
         }
-
+        
+        
     }
 }

@@ -10,20 +10,22 @@ using System.Windows.Forms;
 
 namespace $safeprojectname$.View.Setup
 {
-    public partial class Agree : UserControl
+    public partial class Finish : UserControl
     {
-        public Agree()
+        public Finish()
         {
             InitializeComponent();
         }
 
         private void Next_button_Click(object sender, EventArgs e)
         {
-            if (Agree_checkBox.Checked == true)
-                $safeprojectname$.Setup.SwitchView(3);
-            else
-                MessageBox.Show("If you can not agree, you can not use it.");
-            
+            $safeprojectname$.Setup.Setuped = true;
+
+            Act.Setup setup = new Act.Setup();
+
+            setup.FastSetup();
+        
+            Application.Restart();
         }
     }
 }

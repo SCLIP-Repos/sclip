@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace $safeprojectname$.Act.Security.Configuration {
+namespace $safeprojectname$.Configuration {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.6.0.0")]
-    internal sealed partial class Iv : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class UserConf : global::System.Configuration.ApplicationSettingsBase {
         
-        private static Iv defaultInstance = ((Iv)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Iv())));
+        private static UserConf defaultInstance = ((UserConf)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new UserConf())));
         
-        public static Iv Default {
+        public static UserConf Default {
             get {
                 return defaultInstance;
             }
@@ -25,13 +25,13 @@ namespace $safeprojectname$.Act.Security.Configuration {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string EncryptIv {
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Log {
             get {
-                return ((string)(this["EncryptIv"]));
+                return ((bool)(this["Log"]));
             }
             set {
-                this["EncryptIv"] = value;
+                this["Log"] = value;
             }
         }
     }

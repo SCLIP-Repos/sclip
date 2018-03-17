@@ -28,39 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.Lock_pictureBox = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Trash_button = new System.Windows.Forms.Button();
-            this.Directory_listView = new System.Windows.Forms.ListView();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.NewDirectory_toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.EditDirectory_toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DeleteDirectory_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Base_panel = new System.Windows.Forms.Panel();
+            this.ItemControl_panel = new System.Windows.Forms.Panel();
+            this.Refresh_button = new System.Windows.Forms.Button();
+            this.New_button = new System.Windows.Forms.Button();
+            this.Delete_button = new System.Windows.Forms.Button();
+            this.Edit_button = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.Item_listView = new System.Windows.Forms.ListView();
-            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.NewItem_toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.EditItem_toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DeleteItem_toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.View_panel = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.ItemList_panel = new System.Windows.Forms.Panel();
+            this.ItemList_listView = new System.Windows.Forms.ListView();
+            this.ItemSearch_textBox = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Lock_pictureBox)).BeginInit();
+            this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
+            this.ItemControl_panel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.contextMenuStrip2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.ItemList_panel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // Lock_pictureBox
+            // 
+            this.Lock_pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Lock_pictureBox.Image")));
+            this.Lock_pictureBox.Location = new System.Drawing.Point(3, 50);
+            this.Lock_pictureBox.Name = "Lock_pictureBox";
+            this.Lock_pictureBox.Size = new System.Drawing.Size(44, 50);
+            this.Lock_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Lock_pictureBox.TabIndex = 4;
+            this.Lock_pictureBox.TabStop = false;
+            this.Lock_pictureBox.Click += new System.EventHandler(this.Lock_pictureBox_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.Lock_pictureBox);
+            this.panel1.Location = new System.Drawing.Point(12, 514);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(50, 100);
+            this.panel1.TabIndex = 5;
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.8144F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.1856F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 731F));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.406647F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.59335F));
             this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.Base_panel, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -68,245 +86,184 @@
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1093, 655);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1023, 623);
+            this.tableLayoutPanel1.TabIndex = 6;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.Trash_button);
-            this.panel2.Controls.Add(this.Directory_listView);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.ItemControl_panel);
+            this.panel2.Controls.Add(this.panel1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(163, 649);
-            this.panel2.TabIndex = 1;
+            this.panel2.Size = new System.Drawing.Size(79, 617);
+            this.panel2.TabIndex = 0;
             // 
-            // Trash_button
+            // ItemControl_panel
             // 
-            this.Trash_button.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Trash_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Trash_button.ForeColor = System.Drawing.Color.DarkGray;
-            this.Trash_button.Location = new System.Drawing.Point(0, 626);
-            this.Trash_button.Name = "Trash_button";
-            this.Trash_button.Size = new System.Drawing.Size(163, 23);
-            this.Trash_button.TabIndex = 2;
-            this.Trash_button.Text = "TRASH";
-            this.Trash_button.UseVisualStyleBackColor = true;
+            this.ItemControl_panel.Controls.Add(this.Refresh_button);
+            this.ItemControl_panel.Controls.Add(this.New_button);
+            this.ItemControl_panel.Controls.Add(this.Delete_button);
+            this.ItemControl_panel.Controls.Add(this.Edit_button);
+            this.ItemControl_panel.Location = new System.Drawing.Point(3, 3);
+            this.ItemControl_panel.Name = "ItemControl_panel";
+            this.ItemControl_panel.Size = new System.Drawing.Size(71, 216);
+            this.ItemControl_panel.TabIndex = 9;
             // 
-            // Directory_listView
+            // Refresh_button
             // 
-            this.Directory_listView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Directory_listView.ContextMenuStrip = this.contextMenuStrip1;
-            this.Directory_listView.Location = new System.Drawing.Point(3, 27);
-            this.Directory_listView.Name = "Directory_listView";
-            this.Directory_listView.Size = new System.Drawing.Size(157, 596);
-            this.Directory_listView.TabIndex = 1;
-            this.Directory_listView.UseCompatibleStateImageBehavior = false;
+            this.Refresh_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Refresh_button.Location = new System.Drawing.Point(3, 164);
+            this.Refresh_button.Name = "Refresh_button";
+            this.Refresh_button.Size = new System.Drawing.Size(62, 34);
+            this.Refresh_button.TabIndex = 9;
+            this.Refresh_button.Text = "Refresh";
+            this.Refresh_button.UseVisualStyleBackColor = true;
+            this.Refresh_button.Click += new System.EventHandler(this.Refresh_button_Click);
             // 
-            // contextMenuStrip1
+            // New_button
             // 
-            this.contextMenuStrip1.BackColor = System.Drawing.Color.White;
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.NewDirectory_toolStripMenuItem,
-            this.EditDirectory_toolStripMenuItem,
-            this.DeleteDirectory_ToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(131, 70);
+            this.New_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.New_button.Location = new System.Drawing.Point(3, 3);
+            this.New_button.Name = "New_button";
+            this.New_button.Size = new System.Drawing.Size(62, 34);
+            this.New_button.TabIndex = 6;
+            this.New_button.Text = "NEW";
+            this.New_button.UseVisualStyleBackColor = true;
+            this.New_button.Click += new System.EventHandler(this.New_button_Click);
             // 
-            // NewDirectory_toolStripMenuItem
+            // Delete_button
             // 
-            this.NewDirectory_toolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.NewDirectory_toolStripMenuItem.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.NewDirectory_toolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
-            this.NewDirectory_toolStripMenuItem.Name = "NewDirectory_toolStripMenuItem";
-            this.NewDirectory_toolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.NewDirectory_toolStripMenuItem.Text = "NEW";
-            this.NewDirectory_toolStripMenuItem.Click += new System.EventHandler(this.NewDirectory_toolStripMenuItem_Click);
+            this.Delete_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete_button.Location = new System.Drawing.Point(3, 106);
+            this.Delete_button.Name = "Delete_button";
+            this.Delete_button.Size = new System.Drawing.Size(62, 34);
+            this.Delete_button.TabIndex = 8;
+            this.Delete_button.Text = "Delete";
+            this.Delete_button.UseVisualStyleBackColor = true;
+            this.Delete_button.Click += new System.EventHandler(this.Delete_button_Click);
             // 
-            // EditDirectory_toolStripMenuItem
+            // Edit_button
             // 
-            this.EditDirectory_toolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.EditDirectory_toolStripMenuItem.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.EditDirectory_toolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
-            this.EditDirectory_toolStripMenuItem.Name = "EditDirectory_toolStripMenuItem";
-            this.EditDirectory_toolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.EditDirectory_toolStripMenuItem.Text = "EDIT";
-            this.EditDirectory_toolStripMenuItem.Click += new System.EventHandler(this.EditDirectory_toolStripMenuItem_Click);
-            // 
-            // DeleteDirectory_ToolStripMenuItem
-            // 
-            this.DeleteDirectory_ToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.DeleteDirectory_ToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.DeleteDirectory_ToolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
-            this.DeleteDirectory_ToolStripMenuItem.Name = "DeleteDirectory_ToolStripMenuItem";
-            this.DeleteDirectory_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.DeleteDirectory_ToolStripMenuItem.Text = "DELETE";
-            this.DeleteDirectory_ToolStripMenuItem.Click += new System.EventHandler(this.DeleteDirectory_ToolStripMenuItem_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Directorys";
-            // 
-            // Base_panel
-            // 
-            this.Base_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Base_panel.Location = new System.Drawing.Point(364, 3);
-            this.Base_panel.Name = "Base_panel";
-            this.Base_panel.Size = new System.Drawing.Size(726, 649);
-            this.Base_panel.TabIndex = 0;
+            this.Edit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Edit_button.Location = new System.Drawing.Point(3, 54);
+            this.Edit_button.Name = "Edit_button";
+            this.Edit_button.Size = new System.Drawing.Size(62, 34);
+            this.Edit_button.TabIndex = 7;
+            this.Edit_button.Text = "EDIT";
+            this.Edit_button.UseVisualStyleBackColor = true;
+            this.Edit_button.Click += new System.EventHandler(this.Edit_button_Click);
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.Item_listView, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textBox1, 0, 0);
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.34764F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.65236F));
+            this.tableLayoutPanel2.Controls.Add(this.View_panel, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(172, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(88, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.85208F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 96.14792F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(186, 649);
-            this.tableLayoutPanel2.TabIndex = 2;
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(932, 617);
+            this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // Item_listView
+            // View_panel
             // 
-            this.Item_listView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Item_listView.ContextMenuStrip = this.contextMenuStrip2;
-            this.Item_listView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Item_listView.Location = new System.Drawing.Point(3, 27);
-            this.Item_listView.Name = "Item_listView";
-            this.Item_listView.Size = new System.Drawing.Size(180, 619);
-            this.Item_listView.TabIndex = 0;
-            this.Item_listView.UseCompatibleStateImageBehavior = false;
+            this.View_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.View_panel.Location = new System.Drawing.Point(173, 3);
+            this.View_panel.Name = "View_panel";
+            this.View_panel.Size = new System.Drawing.Size(756, 611);
+            this.View_panel.TabIndex = 1;
             // 
-            // contextMenuStrip2
+            // panel3
             // 
-            this.contextMenuStrip2.BackColor = System.Drawing.Color.White;
-            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.NewItem_toolStripMenuItem,
-            this.EditItem_toolStripMenuItem,
-            this.DeleteItem_toolStripMenuItem});
-            this.contextMenuStrip2.Name = "contextMenuStrip1";
-            this.contextMenuStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.contextMenuStrip2.ShowCheckMargin = true;
-            this.contextMenuStrip2.ShowImageMargin = false;
-            this.contextMenuStrip2.Size = new System.Drawing.Size(181, 92);
+            this.panel3.Controls.Add(this.ItemList_panel);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(164, 611);
+            this.panel3.TabIndex = 0;
             // 
-            // NewItem_toolStripMenuItem
+            // ItemList_panel
             // 
-            this.NewItem_toolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.NewItem_toolStripMenuItem.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.NewItem_toolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
-            this.NewItem_toolStripMenuItem.Name = "NewItem_toolStripMenuItem";
-            this.NewItem_toolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.NewItem_toolStripMenuItem.Text = "NEW";
-            this.NewItem_toolStripMenuItem.Click += new System.EventHandler(this.NewItem_toolStripMenuItem_Click);
+            this.ItemList_panel.Controls.Add(this.ItemList_listView);
+            this.ItemList_panel.Controls.Add(this.ItemSearch_textBox);
+            this.ItemList_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ItemList_panel.Location = new System.Drawing.Point(0, 0);
+            this.ItemList_panel.Name = "ItemList_panel";
+            this.ItemList_panel.Size = new System.Drawing.Size(164, 611);
+            this.ItemList_panel.TabIndex = 0;
             // 
-            // EditItem_toolStripMenuItem
+            // ItemList_listView
             // 
-            this.EditItem_toolStripMenuItem.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditItem_toolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
-            this.EditItem_toolStripMenuItem.Name = "EditItem_toolStripMenuItem";
-            this.EditItem_toolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.EditItem_toolStripMenuItem.Text = "EDIT";
-            this.EditItem_toolStripMenuItem.Click += new System.EventHandler(this.EditItem_toolStripMenuItem_Click);
+            this.ItemList_listView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ItemList_listView.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ItemList_listView.Font = new System.Drawing.Font("MS UI Gothic", 15F);
+            this.ItemList_listView.Location = new System.Drawing.Point(0, 37);
+            this.ItemList_listView.Name = "ItemList_listView";
+            this.ItemList_listView.Size = new System.Drawing.Size(164, 574);
+            this.ItemList_listView.TabIndex = 1;
+            this.ItemList_listView.UseCompatibleStateImageBehavior = false;
+            this.ItemList_listView.Click += new System.EventHandler(this.ItemList_listView_Click);
             // 
-            // DeleteItem_toolStripMenuItem
+            // ItemSearch_textBox
             // 
-            this.DeleteItem_toolStripMenuItem.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.DeleteItem_toolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
-            this.DeleteItem_toolStripMenuItem.Name = "DeleteItem_toolStripMenuItem";
-            this.DeleteItem_toolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.DeleteItem_toolStripMenuItem.Text = "DELETE";
-            this.DeleteItem_toolStripMenuItem.Click += new System.EventHandler(this.DeleteItem_toolStripMenuItem_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Silver;
-            this.textBox1.Location = new System.Drawing.Point(3, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "SEARCH";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ItemSearch_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ItemSearch_textBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ItemSearch_textBox.Font = new System.Drawing.Font("MS UI Gothic", 13F);
+            this.ItemSearch_textBox.ForeColor = System.Drawing.Color.Gainsboro;
+            this.ItemSearch_textBox.Location = new System.Drawing.Point(0, 0);
+            this.ItemSearch_textBox.Name = "ItemSearch_textBox";
+            this.ItemSearch_textBox.Size = new System.Drawing.Size(164, 18);
+            this.ItemSearch_textBox.TabIndex = 0;
+            this.ItemSearch_textBox.Text = "SEARCH";
+            this.ItemSearch_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1093, 655);
+            this.ClientSize = new System.Drawing.Size(1023, 623);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "$safeprojectname$ Beta";
+            this.Text = "$safeprojectname$";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Lock_pictureBox)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.contextMenuStrip1.ResumeLayout(false);
+            this.ItemControl_panel.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.contextMenuStrip2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.ItemList_panel.ResumeLayout(false);
+            this.ItemList_panel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
+        private System.Windows.Forms.PictureBox Lock_pictureBox;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel Base_panel;
+        private System.Windows.Forms.Panel ItemControl_panel;
+        private System.Windows.Forms.Button New_button;
+        private System.Windows.Forms.Button Delete_button;
+        private System.Windows.Forms.Button Edit_button;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.ListView Item_listView;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Trash_button;
-        private System.Windows.Forms.ListView Directory_listView;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem DeleteDirectory_ToolStripMenuItem;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem NewItem_toolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem EditItem_toolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem DeleteItem_toolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem NewDirectory_toolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem EditDirectory_toolStripMenuItem;
+        private System.Windows.Forms.Panel View_panel;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel ItemList_panel;
+        private System.Windows.Forms.TextBox ItemSearch_textBox;
+        public System.Windows.Forms.ListView ItemList_listView;
+        private System.Windows.Forms.Button Refresh_button;
     }
 }
 

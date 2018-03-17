@@ -12,62 +12,85 @@ namespace $safeprojectname$
 {
     public partial class Setup : Form
     {
+        /*変数とクラス*/
         private static View.Setup.Welcome _welcomeView = new View.Setup.Welcome();
 
         private static View.Setup.Agree _agreeView = new View.Setup.Agree();
 
-        private static View.Setup.PasswdSet _passwdSetView = new View.Setup.PasswdSet();
+        private static View.Setup.Passwd _passwdView = new View.Setup.Passwd();
+
+        private static View.Setup.Finish _finishView = new View.Setup.Finish();
+
+        internal static bool Setuped = false;
 
 
-
+        /* コンストラクタ */
         public Setup()
         {
             InitializeComponent();
 
-            View_Registration();
-
-            View_Switch(View_Chanel.Welcome);
+            RegistrationView();
         }
 
 
+        /* インターナル */
 
-        public static void View_Switch(Enum @enum)
+
+        //コントロールの切り替え
+        internal static void SwitchView(short ViewNumber)
         {
-            switch(@enum)
+            switch(ViewNumber)
             {
-                case View_Chanel.Init:
+                case 0:
                     _welcomeView.Visible = false;
-                    _agreeView.Visible = false ;
-                    _passwdSetView.Visible = false;
+                    _agreeView.Visible = false;
+                    _passwdView.Visible = false;
+                    _finishView.Visible = false;
                     break;
 
-                case View_Chanel.Welcome:
-                    View_Switch(View_Chanel.Init);
-
+                case 1:
+                    SwitchView(0);
                     _welcomeView.Visible = true;
                     break;
 
-                case View_Chanel.Agree:
-                    View_Switch(View_Chanel.Init);
-
+                case 2:
+                    SwitchView(0);
                     _agreeView.Visible = true;
                     break;
 
-                case View_Chanel.PasswdSet:
-                    View_Switch(View_Chanel.Init);
-
-                    _passwdSetView.Visible = true;
+                case 3:
+                    SwitchView(0);
+                    _passwdView.Visible = true;
                     break;
-                    
+
+                case 4:
+                    SwitchView(0);
+                    _finishView.Visible = true;
+                    break;
             }
         }
 
-        /*PRIVATE*/
-        private void View_Registration()
+
+        /*プライベート*/
+
+
+
+        //コントロールの登録をします。
+        private void RegistrationView()
         {
             Base_panel.Controls.Add(_welcomeView);
+
             Base_panel.Controls.Add(_agreeView);
-            Base_panel.Controls.Add(_passwdSetView);
+
+            Base_panel.Controls.Add(_passwdView);
+
+            Base_panel.Controls.Add(_finishView);
+        }
+
+        private void Setup_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (Setuped == false)
+                Application.Exit();
         }
     }
 }

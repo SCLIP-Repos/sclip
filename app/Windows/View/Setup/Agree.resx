@@ -118,14 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>The external library you are using
-https://github.com/Ryu-ji/CipherModule/blob/master/LICENSE
-
-
-
+    <value>License of $safeprojectname$ and used library
 
 $safeprojectname$
 GitHub : https://github.com/$safeprojectname$-Repos
+
+https://sclipproject.com
                        
                         
                                 Apache License

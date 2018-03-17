@@ -2,13 +2,11 @@
 {
     public partial class Form1
     {
-        internal enum View_Chanel
+        public enum View_Channel
         {
-            Init,Top, ItemView, Login
+            Init,ItemView,ItemAdd
         }
 
-
         
-        /*EVENT DRIVE*/
     }
 }

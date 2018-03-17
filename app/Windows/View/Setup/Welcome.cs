@@ -17,16 +17,9 @@ namespace $safeprojectname$.View.Setup
             InitializeComponent();
         }
 
-
-
-        /*PRIVATE*/
-
-
-        /*EVENT DRIVE*/
-
         private void Next_button_Click(object sender, EventArgs e)
         {
-            $safeprojectname$.Setup.View_Switch($safeprojectname$.Setup.View_Chanel.Agree);
+            $safeprojectname$.Setup.SwitchView(2);
         }
     }
 }

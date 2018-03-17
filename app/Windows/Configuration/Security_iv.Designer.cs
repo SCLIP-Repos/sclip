@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace $safeprojectname$.Act.Security.Configuration {
+namespace $safeprojectname$.Configuration {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.6.0.0")]
-    internal sealed partial class Salt : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class Security_iv : global::System.Configuration.ApplicationSettingsBase {
         
-        private static Salt defaultInstance = ((Salt)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Salt())));
+        private static Security_iv defaultInstance = ((Security_iv)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Security_iv())));
         
-        public static Salt Default {
+        public static Security_iv Default {
             get {
                 return defaultInstance;
             }
@@ -26,12 +26,12 @@ namespace $safeprojectname$.Act.Security.Configuration {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string LoginSalt {
+        public string Encrypt {
             get {
-                return ((string)(this["LoginSalt"]));
+                return ((string)(this["Encrypt"]));
             }
             set {
-                this["LoginSalt"] = value;
+                this["Encrypt"] = value;
             }
         }
     }

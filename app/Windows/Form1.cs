@@ -8,172 +8,190 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using FSys;
-
 namespace $safeprojectname$
 {
     public partial class Form1 : Form
     {
-        private static View.Form1.Top _topView = new View.Form1.Top();
 
-        private static View.Form1.ItemView _itemviewView = new View.Form1.ItemView();
+        /* 変数とクラス(public,internal,private) */
+        internal static View.Item _itemView = new View.Item();
 
-        private static View.Form1.Login _loginView = new View.Form1.Login();
+        internal static View.ItemControl _itemControlView = new View.ItemControl();
+        
 
 
-
+        /*コンストラクタ*/
         public Form1()
         {
             InitializeComponent();
 
-            View_Registration();
-
-            View_Switch(View_Chanel.Init);
+            View_panel.Controls.Add(_itemView);
+            View_panel.Controls.Add(_itemControlView);
         }
 
 
-
-
-
-        public static void View_Switch(Enum @enum)
+        /* パブリック */
+        public static void ViewSwitch(Enum @enum)
         {
             switch(@enum)
             {
-                case View_Chanel.Init:
-                    _topView.Visible = false;
-
-                    _itemviewView.Visible = false;
-
-                    _loginView.Visible = false;
-
+                case View_Channel.Init:
+                    _itemView.Visible = false;
+                    _itemControlView.Visible = false;
                     break;
 
-                case View_Chanel.Top:
-                    View_Switch(View_Chanel.Init);
-                    _topView.Visible = true;
-
+                case View_Channel.ItemAdd:
+                    ViewSwitch(View_Channel.Init);
+                    _itemControlView.Visible = true;
                     break;
 
-                case View_Chanel.ItemView:
-                    View_Switch(View_Chanel.Init);
-
-                    _itemviewView.Visible = true;
-
-                    break;
-
-                case View_Chanel.Login:
                     
-                    View_Switch(View_Chanel.Init);
-
-                    _loginView.Visible = true;
+                case View_Channel.ItemView:
+                    ViewSwitch(View_Channel.Init);
+                    _itemView.Visible = true;
 
                     break;
-                    
-
             }
         }
 
 
-
-
-        /*PRIVATE*/
-        private void View_Registration()
+        public  void RefreshItemList()
         {
-            Base_panel.Controls.Add(_topView);
 
-            Base_panel.Controls.Add(_itemviewView);
+            ItemList_listView.Clear();
+            
 
-            Base_panel.Controls.Add(_loginView);
-        }
-        
+            Act.ItemControl itemControl = new Act.ItemControl();
 
+            string[] tmpArray = itemControl.Items;
 
-        private bool isSelectDirectoryList()
-        {
-            if (Directory_listView.SelectedItems.Count != 0)
-                return true;
-
-            MessageBox.Show("Item is not selected.");
-            return false;
+            for (int i = 0; i < tmpArray.Length; i++)
+                ItemList_listView.Items.Add(System.IO.Path.GetFileName(tmpArray[i]));
         }
 
 
-        private bool isSelectItemList()
-        {
-            if (Item_listView.SelectedItems.Count != 0)
-                return true;
-
-            MessageBox.Show("Item is not selected.");
-            return false;
-        }
+        /* プライベートメソッド */
 
 
-        /*EVENT DRIVE*/
+
+        /* イベント駆動 */
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if(!FSysDirectory.Exists(@"C:\Users\" + Environment.UserName + @"\AppData\Local\$safeprojectname$") )
+            //セットアップ済みかチェックする
+            if(!Act.Configuration.isProfile())
             {
-                Setup.View_Switch(Setup.View_Chanel.Welcome);
+                //セットアップをする。
+                //設定が完了するとログイン処理に"続かずに"アプリケーションをリスタートさせて設定を読み込みなおします。
+                //設定を最後までせずに途中で中断された場合はアプリケーション事態を終了します。
 
                 Setup setup = new Setup();
 
+                Setup.SwitchView(1);
+
                 setup.ShowDialog();
+
+                
             }
 
-            View_Switch(View_Chanel.Login);
+
+
+            //ログイン処理
+            Login login = new Login();
+
+            login.ShowDialog();
+
+
+            RefreshItemList();
+          
+        }
+
+        private void Lock_pictureBox_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void Sets_label_Click(object sender, EventArgs e)
+        {
+            Settings settings = new Settings();
+
+            settings.ShowDialog();
+        }
+
+
+
+
+        private void New_button_Click(object sender, EventArgs e)
+        {
+            ViewSwitch(View_Channel.ItemAdd);
+        }
+
+        private void Edit_button_Click(object sender, EventArgs e)
+        {
+            if(ItemList_listView.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Item is not selected.");
+                return;
+            }
+
+            ViewSwitch(View_Channel.ItemAdd);
+
+
+            ListViewItem listView = ItemList_listView.SelectedItems[0];
+
+            _itemControlView.Read(listView.Text);
             
         }
 
-
-
-
-
-        //Directory operation
- 
-        private void NewDirectory_toolStripMenuItem_Click(object sender, EventArgs e)
+        private void Delete_button_Click(object sender, EventArgs e)
         {
-           
+            if (ItemList_listView.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Item is not selected.");
+                return;
+            }
+
+
+
+
+            DialogResult dialogResult = MessageBox.Show("Do you want to delete the selected item?" , "",MessageBoxButtons.YesNo,MessageBoxIcon.Stop,MessageBoxDefaultButton.Button2);
+
+            if(dialogResult == DialogResult.Yes)
+            {
+
+                ListViewItem listView = ItemList_listView.SelectedItems[0];
+
+
+                Act.ItemControl itemControl = new Act.ItemControl();
+
+                itemControl.Delete(listView.Text);
+
+
+                RefreshItemList();
+
+                ViewSwitch(View_Channel.Init);
+
+            }
+
         }
 
-        private void EditDirectory_toolStripMenuItem_Click(object sender, EventArgs e)
+        private void ItemList_listView_Click(object sender, EventArgs e)
         {
-            if(isSelectDirectoryList() == false)
+            if (ItemList_listView.SelectedItems.Count == 0)
                 return;
 
+            ViewSwitch(View_Channel.ItemView);
 
+            
+            ListViewItem listView = ItemList_listView.SelectedItems[0];
+            
+            _itemView.Load(listView.Text);
         }
 
-        private void DeleteDirectory_ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Refresh_button_Click(object sender, EventArgs e)
         {
-            if (isSelectDirectoryList() == false)
-                return;
-
-
+            RefreshItemList();
         }
-
-
-
-        //Item operation
-        private void NewItem_toolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void EditItem_toolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (isSelectItemList() == false)
-                return;
-        }
-
-
-        private void DeleteItem_toolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (isSelectItemList() == false)
-                return;
-        }
-
-
     }
 }

@@ -36,7 +36,7 @@
             this.Base_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Base_panel.Location = new System.Drawing.Point(0, 0);
             this.Base_panel.Name = "Base_panel";
-            this.Base_panel.Size = new System.Drawing.Size(490, 499);
+            this.Base_panel.Size = new System.Drawing.Size(644, 661);
             this.Base_panel.TabIndex = 0;
             // 
             // Setup
@@ -44,12 +44,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(490, 499);
+            this.ClientSize = new System.Drawing.Size(644, 661);
             this.Controls.Add(this.Base_panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Setup";
+            this.Text = "$safeprojectname$";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Setup_FormClosing);
             this.ResumeLayout(false);
 
         }

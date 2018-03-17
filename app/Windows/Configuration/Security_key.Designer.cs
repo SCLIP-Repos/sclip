@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace $safeprojectname$.Act.Security.Configuration {
+namespace $safeprojectname$.Configuration {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.6.0.0")]
-    internal sealed partial class Key : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class Security_key : global::System.Configuration.ApplicationSettingsBase {
         
-        private static Key defaultInstance = ((Key)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Key())));
+        private static Security_key defaultInstance = ((Security_key)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Security_key())));
         
-        public static Key Default {
+        public static Security_key Default {
             get {
                 return defaultInstance;
             }
@@ -26,24 +26,24 @@ namespace $safeprojectname$.Act.Security.Configuration {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string LoginKey {
+        public string Login {
             get {
-                return ((string)(this["LoginKey"]));
+                return ((string)(this["Login"]));
             }
             set {
-                this["LoginKey"] = value;
+                this["Login"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string EncryptKey {
+        public string Encrypt {
             get {
-                return ((string)(this["EncryptKey"]));
+                return ((string)(this["Encrypt"]));
             }
             set {
-                this["EncryptKey"] = value;
+                this["Encrypt"] = value;
             }
         }
     }
