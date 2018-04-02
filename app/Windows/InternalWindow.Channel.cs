@@ -1,4 +1,4 @@
-﻿namespace $safeprojectname$
+﻿namespace SCLIP
 {
     public partial class InternalWindow
     {

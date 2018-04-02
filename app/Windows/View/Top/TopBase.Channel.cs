@@ -1,4 +1,4 @@
-﻿namespace $safeprojectname$.View.Top
+﻿namespace SCLIP.View.Top
 {
     public partial class TopBase
     {

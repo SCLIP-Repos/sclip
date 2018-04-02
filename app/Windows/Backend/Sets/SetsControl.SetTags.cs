@@ -1,4 +1,4 @@
-﻿namespace $safeprojectname$.Backend.Sets
+﻿namespace SCLIP.Backend.Sets
 {
     partial class SetsControl
     {

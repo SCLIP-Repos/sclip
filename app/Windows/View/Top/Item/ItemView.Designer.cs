@@ -1,4 +1,4 @@
-﻿namespace $safeprojectname$.View.Top.Item
+﻿namespace SCLIP.View.Top.Item
 {
     partial class ItemView
     {

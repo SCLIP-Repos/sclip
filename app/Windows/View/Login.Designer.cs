@@ -1,4 +1,4 @@
-﻿namespace $safeprojectname$.View
+﻿namespace SCLIP.View
 {
     partial class Login
     {
@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Passwd_textBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Login_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,23 +56,24 @@
             this.Passwd_textBox.TabIndex = 1;
             this.Passwd_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // Login_button
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Verdana", 10F);
-            this.button1.Location = new System.Drawing.Point(657, 202);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 33);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Login_button.Font = new System.Drawing.Font("Verdana", 10F);
+            this.Login_button.Location = new System.Drawing.Point(657, 202);
+            this.Login_button.Name = "Login_button";
+            this.Login_button.Size = new System.Drawing.Size(81, 33);
+            this.Login_button.TabIndex = 2;
+            this.Login_button.Text = "Login";
+            this.Login_button.UseVisualStyleBackColor = true;
+            this.Login_button.Click += new System.EventHandler(this.Login_button_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Login_button);
             this.Controls.Add(this.Passwd_textBox);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Login";
@@ -87,6 +88,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox Passwd_textBox;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Login_button;
     }
 }

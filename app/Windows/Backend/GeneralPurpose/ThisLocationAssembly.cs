@@ -26,7 +26,7 @@ SOFTWARE.
 using System.IO;
 using System.Reflection;
 
-namespace $safeprojectname$.Backend.GeneralPurpose
+namespace SCLIP.Backend.GeneralPurpose
 {
     class ThisLocationAssembly
     {

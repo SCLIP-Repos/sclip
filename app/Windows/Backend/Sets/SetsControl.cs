@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace $safeprojectname$.Backend.Sets
+namespace SCLIP.Backend.Sets
 {
     partial class SetsControl
     {

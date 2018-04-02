@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace $safeprojectname$.Backend
+namespace SCLIP.Backend
 {
     class Paths
     {
@@ -16,6 +16,13 @@ namespace $safeprojectname$.Backend
 
             DirectoryPath[1] + @"AppDataLocalSCLIP\"
         };
-        
+       
+        internal void Check(out string DoesNotExistPath)
+        {
+            DoesNotExistPath = null;
+
+            
+
+        }
     }
 }

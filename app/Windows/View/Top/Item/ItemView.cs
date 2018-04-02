@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace $safeprojectname$.View.Top.Item
+namespace SCLIP.View.Top.Item
 {
     public partial class ItemView : UserControl
     {

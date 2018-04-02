@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace $safeprojectname$.Backend.Sets {
+namespace SCLIP.Backend.Sets {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace $safeprojectname$.View.Top
+namespace SCLIP.View.Top
 {
     public partial class TopBase : UserControl
     {
