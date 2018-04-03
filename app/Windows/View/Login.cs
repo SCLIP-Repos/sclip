@@ -16,5 +16,10 @@ namespace $safeprojectname$.View
         {
             InitializeComponent();
         }
+
+        private void Login_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

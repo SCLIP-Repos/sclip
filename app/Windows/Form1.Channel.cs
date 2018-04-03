@@ -4,9 +4,7 @@
     {
         internal enum Channel
         {
-            Init,Login,Top
+            Init,Login,TopBase
         }
-
-
     }
 }
