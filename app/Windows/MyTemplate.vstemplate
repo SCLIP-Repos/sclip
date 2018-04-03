@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
     <Name>SCLIP</Name>
@@ -39,4 +40,80 @@
       </Folder>
     </Project>
   </TemplateContent>
+=======
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>SCLIP</Name>
+    <Description>&lt;説明はありません。&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>SCLIP</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="SCLIP.csproj" File="SCLIP.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+      <Folder Name="Backend" TargetFolderName="Backend">
+        <Folder Name="GeneralPurpose" TargetFolderName="GeneralPurpose">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ThisLocationAssembly.cs">ThisLocationAssembly.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Paths.cs">Paths.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="README.txt">README.txt</ProjectItem>
+        <Folder Name="Sets" TargetFolderName="Sets">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Keys.settings">Keys.settings</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Keys.Designer.cs">Keys.Designer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Salts.settings">Salts.settings</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Salts.Designer.cs">Salts.Designer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SetsControl.cs">SetsControl.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SetsControl.SetTags.cs">SetsControl.SetTags.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Form1.Channel.cs">Form1.Channel.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Form1.cs">Form1.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Form1.Designer.cs">Form1.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Form1.resx">Form1.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="InternalWindow.Channel.cs">InternalWindow.Channel.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="InternalWindow.cs">InternalWindow.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="InternalWindow.Designer.cs">InternalWindow.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="InternalWindow.resx">InternalWindow.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.resx">Resources.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.Designer.cs">Resources.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
+      </Folder>
+      <Folder Name="View" TargetFolderName="View">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Login.cs">Login.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Login.Designer.cs">Login.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Login.resx">Login.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="README.txt">README.txt</ProjectItem>
+        <Folder Name="Top" TargetFolderName="Top">
+          <Folder Name="Item" TargetFolderName="Item">
+            <ProjectItem ReplaceParameters="true" TargetFileName="ItemControl.cs">ItemControl.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ItemControl.Designer.cs">ItemControl.Designer.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ItemControl.resx">ItemControl.resx</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ItemView.cs">ItemView.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ItemView.Designer.cs">ItemView.Designer.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ItemView.resx">ItemView.resx</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="README.txt">README.txt</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Sets.cs">Sets.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Sets.Designer.cs">Sets.Designer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TopBase.Channel.cs">TopBase.Channel.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TopBase.cs">TopBase.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TopBase.Designer.cs">TopBase.Designer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TopBase.resx">TopBase.resx</ProjectItem>
+        </Folder>
+      </Folder>
+    </Project>
+  </TemplateContent>
+>>>>>>> 778e97e77ed83c077448bd98246c6db0bc3cd5ef
 </VSTemplate>
