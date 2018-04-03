@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SCLIP.Properties
+namespace $safeprojectname$.Properties
 {
 
 

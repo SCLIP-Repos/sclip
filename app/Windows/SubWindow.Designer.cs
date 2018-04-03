@@ -1,6 +1,6 @@
-﻿namespace SCLIP
+﻿namespace $safeprojectname$
 {
-    partial class InternalWindow
+    partial class SubWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -33,23 +33,22 @@
             // 
             // Base_panel
             // 
-            this.Base_panel.BackColor = System.Drawing.Color.Black;
             this.Base_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Base_panel.Location = new System.Drawing.Point(0, 0);
             this.Base_panel.Name = "Base_panel";
-            this.Base_panel.Size = new System.Drawing.Size(589, 418);
+            this.Base_panel.Size = new System.Drawing.Size(645, 407);
             this.Base_panel.TabIndex = 0;
             // 
-            // InternalWindow
+            // SubWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(589, 418);
+            this.ClientSize = new System.Drawing.Size(645, 407);
             this.Controls.Add(this.Base_panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "InternalWindow";
-            this.Text = "InternalWindow";
+            this.Name = "SubWindow";
+            this.Text = "$safeprojectname$";
             this.ResumeLayout(false);
 
         }
