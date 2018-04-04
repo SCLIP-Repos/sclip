@@ -8,20 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SCLIP.View
+namespace View.Item
 {
-    public partial class Login : UserControl
+    public partial class ItemControl : UserControl
     {
-        public Login()
+        public ItemControl()
         {
             InitializeComponent();
-        }
-
-
-
-        private void Login_button_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

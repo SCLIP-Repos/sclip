@@ -1,4 +1,4 @@
-﻿namespace $safeprojectname$.View
+﻿namespace SCLIP.View
 {
     partial class Login
     {

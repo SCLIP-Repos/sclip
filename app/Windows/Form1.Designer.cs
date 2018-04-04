@@ -1,4 +1,4 @@
-﻿namespace $safeprojectname$
+﻿namespace SCLIP
 {
     partial class Form1
     {

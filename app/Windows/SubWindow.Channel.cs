@@ -1,10 +1,10 @@
 ﻿namespace SCLIP
 {
-    public partial class Form1
+    public partial class SubWindow
     {
         internal enum Channel
         {
-            Init,Login,TopBase
+            Init,ItemControl,Setting
         }
     }
 }

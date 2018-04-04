@@ -8,18 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SCLIP.View
+namespace View.Sets
 {
-    public partial class Login : UserControl
+    public partial class Setting : UserControl
     {
-        public Login()
+        public Setting()
         {
             InitializeComponent();
         }
 
 
 
-        private void Login_button_Click(object sender, EventArgs e)
+        private void OK_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cancel_button_Click(object sender, EventArgs e)
         {
 
         }
