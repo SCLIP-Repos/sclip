@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SCLIP.Act.Configuration {
+namespace $safeprojectname$.Act.Configuration {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.6.0.0")]
-    internal sealed partial class Key : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class Keys : global::System.Configuration.ApplicationSettingsBase {
         
-        private static Key defaultInstance = ((Key)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Key())));
+        private static Keys defaultInstance = ((Keys)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Keys())));
         
-        public static Key Default {
+        public static Keys Default {
             get {
                 return defaultInstance;
             }

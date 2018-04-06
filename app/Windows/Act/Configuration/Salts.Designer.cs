@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SCLIP.Act.Configuration {
+namespace $safeprojectname$.Act.Configuration {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.6.0.0")]
-    internal sealed partial class Salt : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class Salts : global::System.Configuration.ApplicationSettingsBase {
         
-        private static Salt defaultInstance = ((Salt)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Salt())));
+        private static Salts defaultInstance = ((Salts)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Salts())));
         
-        public static Salt Default {
+        public static Salts Default {
             get {
                 return defaultInstance;
             }

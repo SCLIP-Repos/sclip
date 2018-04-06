@@ -8,30 +8,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SCLIP.Act.Configuration {
+namespace $safeprojectname$.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.6.0.0")]
-    internal sealed partial class Iv : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
-        private static Iv defaultInstance = ((Iv)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Iv())));
+        private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
         
-        public static Iv Default {
+        public static Settings Default {
             get {
                 return defaultInstance;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Login {
-            get {
-                return ((string)(this["Login"]));
-            }
-            set {
-                this["Login"] = value;
             }
         }
     }
