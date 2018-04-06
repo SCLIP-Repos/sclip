@@ -4,7 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+<<<<<<< HEAD
 namespace SCLIP.Act.Configuration
+=======
+namespace $safeprojectname$.Act.Configuration
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
 {
     partial class Control
     {
@@ -66,7 +70,11 @@ namespace SCLIP.Act.Configuration
 
         internal class Path
         {
+<<<<<<< HEAD
             internal static string SavePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\SCLIP\";
+=======
+            internal static string SavePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\$safeprojectname$\";
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
         }
     }
 }

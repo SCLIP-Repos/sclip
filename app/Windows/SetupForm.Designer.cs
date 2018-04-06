@@ -51,7 +51,11 @@
             this.MinimizeBox = false;
             this.Name = "SetupForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+<<<<<<< HEAD:app/Windows/SetupForm.Designer.cs
             this.Text = "SCLIP";
+=======
+            this.Text = "$safeprojectname$";
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b:app/Windows/SetupForm.Designer.cs
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SetupForm_FormClosing);
             this.ResumeLayout(false);
 

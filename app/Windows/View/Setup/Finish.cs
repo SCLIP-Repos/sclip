@@ -9,7 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FSys;
 
+<<<<<<< HEAD
 namespace SCLIP.View.Setup
+=======
+namespace $safeprojectname$.View.Setup
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
 {
     public partial class Finish : UserControl
     {

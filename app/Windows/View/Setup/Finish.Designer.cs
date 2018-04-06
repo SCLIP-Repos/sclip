@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿namespace SCLIP.View.Setup
+=======
+﻿namespace $safeprojectname$.View.Setup
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
 {
     partial class Finish
     {
@@ -52,7 +56,11 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(491, 80);
             this.label1.TabIndex = 5;
+<<<<<<< HEAD
             this.label1.Text = "Go to SCLIP !";
+=======
+            this.label1.Text = "Go to $safeprojectname$ !";
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
             // 
             // Finish
             // 

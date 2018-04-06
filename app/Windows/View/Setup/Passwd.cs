@@ -9,7 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FSys;
 
+<<<<<<< HEAD
 namespace SCLIP.View.Setup
+=======
+namespace $safeprojectname$.View.Setup
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
 {
     public partial class Passwd : UserControl
     {
@@ -37,7 +41,11 @@ namespace SCLIP.View.Setup
             {
                 MessageBox.Show("Export the password to the desktop. Please keep it secure.");
                 
+<<<<<<< HEAD
                 string tmp = @"C:\Users\" + Environment.UserName + @"\Desktop\SCLIP Password.txt";
+=======
+                string tmp = @"C:\Users\" + Environment.UserName + @"\Desktop\$safeprojectname$ Password.txt";
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
 
                 FileIO.Create(tmp);
                 

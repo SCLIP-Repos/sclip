@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using FSys;
 
+<<<<<<< HEAD
 namespace SCLIP
 {
     public partial class Form1 : Form
@@ -25,15 +26,40 @@ namespace SCLIP
             InitializeComponent();
 
             Registration();
+=======
+namespace $safeprojectname$
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            
+        }
+
+
+        internal void LoadItem()
+        {
+            /*
+            string[] tmp = FileIO.GetAllFiles(Act.Configuration.Control.Path.SavePath);
+
+
+            for (int i = 0; i < tmp.Length; i++)
+                Item_listBox.Items.Add( System.IO.Path.GetFileNameWithoutExtension(tmp[i]) );*/
+        }
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
 
             Switch(Channel.Init);
         }
 
 
-        internal static void Switch(Enum SelectChannel)
+
+        private void Form1_Load(object sender, EventArgs e)
         {
-            switch(SelectChannel)
+            
+            if(!Group.Exists(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\$safeprojectname$"))
             {
+<<<<<<< HEAD
                 case Channel.Init:
                     _controlView.Visible = false;
                     _showView.Visible = false;
@@ -48,10 +74,17 @@ namespace SCLIP
                     Switch(Channel.Init);
                     _showView.Visible = true;
                     break;
+=======
+                SetupForm setupForm = new SetupForm();
+
+                SetupForm.Switch(SetupForm.Channel.Welcome);
+
+                setupForm.ShowDialog();
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
             }
-        }
 
 
+<<<<<<< HEAD
         private void Registration()
         {
             _controlView = new View.Item.Control();
@@ -75,13 +108,23 @@ namespace SCLIP
             for (int i = 0; i < tmp.Length; i++)
                 Item_listBox.Items.Add( System.IO.Path.GetFileNameWithoutExtension(tmp[i]) );
         }
+=======
+            LoginForm loginForm = new LoginForm();
+
+            loginForm.ShowDialog();
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
 
         
 
 
+            //Load item
+            LoadItem();
+        }
 
-        private void Form1_Load(object sender, EventArgs e)
+
+        private void New_button_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             
             if(!Group.Exists(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\SCLIP"))
             {
@@ -142,6 +185,12 @@ namespace SCLIP
         }
 
         private void Delete_button_Click(object sender, EventArgs e)
+=======
+
+        }
+
+        private void Edit_button_Click(object sender, EventArgs e)
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
         {
             try
             {
@@ -153,6 +202,7 @@ namespace SCLIP
             
         }
 
+<<<<<<< HEAD
         private void Reload_button_Click(object sender, EventArgs e)
         {
             LoadItem();
@@ -171,5 +221,20 @@ namespace SCLIP
         }
 
     
+=======
+        }
+
+        private void Delete_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lock_pictureBox_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+  
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
     }
 }

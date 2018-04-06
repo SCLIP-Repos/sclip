@@ -1,4 +1,8 @@
+<<<<<<< HEAD:app/Windows/LoginForm.Designer.cs
 ﻿namespace SCLIP
+=======
+﻿namespace $safeprojectname$
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b:app/Windows/LoginForm.Designer.cs
 {
     partial class LoginForm
     {
@@ -92,7 +96,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+<<<<<<< HEAD:app/Windows/LoginForm.Designer.cs
             this.Text = "SCLIP";
+=======
+            this.Text = "$safeprojectname$";
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b:app/Windows/LoginForm.Designer.cs
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

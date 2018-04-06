@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+<<<<<<< HEAD
 using FSys;
 
 
@@ -17,6 +18,12 @@ namespace SCLIP.View.Item
     {
         internal static bool EditMode = false;
 
+=======
+namespace $safeprojectname$.View.Item
+{
+    public partial class Control : UserControl
+    {
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
         public Control()
         {
             InitializeComponent();
@@ -40,6 +47,7 @@ namespace SCLIP.View.Item
 
             Memo_richTextBox.Text = Memo;
         }
+<<<<<<< HEAD
 
         private void OK_button_Click(object sender, EventArgs e)
         {
@@ -72,5 +80,7 @@ namespace SCLIP.View.Item
             SET(null, null, null, null, null, null, null,null);
             Form1.Switch(Form1.Channel.Init);
         }
+=======
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
     }
 }

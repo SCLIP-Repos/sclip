@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿namespace SCLIP.View.Item
+=======
+﻿namespace $safeprojectname$.View.Item
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
 {
     partial class Control
     {
@@ -58,7 +62,10 @@
             this.Cancel_button.TabIndex = 32;
             this.Cancel_button.Text = "Cancel";
             this.Cancel_button.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.Cancel_button.Click += new System.EventHandler(this.Cancel_button_Click);
+=======
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
             // 
             // OK_button
             // 
@@ -70,7 +77,10 @@
             this.OK_button.TabIndex = 31;
             this.OK_button.Text = "OK";
             this.OK_button.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.OK_button.Click += new System.EventHandler(this.OK_button_Click);
+=======
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
             // 
             // label6
             // 

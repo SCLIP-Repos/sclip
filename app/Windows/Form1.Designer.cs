@@ -38,7 +38,10 @@
             this.Edit_button = new System.Windows.Forms.Button();
             this.New_button = new System.Windows.Forms.Button();
             this.Base_panel = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.Reload_button = new System.Windows.Forms.Button();
+=======
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Lock_pictureBox)).BeginInit();
@@ -64,7 +67,10 @@
             // 
             // Item_listBox
             // 
+<<<<<<< HEAD
             this.Item_listBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+=======
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
             this.Item_listBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Item_listBox.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Item_listBox.FormattingEnabled = true;
@@ -73,11 +79,17 @@
             this.Item_listBox.Name = "Item_listBox";
             this.Item_listBox.Size = new System.Drawing.Size(155, 632);
             this.Item_listBox.TabIndex = 0;
+<<<<<<< HEAD
             this.Item_listBox.DoubleClick += new System.EventHandler(this.Item_listBox_DoubleClick);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.Reload_button);
+=======
+            // 
+            // panel2
+            // 
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
             this.panel2.Controls.Add(this.Lock_pictureBox);
             this.panel2.Controls.Add(this.Settings_button);
             this.panel2.Controls.Add(this.Delete_button);
@@ -110,7 +122,10 @@
             this.Settings_button.TabIndex = 3;
             this.Settings_button.Text = "⚙";
             this.Settings_button.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.Settings_button.Click += new System.EventHandler(this.Settings_button_Click);
+=======
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
             // 
             // Delete_button
             // 
@@ -200,7 +215,10 @@
         private System.Windows.Forms.Button Delete_button;
         private System.Windows.Forms.Button Edit_button;
         private System.Windows.Forms.PictureBox Lock_pictureBox;
+<<<<<<< HEAD
         private System.Windows.Forms.Button Reload_button;
+=======
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
     }
 }
 

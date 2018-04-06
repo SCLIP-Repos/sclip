@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿namespace SCLIP.View.Setup
+=======
+﻿namespace $safeprojectname$.View.Setup
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
 {
     partial class Agree
     {

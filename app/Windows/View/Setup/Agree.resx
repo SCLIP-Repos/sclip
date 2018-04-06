@@ -118,8 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="License_richTextBox.Text" xml:space="preserve">
+<<<<<<< HEAD
     <value>SCLIP
 GitHub : https://github.com/SCLIP-Repos
+=======
+    <value>$safeprojectname$
+GitHub : https://github.com/$safeprojectname$-Repos
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
 
 https://sclipproject.com
                        

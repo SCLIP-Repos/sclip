@@ -8,34 +8,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-<<<<<<< HEAD
-namespace SCLIP.Act.Configuration {
-=======
-namespace $safeprojectname$.Act.Configuration {
->>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
+namespace $safeprojectname$.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.6.0.0")]
-    internal sealed partial class IVs : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
-        private static IVs defaultInstance = ((IVs)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new IVs())));
+        private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
         
-        public static IVs Default {
+        public static Settings Default {
             get {
                 return defaultInstance;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Login {
-            get {
-                return ((string)(this["Login"]));
-            }
-            set {
-                this["Login"] = value;
             }
         }
     }

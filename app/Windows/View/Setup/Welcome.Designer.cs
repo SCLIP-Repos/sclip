@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿namespace SCLIP.View.Setup
+=======
+﻿namespace $safeprojectname$.View.Setup
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
 {
     partial class Welcome
     {
@@ -54,7 +58,11 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 23);
             this.label1.TabIndex = 1;
+<<<<<<< HEAD
             this.label1.Text = "Welcome SCLIP";
+=======
+            this.label1.Text = "Welcome $safeprojectname$";
+>>>>>>> b27f45d06842ef02074930127f0fc5e0a8f3b40b
             // 
             // Next_button
             // 
