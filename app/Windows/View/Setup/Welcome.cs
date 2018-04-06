@@ -8,20 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace $safeprojectname$.View
+namespace SCLIP.View.Setup
 {
-    public partial class Login : UserControl
+    public partial class Welcome : UserControl
     {
-        public Login()
+        public Welcome()
         {
             InitializeComponent();
         }
 
-
-
-        private void Login_button_Click(object sender, EventArgs e)
+        private void Next_button_Click(object sender, EventArgs e)
         {
-
+            SetupForm.Switch(SetupForm.Channel.Agree);
         }
     }
 }
