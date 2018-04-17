@@ -35,8 +35,8 @@
             this.New_button = new System.Windows.Forms.ToolStripMenuItem();
             this.Edit_button = new System.Windows.Forms.ToolStripMenuItem();
             this.Delete_button = new System.Windows.Forms.ToolStripMenuItem();
-            this.Logout_button = new System.Windows.Forms.ToolStripButton();
             this.Config_button = new System.Windows.Forms.ToolStripButton();
+            this.Logout_button = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Item_listBox = new System.Windows.Forms.ListBox();
             this.Base_panel = new System.Windows.Forms.Panel();
@@ -97,7 +97,7 @@
             // 
             this.New_button.BackColor = System.Drawing.Color.White;
             this.New_button.Name = "New_button";
-            this.New_button.Size = new System.Drawing.Size(180, 22);
+            this.New_button.Size = new System.Drawing.Size(107, 22);
             this.New_button.Text = "New";
             this.New_button.Click += new System.EventHandler(this.New_button_Click);
             // 
@@ -105,7 +105,7 @@
             // 
             this.Edit_button.BackColor = System.Drawing.Color.White;
             this.Edit_button.Name = "Edit_button";
-            this.Edit_button.Size = new System.Drawing.Size(180, 22);
+            this.Edit_button.Size = new System.Drawing.Size(107, 22);
             this.Edit_button.Text = "Edit";
             this.Edit_button.Click += new System.EventHandler(this.Edit_button_Click);
             // 
@@ -113,9 +113,19 @@
             // 
             this.Delete_button.BackColor = System.Drawing.Color.White;
             this.Delete_button.Name = "Delete_button";
-            this.Delete_button.Size = new System.Drawing.Size(180, 22);
+            this.Delete_button.Size = new System.Drawing.Size(107, 22);
             this.Delete_button.Text = "Delete";
             this.Delete_button.Click += new System.EventHandler(this.Delete_button_Click);
+            // 
+            // Config_button
+            // 
+            this.Config_button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Config_button.Image = ((System.Drawing.Image)(resources.GetObject("Config_button.Image")));
+            this.Config_button.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Config_button.Name = "Config_button";
+            this.Config_button.Size = new System.Drawing.Size(46, 22);
+            this.Config_button.Text = "Config";
+            this.Config_button.Click += new System.EventHandler(this.Config_button_Click);
             // 
             // Logout_button
             // 
@@ -127,16 +137,6 @@
             this.Logout_button.Size = new System.Drawing.Size(49, 22);
             this.Logout_button.Text = "Logout";
             this.Logout_button.Click += new System.EventHandler(this.Logout_button_Click);
-            // 
-            // Config_button
-            // 
-            this.Config_button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.Config_button.Image = ((System.Drawing.Image)(resources.GetObject("Config_button.Image")));
-            this.Config_button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Config_button.Name = "Config_button";
-            this.Config_button.Size = new System.Drawing.Size(46, 22);
-            this.Config_button.Text = "Config";
-            this.Config_button.Click += new System.EventHandler(this.Config_button_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -206,8 +206,8 @@
         private System.Windows.Forms.ToolStripButton Config_button;
         private System.Windows.Forms.ToolStripButton Logout_button;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.ListBox Item_listBox;
         private System.Windows.Forms.Panel Base_panel;
+        internal System.Windows.Forms.ListBox Item_listBox;
     }
 }
 

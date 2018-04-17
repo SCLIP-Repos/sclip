@@ -12,13 +12,25 @@ namespace SCLIP
 {
     public partial class Form1 : Form
     {
+        //static View.View view;
+
         public Form1()
         {
             InitializeComponent();
-        }
+
+            /*
+            view = new View.View(this);
+
+            Base_panel.Controls.Add(view);
+
+            view.Visible = true;
+
+            */
+            
+    }
 
 
-
+        
 
 
         private void New_button_Click(object sender, EventArgs e)
