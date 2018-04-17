@@ -12,4 +12,4 @@ namespace SCLIP.InternalSystem
 
         internal static string Log = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\SCLIP\Log\";
     }
-}
+} 
