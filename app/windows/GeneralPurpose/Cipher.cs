@@ -17,5 +17,10 @@ namespace SCLIP.GeneralPurpose
         {
             return "";
         }
+
+        public static string Hash()
+        {
+            return "";
+        }
     }
 }

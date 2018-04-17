@@ -8,5 +8,8 @@ namespace SCLIP.InternalSystem
 {
     class Paths
     {
+        internal static string Save = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\SCLIP\Save\";
+
+        internal static string Log = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\SCLIP\Log\";
     }
 }
