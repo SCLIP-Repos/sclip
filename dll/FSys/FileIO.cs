@@ -76,5 +76,7 @@ namespace FSys
                 Excepter.Ex = e.ToString();
             }
         }
+
+        public static string[] GetFiles(string DirPath, string Target) => Directory.GetFiles(DirPath, Target, SearchOption.AllDirectories);
     }
 }

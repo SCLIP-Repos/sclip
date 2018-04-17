@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FSys
 {
-    class Group
+   public class Group
     {
         public static void Create(string DirPath)
         {

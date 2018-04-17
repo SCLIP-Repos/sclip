@@ -97,7 +97,7 @@
             // 
             this.New_button.BackColor = System.Drawing.Color.White;
             this.New_button.Name = "New_button";
-            this.New_button.Size = new System.Drawing.Size(107, 22);
+            this.New_button.Size = new System.Drawing.Size(180, 22);
             this.New_button.Text = "New";
             this.New_button.Click += new System.EventHandler(this.New_button_Click);
             // 
@@ -105,7 +105,7 @@
             // 
             this.Edit_button.BackColor = System.Drawing.Color.White;
             this.Edit_button.Name = "Edit_button";
-            this.Edit_button.Size = new System.Drawing.Size(107, 22);
+            this.Edit_button.Size = new System.Drawing.Size(180, 22);
             this.Edit_button.Text = "Edit";
             this.Edit_button.Click += new System.EventHandler(this.Edit_button_Click);
             // 
@@ -113,7 +113,7 @@
             // 
             this.Delete_button.BackColor = System.Drawing.Color.White;
             this.Delete_button.Name = "Delete_button";
-            this.Delete_button.Size = new System.Drawing.Size(107, 22);
+            this.Delete_button.Size = new System.Drawing.Size(180, 22);
             this.Delete_button.Text = "Delete";
             this.Delete_button.Click += new System.EventHandler(this.Delete_button_Click);
             // 
@@ -123,8 +123,8 @@
             this.Config_button.Image = ((System.Drawing.Image)(resources.GetObject("Config_button.Image")));
             this.Config_button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Config_button.Name = "Config_button";
-            this.Config_button.Size = new System.Drawing.Size(46, 22);
-            this.Config_button.Text = "Config";
+            this.Config_button.Size = new System.Drawing.Size(53, 22);
+            this.Config_button.Text = "CONFIG";
             this.Config_button.Click += new System.EventHandler(this.Config_button_Click);
             // 
             // Logout_button

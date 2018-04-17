@@ -33,17 +33,46 @@ namespace FSys
             public void Write(string  Str)
             {
 
+                try
+                {
+
+                    using (StreamWriter sw = new StreamWriter(_fileStream, Encoding.UTF8))
+                    {
+                        sw.Write(Str);
+                    }
+                }
+                catch(Exception e)
+                {
+
+                    Excepter.Clear();
+
+                    Excepter.Ex = e.ToString();
+                }
+                
             }
 
             public string Read()
             {
-                return null;
+                try
+                {
+                    using (StreamReader sr = new StreamReader(_fileStream, Encoding.UTF8))
+                    {
+                        return sr.ReadToEnd();
+                    }
+                }
+                catch(Exception e)
+                {
+
+                    Excepter.Clear();
+
+                    Excepter.Ex = e.ToString();
+
+                    return null;
+                }
+                
             }
 
-            public void Close()
-            {
-
-            }
+            public void Close() => _fileStream.Close();
 
         }
     }
