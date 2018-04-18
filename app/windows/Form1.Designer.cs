@@ -2,7 +2,7 @@
 {
     partial class Form1
     {
-        /// <summary>
+         /// <summary>
         /// 必要なデザイナー変数です。
         /// </summary>
         private System.ComponentModel.IContainer components = null;
@@ -97,7 +97,7 @@
             // 
             this.New_button.BackColor = System.Drawing.Color.White;
             this.New_button.Name = "New_button";
-            this.New_button.Size = new System.Drawing.Size(180, 22);
+            this.New_button.Size = new System.Drawing.Size(107, 22);
             this.New_button.Text = "New";
             this.New_button.Click += new System.EventHandler(this.New_button_Click);
             // 
@@ -105,7 +105,7 @@
             // 
             this.Edit_button.BackColor = System.Drawing.Color.White;
             this.Edit_button.Name = "Edit_button";
-            this.Edit_button.Size = new System.Drawing.Size(180, 22);
+            this.Edit_button.Size = new System.Drawing.Size(107, 22);
             this.Edit_button.Text = "Edit";
             this.Edit_button.Click += new System.EventHandler(this.Edit_button_Click);
             // 
@@ -113,7 +113,7 @@
             // 
             this.Delete_button.BackColor = System.Drawing.Color.White;
             this.Delete_button.Name = "Delete_button";
-            this.Delete_button.Size = new System.Drawing.Size(180, 22);
+            this.Delete_button.Size = new System.Drawing.Size(107, 22);
             this.Delete_button.Text = "Delete";
             this.Delete_button.Click += new System.EventHandler(this.Delete_button_Click);
             // 
@@ -134,8 +134,8 @@
             this.Logout_button.Image = ((System.Drawing.Image)(resources.GetObject("Logout_button.Image")));
             this.Logout_button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Logout_button.Name = "Logout_button";
-            this.Logout_button.Size = new System.Drawing.Size(49, 22);
-            this.Logout_button.Text = "Logout";
+            this.Logout_button.Size = new System.Drawing.Size(57, 22);
+            this.Logout_button.Text = "LOGOUT";
             this.Logout_button.Click += new System.EventHandler(this.Logout_button_Click);
             // 
             // tableLayoutPanel2

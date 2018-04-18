@@ -3,24 +3,78 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CipherModule;
+using CipherModule.Fake;
 
 namespace SCLIP.GeneralPurpose
 {
     class Cipher
     {
-        public static string Encrypt()
+
+        private static AES aes;
+
+
+        internal static string Encrypt(string Key, string Iv, string Str)
         {
-            return "";
+            string tmp;
+
+
+            aes = new AES();
+
+
+            aes.SET(Key, Iv, 256, "CBC");
+
+
+            aes.Encyrpt(Str);
+
+            tmp = aes.Print();
+
+            aes.Close();
+
+            return tmp;
         }
 
-        public static string Decrypt()
+        internal static string Decrypt(string Key, string Iv, string Str)
         {
-            return "";
+            string tmp;
+
+
+            aes = new AES();
+
+
+            aes.SET(Key, Iv, 256, "CBC");
+
+
+            aes.Decrypt(Str);
+
+
+            tmp = aes.Print();
+
+            aes.Close();
+
+            return aes.Print();
         }
 
-        public static string Hash()
+
+        internal static string HashCompute(string Str, string Salt)
         {
-            return "";
+            string tmp = String.Empty;
+
+            tmp = SHA.SHA_256(Str + Salt);
+
+            for (int i = 0; i < 5000; i++)
+            {
+                tmp = SHA.SHA_256(tmp + Salt);
+            }
+
+            return tmp;
         }
+
+
+        internal static string Rdm()
+        {
+            return SimpleRandom.Create(15);
+        }
+
     }
 }

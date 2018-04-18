@@ -26,6 +26,15 @@ namespace SCLIP
             view.Visible = true;
 
             */
+
+            ConfigForm configForm = new ConfigForm();
+
+            configForm.ShowDialog();
+
+            /*
+            ReceptionistForm receptionistForm = new ReceptionistForm();
+
+            receptionistForm.ShowDialog();*/
             
     }
 

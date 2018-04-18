@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CipherModule;
+using CipherModule.Fake;
 
 namespace SCLIP.InternalSystem.Config
 {
@@ -10,45 +12,66 @@ namespace SCLIP.InternalSystem.Config
     {
         internal void Save(string Dt, Enum @enum)
         {
-            switch(@enum)
+
+            switch (@enum)
             {
                 case Mode.LoginKey:
+                    string tmp;
+
+                    tmp = GeneralPurpose.Cipher.Rdm();
+
+                    Security.Default.LoginKey = GeneralPurpose.Cipher.HashCompute(Dt, tmp);
+                    Security.Default.Save();
+
+                    Save(tmp, Mode.LoginSalt);
                     break;
 
                 case Mode.LoginIv:
+                    Security.Default.LoginIv = Dt;
+                    Security.Default.Save();
                     break;
 
                 case Mode.LoginSalt:
+                    Security.Default.LoginSalt = Dt;
+                    Security.Default.Save();
                     break;
 
                 case Mode.EncryptKey:
+                    Security.Default.EncryptKey = Dt;
+                    Security.Default.Save();
                     break;
 
                 case Mode.Log:
+                    User.Default.Log = Convert.ToBoolean(Dt);
+                    User.Default.Save();
                     break;
             }
         }
 
 
-        internal void Load(Enum @enum)
+        internal string Load(Enum @enum)
         {
             switch (@enum)
             {
                 case Mode.LoginKey:
-                    break;
+                    return Security.Default.LoginKey;
 
                 case Mode.LoginIv:
-                    break;
+                    return Security.Default.LoginIv;
 
                 case Mode.LoginSalt:
-                    break;
+                    return Security.Default.LoginSalt;
 
                 case Mode.EncryptKey:
-                    break;
+                    return Security.Default.EncryptKey;
 
                 case Mode.Log:
-                    break;
+                    return User.Default.Log.ToString();
+
+                default:
+                    return null;
             }
         }
+
     }
 }
