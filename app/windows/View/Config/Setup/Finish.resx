@@ -117,25 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="agree_Alert" xml:space="preserve">
-    <value>Only available when you agree with License.</value>
-  </data>
-  <data name="login_Failure" xml:space="preserve">
-    <value>The password is incorrect.</value>
-  </data>
-  <data name="login_Failure_SysErr" xml:space="preserve">
-    <value>Login processing could not be completed normally due to internal error.</value>
-  </data>
-  <data name="passwod_NoLength" xml:space="preserve">
-    <value>Password must be 5 digits or more.</value>
-  </data>
-  <data name="password_Strength_LittleNice" xml:space="preserve">
-    <value>Little nice</value>
-  </data>
-  <data name="password_Strength_Strong" xml:space="preserve">
-    <value>Strong</value>
-  </data>
-  <data name="password_Strength_Weak" xml:space="preserve">
-    <value>Weak</value>
-  </data>
 </root>

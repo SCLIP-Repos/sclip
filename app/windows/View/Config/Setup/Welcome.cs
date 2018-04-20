@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace SCLIP.View.Config.Setup
 {
-    public partial class Log : UserControl
+    public partial class Welcome : UserControl
     {
-        public Log()
+        public Welcome()
         {
             InitializeComponent();
         }
 
         private void NEXT_button_Click(object sender, EventArgs e)
         {
-
+            ConfigForm.SwichView(ConfigForm.Channel.Agree);
         }
     }
 }

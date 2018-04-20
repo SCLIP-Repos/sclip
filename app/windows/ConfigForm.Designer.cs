@@ -51,6 +51,7 @@
             this.MinimizeBox = false;
             this.Name = "ConfigForm";
             this.Text = "SCLIP";
+            this.Load += new System.EventHandler(this.ConfigForm_Load);
             this.ResumeLayout(false);
 
         }

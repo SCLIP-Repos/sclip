@@ -24,6 +24,8 @@ namespace SCLIP.View.Config.Setup
                 MessageBox.Show(Properties.Resources.agree_Alert);
                 return;
             }
+
+            ConfigForm.SwichView(ConfigForm.Channel.Passwd);
         }
     }
 }

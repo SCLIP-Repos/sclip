@@ -88,6 +88,15 @@ namespace SCLIP.Properties {
         }
         
         /// <summary>
+        ///   Password must be 5 digits or more. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string passwod_NoLength {
+            get {
+                return ResourceManager.GetString("passwod_NoLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Little nice に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string password_Strength_LittleNice {
