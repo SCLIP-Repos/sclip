@@ -31,10 +31,10 @@ namespace SCLIP
 
             configForm.ShowDialog();
 
-            /*
+            
             ReceptionistForm receptionistForm = new ReceptionistForm();
 
-            receptionistForm.ShowDialog();*/
+            receptionistForm.ShowDialog();
             
     }
 

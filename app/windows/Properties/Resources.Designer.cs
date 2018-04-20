@@ -61,6 +61,15 @@ namespace SCLIP.Properties {
         }
         
         /// <summary>
+        ///   Only available when you agree with License. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string agree_Alert {
+            get {
+                return ResourceManager.GetString("agree_Alert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   The password is incorrect. に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string login_Failure {
@@ -75,6 +84,33 @@ namespace SCLIP.Properties {
         internal static string login_Failure_SysErr {
             get {
                 return ResourceManager.GetString("login_Failure_SysErr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Little nice に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string password_Strength_LittleNice {
+            get {
+                return ResourceManager.GetString("password_Strength_LittleNice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Strong に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string password_Strength_Strong {
+            get {
+                return ResourceManager.GetString("password_Strength_Strong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Weak に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string password_Strength_Weak {
+            get {
+                return ResourceManager.GetString("password_Strength_Weak", resourceCulture);
             }
         }
     }

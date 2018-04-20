@@ -54,6 +54,7 @@
             this.NEXT_button.TabIndex = 4;
             this.NEXT_button.Text = "NEXT";
             this.NEXT_button.UseVisualStyleBackColor = true;
+            this.NEXT_button.Click += new System.EventHandler(this.NEXT_button_Click);
             // 
             // Agree_checkBox1
             // 

@@ -16,5 +16,14 @@ namespace SCLIP.View.Config.Setup
         {
             InitializeComponent();
         }
+
+        private void NEXT_button_Click(object sender, EventArgs e)
+        {
+            if(Agree_checkBox1.Checked == false)
+            {
+                MessageBox.Show(Properties.Resources.agree_Alert);
+                return;
+            }
+        }
     }
 }

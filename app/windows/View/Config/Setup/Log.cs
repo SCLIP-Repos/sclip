@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SCLIP.View.Config.Setup
 {
-    public partial class Welcome : UserControl
+    public partial class Log : UserControl
     {
-        public Welcome()
+        public Log()
         {
             InitializeComponent();
         }

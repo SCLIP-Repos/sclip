@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SCLIP.View.Config
+namespace SCLIP.View.Config.Setup
 {
-    public partial class Confs : UserControl
+    public partial class Passwd : UserControl
     {
-        public Confs()
+        public Passwd()
         {
             InitializeComponent();
         }

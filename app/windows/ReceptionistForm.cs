@@ -43,6 +43,7 @@ namespace SCLIP
             catch
             {
                 MessageBox.Show(Properties.Resources.login_Failure_SysErr);
+                
             }
         }
              

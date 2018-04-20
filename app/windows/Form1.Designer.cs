@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.Item_button = new System.Windows.Forms.ToolStripDropDownButton();
@@ -87,7 +86,6 @@
             this.New_button,
             this.Edit_button,
             this.Delete_button});
-            this.Item_button.Image = ((System.Drawing.Image)(resources.GetObject("Item_button.Image")));
             this.Item_button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Item_button.Name = "Item_button";
             this.Item_button.Size = new System.Drawing.Size(46, 22);
@@ -120,7 +118,6 @@
             // Config_button
             // 
             this.Config_button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.Config_button.Image = ((System.Drawing.Image)(resources.GetObject("Config_button.Image")));
             this.Config_button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Config_button.Name = "Config_button";
             this.Config_button.Size = new System.Drawing.Size(53, 22);
@@ -131,7 +128,6 @@
             // 
             this.Logout_button.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.Logout_button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.Logout_button.Image = ((System.Drawing.Image)(resources.GetObject("Logout_button.Image")));
             this.Logout_button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Logout_button.Name = "Logout_button";
             this.Logout_button.Size = new System.Drawing.Size(57, 22);
