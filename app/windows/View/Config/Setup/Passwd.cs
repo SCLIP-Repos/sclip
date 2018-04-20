@@ -116,6 +116,8 @@ namespace SCLIP.View.Config.Setup
             {
                 MessageBox.Show(Properties.Resources.passwod_NoLength);
             }
+
+            ConfigForm.SwichView(ConfigForm.Channel.Log);
         }
 
     }
