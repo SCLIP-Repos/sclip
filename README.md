@@ -1,6 +1,6 @@
 # SCLIP
 Tools for secure managing confidential information such as passwords.<br />
-![SCLIP](https://sclipproject.com/img/etc/001.png)
+![SCLIP](https://sclipproject.com/img/etc/001.JPG)
 
 ## SCLIP Project
 https://sclipproject.com<br />
