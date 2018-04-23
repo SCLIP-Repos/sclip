@@ -123,12 +123,7 @@ namespace SCLIP.View.Config.Setup
             }
 
 
-
-            ConfigForm.SetupDt[0] = Passwd_textBox.Text;
-
-            ConfigForm.SetupDt[1] = ExportOfPasswd_checkBox.Checked.ToString();
-
-            ConfigForm.SwichView(ConfigForm.Channel.Log);
+            ConfigForm.SwichView(ConfigForm.Channel.Finish);
         }
 
     }

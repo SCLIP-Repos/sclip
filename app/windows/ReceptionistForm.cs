@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FSys;
 
 namespace SCLIP
 {
@@ -14,58 +15,47 @@ namespace SCLIP
     {
         private bool bl;
 
-        private InternalSystem.Config.Control control = new InternalSystem.Config.Control();
+        private FileIO.Stream stream;
+
 
         public ReceptionistForm()
         {
             InitializeComponent();
 
         }
-        
-        private void TmpSave()
-        { 
-            InternalSystem.Tmp.LoginKey = Passwd_textBox.Text;
+         
 
-                
+        private void Login_button_Click(object sender, EventArgs e)
+        {
+            /*
+            string tmp;
+
             try
             {
-                InternalSystem.Tmp.EncryptKey =
+                stream = new FileIO.Stream(InternalSystem.Paths.Files[0]);
 
-                    GeneralPurpose.Cipher.Decrypt(
+                tmp = stream.Read();
 
-                        Passwd_textBox.Text,
 
-                        control.Load(InternalSystem.Config.Control.Mode.LoginIv),
+                if (tmp.Split(',')[0] != GeneralPurpose.Cipher.HashCompute(Passwd_textBox.Text, tmp.Split(',')[1]))
+                {
+                    MessageBox.Show(Properties.Resources.login_Failure);
 
-                        control.Load(InternalSystem.Config.Control.Mode.EncryptKey)
-                    );
+                    return;
+                }
+
             }
             catch
             {
                 MessageBox.Show(Properties.Resources.login_Failure_SysErr);
-                
-            }
-        }
-             
 
-        private void Login_button_Click(object sender, EventArgs e)
-        {
-            string tmp;
-            
-            tmp = GeneralPurpose.Cipher.HashCompute(Passwd_textBox.Text, control.Load( InternalSystem.Config.Control.Mode.LoginSalt));
-            
-            if(tmp == control.Load(InternalSystem.Config.Control.Mode.LoginKey))
-            {
-                TmpSave();
-
-                bl = true;
-
-                this.Close();
+                return;
             }
-            else
-            {
-                MessageBox.Show(Properties.Resources.login_Failure);
-            }
+
+            bl = true;
+            */
+
+            this.Close();
         }
 
         private void ReceptionistForm_FormClosing(object sender, FormClosingEventArgs e)

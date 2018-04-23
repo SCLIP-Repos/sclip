@@ -97,6 +97,15 @@ namespace SCLIP.Properties {
         }
         
         /// <summary>
+        ///   It does not match the confirmation input. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string password_NoConfirmation {
+            get {
+                return ResourceManager.GetString("password_NoConfirmation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Little nice に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string password_Strength_LittleNice {

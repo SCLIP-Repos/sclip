@@ -129,6 +129,9 @@
   <data name="passwod_NoLength" xml:space="preserve">
     <value>Password must be 5 digits or more.</value>
   </data>
+  <data name="password_NoConfirmation" xml:space="preserve">
+    <value>It does not match the confirmation input.</value>
+  </data>
   <data name="password_Strength_LittleNice" xml:space="preserve">
     <value>Little nice</value>
   </data>

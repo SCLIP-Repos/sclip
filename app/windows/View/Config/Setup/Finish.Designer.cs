@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.NEXT_button = new System.Windows.Forms.Button();
+            this.Finish_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -43,23 +43,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Good Job!";
             // 
-            // NEXT_button
+            // Finish_button
             // 
-            this.NEXT_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NEXT_button.Location = new System.Drawing.Point(428, 459);
-            this.NEXT_button.Name = "NEXT_button";
-            this.NEXT_button.Size = new System.Drawing.Size(91, 38);
-            this.NEXT_button.TabIndex = 7;
-            this.NEXT_button.Text = "NEXT";
-            this.NEXT_button.UseVisualStyleBackColor = true;
-            this.NEXT_button.Click += new System.EventHandler(this.NEXT_button_Click);
+            this.Finish_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Finish_button.Location = new System.Drawing.Point(428, 459);
+            this.Finish_button.Name = "Finish_button";
+            this.Finish_button.Size = new System.Drawing.Size(91, 38);
+            this.Finish_button.TabIndex = 7;
+            this.Finish_button.Text = "Finish";
+            this.Finish_button.UseVisualStyleBackColor = true;
+            this.Finish_button.Click += new System.EventHandler(this.Finish_button_Click);
             // 
             // Finish
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.NEXT_button);
+            this.Controls.Add(this.Finish_button);
             this.Controls.Add(this.label1);
             this.Name = "Finish";
             this.Size = new System.Drawing.Size(522, 500);
@@ -71,6 +71,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button NEXT_button;
+        private System.Windows.Forms.Button Finish_button;
     }
 }

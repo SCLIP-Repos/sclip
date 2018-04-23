@@ -13,20 +13,18 @@ namespace SCLIP
     public partial class ConfigForm : Form
     {
 
+        internal static bool Setuped = false;
+
+        internal static View.Config.Setup.Passwd _passwdView;
+
         private static View.Config.Setup.Welcome _welcomeView;
 
          private static View.Config.Setup.Agree _agreeView;
 
-        private static View.Config.Setup.Passwd _passwdView;
-
-        private static View.Config.Setup.Log _logView;
-
+        
         private static View.Config.Setup.Finish _finishView;
 
-        //psw,exportOFpsw,
-        internal static string[] SetupDt = new string[10];
-             
-
+        
 
         public ConfigForm()
         {
@@ -47,7 +45,6 @@ namespace SCLIP
 
                     _passwdView.Visible = false;
 
-                    _logView.Visible = false;
 
                     _finishView.Visible = false;
                     break;
@@ -70,11 +67,6 @@ namespace SCLIP
                     _passwdView.Visible = true;
                     break;
 
-                case Channel.Log:
-                    SwichView(Channel.Init);
-
-                    _logView.Visible = true;
-                    break;
 
                 case Channel.Finish:
                     SwichView(Channel.Init);
@@ -93,8 +85,6 @@ namespace SCLIP
 
             _passwdView = new View.Config.Setup.Passwd();
 
-            _logView = new View.Config.Setup.Log();
-
             _finishView = new View.Config.Setup.Finish();
 
 
@@ -104,7 +94,6 @@ namespace SCLIP
 
             Base_panel.Controls.Add(_passwdView);
 
-            Base_panel.Controls.Add(_logView);
 
             Base_panel.Controls.Add(_finishView);
         }
@@ -114,6 +103,12 @@ namespace SCLIP
         private void ConfigForm_Load(object sender, EventArgs e)
         {
             SwichView(Channel.Welcome);
+        }
+
+        private void ConfigForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!Setuped)
+                Application.Exit();
         }
     }
 }

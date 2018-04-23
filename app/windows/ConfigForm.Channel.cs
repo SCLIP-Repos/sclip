@@ -4,7 +4,7 @@
     {
         internal enum Channel
         {
-            Init,Welcome,Agree,Passwd,Log,Finish
+            Init,Welcome,Agree,Passwd,Finish
         }
 
 

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using FSys;
+
 namespace SCLIP
 {
     public partial class Form1 : Form
@@ -24,19 +26,23 @@ namespace SCLIP
             Base_panel.Controls.Add(view);
 
             view.Visible = true;
-
+w
             */
 
-            ConfigForm configForm = new ConfigForm();
+            if(!Group.Exists(InternalSystem.Paths.Directorys[0]))
+            {
+                ConfigForm configForm = new ConfigForm();
 
-            configForm.ShowDialog();
+                configForm.ShowDialog();
 
-            
+            }
+
+
             ReceptionistForm receptionistForm = new ReceptionistForm();
 
             receptionistForm.ShowDialog();
             
-    }
+        }
 
 
         

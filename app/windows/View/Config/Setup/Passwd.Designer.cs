@@ -31,7 +31,6 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.NEXT_button = new System.Windows.Forms.Button();
-            this.ExportOfPasswd_checkBox = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,7 +63,6 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.NEXT_button);
-            this.panel2.Controls.Add(this.ExportOfPasswd_checkBox);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 208);
             this.panel2.Name = "panel2";
@@ -81,16 +79,6 @@
             this.NEXT_button.Text = "NEXT";
             this.NEXT_button.UseVisualStyleBackColor = true;
             this.NEXT_button.Click += new System.EventHandler(this.NEXT_button_Click);
-            // 
-            // ExportOfPasswd_checkBox
-            // 
-            this.ExportOfPasswd_checkBox.AutoSize = true;
-            this.ExportOfPasswd_checkBox.Location = new System.Drawing.Point(99, 35);
-            this.ExportOfPasswd_checkBox.Name = "ExportOfPasswd_checkBox";
-            this.ExportOfPasswd_checkBox.Size = new System.Drawing.Size(109, 16);
-            this.ExportOfPasswd_checkBox.TabIndex = 0;
-            this.ExportOfPasswd_checkBox.Text = "Export password\r\n";
-            this.ExportOfPasswd_checkBox.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -188,7 +176,6 @@
             this.Size = new System.Drawing.Size(522, 500);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -200,14 +187,13 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox Passwd_textBox;
-        private System.Windows.Forms.TextBox RePasswd_textBox;
         private System.Windows.Forms.ProgressBar Strength_progressBar;
         private System.Windows.Forms.Label Strength_label;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox ExportOfPasswd_checkBox;
         private System.Windows.Forms.Button NEXT_button;
         private System.Windows.Forms.Label label3;
+        internal System.Windows.Forms.TextBox Passwd_textBox;
+        private System.Windows.Forms.TextBox RePasswd_textBox;
     }
 }
