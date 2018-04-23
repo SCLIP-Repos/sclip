@@ -11,3 +11,7 @@ SCLIP Project is a software development organization called SCLIP.
 Page : https://sclipproject.com<br />
 Facebook : https://www.facebook.com/SCLIP-2012149895739903/<br />
 Facebook Community : https://www.facebook.com/groups/575720686095538/<br />
+
+### Stakeholders
+People involved in development. <br />
+List : https://sclipproject.com/stakeholders
