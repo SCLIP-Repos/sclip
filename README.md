@@ -15,3 +15,7 @@ Facebook Community : https://www.facebook.com/groups/575720686095538/<br />
 ### Stakeholders
 People involved in development. <br />
 List : https://sclipproject.com/stakeholders
+
+# Regarding repository configuration
+[sclip](https://github.com/SCLIP-Repos/sclip) , [sclipcloud-server](https://github.com/SCLIP-Repos/sclipcloud-server) , [sclipcloud-client](https://github.com/SCLIP-Repos/sclipcloud-client)  is the main repository.<br />
+For each library you are using, we have prepared repositories.
