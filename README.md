@@ -1,6 +1,6 @@
 # SCLIP
-![SCLIP](https://sclipproject.com/img/etc/001.png)<br />
-Tools for secure managing confidential information such as passwords.
+Tools for secure managing confidential information such as passwords.<br />
+![SCLIP](https://sclipproject.com/img/etc/001.png)
 
 ## SCLIP Project
 https://sclipproject.com<br />
