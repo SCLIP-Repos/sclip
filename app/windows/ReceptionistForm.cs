@@ -23,11 +23,12 @@ namespace SCLIP
             InitializeComponent();
 
         }
+
+        
          
 
         private void Login_button_Click(object sender, EventArgs e)
         {
-            /*
             string tmp;
 
             try
@@ -35,6 +36,9 @@ namespace SCLIP
                 stream = new FileIO.Stream(InternalSystem.Paths.Files[0]);
 
                 tmp = stream.Read();
+
+                stream.Close();
+
 
 
                 if (tmp.Split(',')[0] != GeneralPurpose.Cipher.HashCompute(Passwd_textBox.Text, tmp.Split(',')[1]))
@@ -52,8 +56,39 @@ namespace SCLIP
                 return;
             }
 
+
+
+            //Decrypt enckey
+            stream = new FileIO.Stream(InternalSystem.Paths.Files[1]);
+
+            tmp = stream.Read();
+
+
+            InternalSystem.Tmp.EncryptKey = GeneralPurpose.Cipher.Decrypt(Passwd_textBox.Text, tmp.Split(',')[1], tmp.Split(',')[0]);
+
+           
+            stream.Close();
+
+
+            InternalSystem.Tmp.LoginKey = Passwd_textBox.Text;
+
+
+
+
+
+            InternalSystem.Config.Security.Login securityLogin = new InternalSystem.Config.Security.Login();
+
+            securityLogin.ChangeSalt();
+
+
+
+            InternalSystem.Config.Security.Encrypt securityEncrypt= new InternalSystem.Config.Security.Encrypt();
+
+            securityEncrypt.ChangeIv();
+
+
+
             bl = true;
-            */
 
             this.Close();
         }
