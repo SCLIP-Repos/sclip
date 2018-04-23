@@ -49,7 +49,6 @@ namespace SCLIP.View.Config.Setup
             }
             */
 
-
             char[] tmp =
             {
                 '!',
@@ -76,46 +75,58 @@ namespace SCLIP.View.Config.Setup
             };
 
             GeneralPurpose.PasswdCheck passwdCheck = new GeneralPurpose.PasswdCheck(Passwd_textBox.Text);
-            
-            if(passwdCheck.Length(5))
-            {
-                Strength_progressBar.Value = 10;
-                Strength_label.Text = Properties.Resources.password_Strength_Weak;
-            }
 
-            if (passwdCheck.Length(5) && passwdCheck.Check("[a-z]") && passwdCheck.Check("[A-Z]"))
+            if (passwdCheck.Length(8) && passwdCheck.Check("[a-z]") && passwdCheck.Check("[A-Z]") && passwdCheck.isChar(tmp) && passwdCheck.Check("[0-9]"))
             {
-                Strength_progressBar.Value = 20;
-                Strength_label.Text = Properties.Resources.password_Strength_Weak;
-            }
 
-            if (passwdCheck.Length(6) && passwdCheck.Check("[a-z]") && passwdCheck.Check("[A-Z]"))
-            {
-                Strength_progressBar.Value = 30;
-                Strength_label.Text = Properties.Resources.password_Strength_Weak;
+                Strength_progressBar.Value = 100;
+                Strength_label.Text = Properties.Resources.password_Strength_Strong;
             }
-
-            if (passwdCheck.Length(6) && passwdCheck.Check("[a-z]") && passwdCheck.Check("[A-Z]") && passwdCheck.isChar(tmp))
+            else if (passwdCheck.Length(6) && passwdCheck.Check("[a-z]") && passwdCheck.Check("[A-Z]") && passwdCheck.isChar(tmp) && passwdCheck.Check("[0-9]"))
             {
                 Strength_progressBar.Value = 50;
                 Strength_label.Text = Properties.Resources.password_Strength_LittleNice;
             }
-
-
-            if (passwdCheck.Length(8) && passwdCheck.Check("[a-z]") && passwdCheck.Check("[A-Z]") && passwdCheck.isChar(tmp))
+            else if (passwdCheck.Length(6) && passwdCheck.Check("[a-z]") && passwdCheck.Check("[A-Z]"))
             {
-                Strength_progressBar.Value = 100;
-                Strength_label.Text = Properties.Resources.password_Strength_Strong;
+                Strength_progressBar.Value = 30;
+                Strength_label.Text = Properties.Resources.password_Strength_Weak;
             }
+            else if (passwdCheck.Length(5) && passwdCheck.Check("[a-z]") && passwdCheck.Check("[A-Z]"))
+            {
+                Strength_progressBar.Value = 20;
+                Strength_label.Text = Properties.Resources.password_Strength_Weak;
+            }
+            else if (passwdCheck.Length(5))
+            {
+                Strength_progressBar.Value = 10;
+                Strength_label.Text = Properties.Resources.password_Strength_Weak;
+            }
+            
 
         }
 
         private void NEXT_button_Click(object sender, EventArgs e)
         {
-            if(Passwd_textBox.Text.Length < 5)
+            if(Passwd_textBox.Text!= RePasswd_textBox.Text)
+            {
+
+                MessageBox.Show(Properties.Resources.password_NoConfirmation);
+                return;
+            }
+
+
+            if (Passwd_textBox.Text.Length < 5)
             {
                 MessageBox.Show(Properties.Resources.passwod_NoLength);
+                return;
             }
+
+
+
+            ConfigForm.SetupDt[0] = Passwd_textBox.Text;
+
+            ConfigForm.SetupDt[1] = ExportOfPasswd_checkBox.Checked.ToString();
 
             ConfigForm.SwichView(ConfigForm.Channel.Log);
         }

@@ -114,9 +114,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(177, 20);
+            this.label3.Size = new System.Drawing.Size(97, 20);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Password settings";
+            this.label3.Text = "Password";
             // 
             // label2
             // 

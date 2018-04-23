@@ -23,7 +23,9 @@ namespace SCLIP
 
         private static View.Config.Setup.Finish _finishView;
 
-
+        //psw,exportOFpsw,
+        internal static string[] SetupDt = new string[10];
+             
 
 
         public ConfigForm()
