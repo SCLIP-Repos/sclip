@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SCLIP.View.SetupForm
 {
-    public partial class Welcome : UserControl
+    public partial class Finish : UserControl
     {
-        public Welcome()
+        public Finish()
         {
             InitializeComponent();
-        }
-
-        private void Next_button_Click(object sender, EventArgs e)
-        {
-            SCLIP.SetupForm.Switch(SCLIP.SetupForm.Channel.Agree);
         }
     }
 }

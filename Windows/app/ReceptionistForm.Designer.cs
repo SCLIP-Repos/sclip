@@ -37,6 +37,7 @@
             // 
             // Passwd_textBox
             // 
+            this.Passwd_textBox.PasswordChar = '●';
             this.Passwd_textBox.Font = new System.Drawing.Font("MS UI Gothic", 12F);
             this.Passwd_textBox.Location = new System.Drawing.Point(107, 100);
             this.Passwd_textBox.Name = "Passwd_textBox";

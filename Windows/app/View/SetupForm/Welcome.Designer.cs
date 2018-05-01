@@ -66,6 +66,7 @@
             this.Next_button.TabIndex = 5;
             this.Next_button.Text = "→";
             this.Next_button.UseVisualStyleBackColor = true;
+            this.Next_button.Click += new System.EventHandler(this.Next_button_Click);
             // 
             // Welcome
             // 

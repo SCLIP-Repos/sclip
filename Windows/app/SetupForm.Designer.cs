@@ -49,6 +49,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "SetupForm";
             this.Text = "SCLIP";
+            this.Load += new System.EventHandler(this.SetupForm_Load);
             this.ResumeLayout(false);
 
         }
