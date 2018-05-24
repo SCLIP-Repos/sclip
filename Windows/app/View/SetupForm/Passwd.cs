@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace SCLIP.View.SetupForm
 {
     public partial class Passwd : UserControl
@@ -52,6 +53,17 @@ namespace SCLIP.View.SetupForm
 
                 return;
             }
+
+
+
+
+
+            Act.InternalSystem.Tmp.LoginKey = Psw_textBox.Text;
+
+            Act.InternalSystem.Tmp.EncKey = Act.GeneralPurpose.Cipher.Rdm();
+
+
+
 
 
             SCLIP.SetupForm.Switch(SCLIP.SetupForm.Channel.Settings);

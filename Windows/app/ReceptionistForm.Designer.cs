@@ -37,10 +37,10 @@
             // 
             // Passwd_textBox
             // 
-            this.Passwd_textBox.PasswordChar = '●';
             this.Passwd_textBox.Font = new System.Drawing.Font("MS UI Gothic", 12F);
             this.Passwd_textBox.Location = new System.Drawing.Point(107, 100);
             this.Passwd_textBox.Name = "Passwd_textBox";
+            this.Passwd_textBox.PasswordChar = '●';
             this.Passwd_textBox.Size = new System.Drawing.Size(338, 23);
             this.Passwd_textBox.TabIndex = 0;
             this.Passwd_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -64,6 +64,7 @@
             this.Login_button.TabIndex = 2;
             this.Login_button.Text = "Login";
             this.Login_button.UseVisualStyleBackColor = true;
+            this.Login_button.Click += new System.EventHandler(this.Login_button_Click);
             // 
             // ReceptionistForm
             // 

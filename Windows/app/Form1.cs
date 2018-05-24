@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FSys;
 
 namespace SCLIP
 {
@@ -19,9 +20,21 @@ namespace SCLIP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            SetupForm setupForm = new SetupForm();
+            if(!Group.Exists(@"C:\Users\" + Environment.UserName + @"\AppData\Local\SCLIP"))
+            {
+                SetupForm setupForm = new SetupForm();
 
-            setupForm.ShowDialog();
+                setupForm.ShowDialog();
+
+                Application.Restart();
+            }
+
+
+
+            ReceptionistForm receptionistForm = new ReceptionistForm();
+
+            receptionistForm.ShowDialog();
+            
         }
     }
 }
