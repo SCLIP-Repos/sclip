@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="200">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="199">
+            <objects>
+                <viewController id="200" sceneMemberID="viewController" customClass="Setup">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="197"/>
+                        <viewControllerLayoutGuide type="bottom" id="198"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="201">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="204" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="28619065_2028334414121451_2964661326206763919_o.jpg">
+                                <rect key="frame" x="21" y="195" width="338" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="695" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="282" y="738" width="77" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.984313725490196" green="0.97647058823529409" blue="0.9882352941176471" alpha="1"/>
+                                <state key="normal" title="→">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue id="754" destination="210" kind="show"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="202" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="-46"/>
+        </scene>
+        <scene sceneID="209">
+            <objects>
+                <viewController id="210" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="207"/>
+                        <viewControllerLayoutGuide type="bottom" id="208"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="211">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="257" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="282" y="738" width="77" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.984313725490196" green="0.97647058823529409" blue="0.9882352941176471" alpha="1"/>
+                                <state key="normal" title="→">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue id="359" destination="300" kind="show"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="260" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="197" y="738" width="77" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.984313725490196" green="0.97647058823529409" blue="0.9882352941176471" alpha="1"/>
+                                <state key="normal" title="←">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue id="287" destination="200" kind="show"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="291" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" usesAttributedText="YES">
+                                <rect key="frame" x="16" y="50" width="343" height="651"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="! SCLIP PROJECT !&#xA;https://sclipproject.com&#xA;&#xA;&#xA;&#xA;! SCLIP Project  Open source license !&#xA;&#xA;GitHub : https://github.com/SCLIP-Repos&#xA;&#xA;                       &#xA;                        &#xA;                                Apache License&#xA;                           Version 2.0, January 2004&#xA;                        http://www.apache.org/licenses/&#xA;                        &#xA;   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION&#xA;&#xA;   1. Definitions.&#xA;&#xA;      &quot;License&quot; shall mean the terms and conditions for use, reproduction,&#xA;      and distribution as defined by Sections 1 through 9 of this document.&#xA;&#xA;      &quot;Licensor&quot; shall mean the copyright owner or entity authorized by&#xA;      the copyright owner that is granting the License.&#xA;&#xA;      &quot;Legal Entity&quot; shall mean the union of the acting entity and all&#xA;      other entities that control, are controlled by, or are under common&#xA;      control with that entity. For the purposes of this definition,&#xA;      &quot;control&quot; means (i) the power, direct or indirect, to cause the&#xA;      direction or management of such entity, whether by contract or&#xA;      otherwise, or (ii) ownership of fifty percent (50%) or more of the&#xA;      outstanding shares, or (iii) beneficial ownership of such entity.&#xA;&#xA;      &quot;You&quot; (or &quot;Your&quot;) shall mean an individual or Legal Entity&#xA;      exercising permissions granted by this License.&#xA;&#xA;      &quot;Source&quot; form shall mean the preferred form for making modifications,&#xA;      including but not limited to software source code, documentation&#xA;      source, and configuration files.&#xA;&#xA;      &quot;Object&quot; form shall mean any form resulting from mechanical&#xA;      transformation or translation of a Source form, including but&#xA;      not limited to compiled object code, generated documentation,&#xA;      and conversions to other media types.&#xA;&#xA;      &quot;Work&quot; shall mean the work of authorship, whether in Source or&#xA;      Object form, made available under the License, as indicated by a&#xA;      copyright notice that is included in or attached to the work&#xA;      (an example is provided in the Appendix below).&#xA;&#xA;      &quot;Derivative Works&quot; shall mean any work, whether in Source or Object&#xA;      form, that is based on (or derived from) the Work and for which the&#xA;      editorial revisions, annotations, elaborations, or other modifications&#xA;      represent, as a whole, an original work of authorship. For the purposes&#xA;      of this License, Derivative Works shall not include works that remain&#xA;      separable from, or merely link (or bind by name) to the interfaces of,&#xA;      the Work and Derivative Works thereof.&#xA;&#xA;      &quot;Contribution&quot; shall mean any work of authorship, including&#xA;      the original version of the Work and any modifications or additions&#xA;      to that Work or Derivative Works thereof, that is intentionally&#xA;      submitted to Licensor for inclusion in the Work by the copyright owner&#xA;      or by an individual or Legal Entity authorized to submit on behalf of&#xA;      the copyright owner. For the purposes of this definition, &quot;submitted&quot;&#xA;      means any form of electronic, verbal, or written communication sent&#xA;      to the Licensor or its representatives, including but not limited to&#xA;      communication on electronic mailing lists, source code control systems,&#xA;      and issue tracking systems that are managed by, or on behalf of, the&#xA;      Licensor for the purpose of discussing and improving the Work, but&#xA;      excluding communication that is conspicuously marked or otherwise&#xA;      designated in writing by the copyright owner as &quot;Not a Contribution.&quot;&#xA;&#xA;      &quot;Contributor&quot; shall mean Licensor and any individual or Legal Entity&#xA;      on behalf of whom a Contribution has been received by Licensor and&#xA;      subsequently incorporated within the Work.&#xA;&#xA;   2. Grant of Copyright License. Subject to the terms and conditions of&#xA;      this License, each Contributor hereby grants to You a perpetual,&#xA;      worldwide, non-exclusive, no-charge, royalty-free, irrevocable&#xA;      copyright license to reproduce, prepare Derivative Works of,&#xA;      publicly display, publicly perform, sublicense, and distribute the&#xA;      Work and such Derivative Works in Source or Object form.&#xA;&#xA;   3. Grant of Patent License. Subject to the terms and conditions of&#xA;      this License, each Contributor hereby grants to You a perpetual,&#xA;      worldwide, non-exclusive, no-charge, royalty-free, irrevocable&#xA;      (except as stated in this section) patent license to make, have made,&#xA;      use, offer to sell, sell, import, and otherwise transfer the Work,&#xA;      where such license applies only to those patent claims licensable&#xA;      by such Contributor that are necessarily infringed by their&#xA;      Contribution(s) alone or by combination of their Contribution(s)&#xA;      with the Work to which such Contribution(s) was submitted. If You&#xA;      institute patent litigation against any entity (including a&#xA;      cross-claim or counterclaim in a lawsuit) alleging that the Work&#xA;      or a Contribution incorporated within the Work constitutes direct&#xA;      or contributory patent infringement, then any patent licenses&#xA;      granted to You under this License for that Work shall terminate&#xA;      as of the date such litigation is filed.&#xA;&#xA;   4. Redistribution. You may reproduce and distribute copies of the&#xA;      Work or Derivative Works thereof in any medium, with or without&#xA;      modifications, and in Source or Object form, provided that You&#xA;      meet the following conditions:&#xA;&#xA;      (a) You must give any other recipients of the Work or&#xA;          Derivative Works a copy of this License; and&#xA;&#xA;      (b) You must cause any modified files to carry prominent notices&#xA;          stating that You changed the files; and&#xA;&#xA;      (c) You must retain, in the Source form of any Derivative Works&#xA;          that You distribute, all copyright, patent, trademark, and&#xA;          attribution notices from the Source form of the Work,&#xA;          excluding those notices that do not pertain to any part of&#xA;          the Derivative Works; and&#xA;&#xA;      (d) If the Work includes a &quot;NOTICE&quot; text file as part of its&#xA;          distribution, then any Derivative Works that You distribute must&#xA;          include a readable copy of the attribution notices contained&#xA;          within such NOTICE file, excluding those notices that do not&#xA;          pertain to any part of the Derivative Works, in at least one&#xA;          of the following places: within a NOTICE text file distributed&#xA;          as part of the Derivative Works; within the Source form or&#xA;          documentation, if provided along with the Derivative Works; or,&#xA;          within a display generated by the Derivative Works, if and&#xA;          wherever such third-party notices normally appear. The contents&#xA;          of the NOTICE file are for informational purposes only and&#xA;          do not modify the License. You may add Your own attribution&#xA;          notices within Derivative Works that You distribute, alongside&#xA;          or as an addendum to the NOTICE text from the Work, provided&#xA;          that such additional attribution notices cannot be construed&#xA;          as modifying the License.&#xA;&#xA;      You may add Your own copyright statement to Your modifications and&#xA;      may provide additional or different license terms and conditions&#xA;      for use, reproduction, or distribution of Your modifications, or&#xA;      for any such Derivative Works as a whole, provided Your use,&#xA;      reproduction, and distribution of the Work otherwise complies with&#xA;      the conditions stated in this License.&#xA;&#xA;   5. Submission of Contributions. Unless You explicitly state otherwise,&#xA;      any Contribution intentionally submitted for inclusion in the Work&#xA;      by You to the Licensor shall be under the terms and conditions of&#xA;      this License, without any additional terms or conditions.&#xA;      Notwithstanding the above, nothing herein shall supersede or modify&#xA;      the terms of any separate license agreement you may have executed&#xA;      with Licensor regarding such Contributions.&#xA;&#xA;   6. Trademarks. This License does not grant permission to use the trade&#xA;      names, trademarks, service marks, or product names of the Licensor,&#xA;      except as required for reasonable and customary use in describing the&#xA;      origin of the Work and reproducing the content of the NOTICE file.&#xA;&#xA;   7. Disclaimer of Warranty. Unless required by applicable law or&#xA;      agreed to in writing, Licensor provides the Work (and each&#xA;      Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS,&#xA;      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or&#xA;      implied, including, without limitation, any warranties or conditions&#xA;      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A&#xA;      PARTICULAR PURPOSE. You are solely responsible for determining the&#xA;      appropriateness of using or redistributing the Work and assume any&#xA;      risks associated with Your exercise of permissions under this License.&#xA;&#xA;   8. Limitation of Liability. In no event and under no legal theory,&#xA;      whether in tort (including negligence), contract, or otherwise,&#xA;      unless required by applicable law (such as deliberate and grossly&#xA;      negligent acts) or agreed to in writing, shall any Contributor be&#xA;      liable to You for damages, including any direct, indirect, special,&#xA;      incidental, or consequential damages of any character arising as a&#xA;      result of this License or out of the use or inability to use the&#xA;      Work (including but not limited to damages for loss of goodwill,&#xA;      work stoppage, computer failure or malfunction, or any and all&#xA;      other commercial damages or losses), even if such Contributor&#xA;      has been advised of the possibility of such damages.&#xA;&#xA;   9. Accepting Warranty or Additional Liability. While redistributing&#xA;      the Work or Derivative Works thereof, You may choose to offer,&#xA;      and charge a fee for, acceptance of support, warranty, indemnity,&#xA;      or other liability obligations and/or rights consistent with this&#xA;      License. However, in accepting such obligations, You may act only&#xA;      on Your own behalf and on Your sole responsibility, not on behalf&#xA;      of any other Contributor, and only if You agree to indemnify,&#xA;      defend, and hold each Contributor harmless for any liability&#xA;      incurred by, or claims asserted against, such Contributor by reason&#xA;      of your accepting any such warranty or additional liability.&#xA;&#xA;   END OF TERMS AND CONDITIONS&#xA;&#xA;   APPENDIX: How to apply the Apache License to your work.&#xA;&#xA;      To apply the Apache License to your work, attach the following&#xA;      boilerplate notice, with the fields enclosed by brackets &quot;[]&quot;&#xA;      replaced with your own identifying information. (Don't include&#xA;      the brackets!)  The text should be enclosed in the appropriate&#xA;      comment syntax for the file format. We also recommend that a&#xA;      file or class name and description of purpose be included on the&#xA;      same &quot;printed page&quot; as the copyright notice for easier&#xA;      identification within third-party archives.&#xA;&#xA;   Copyright [yyyy] [name of copyright owner]&#xA;&#xA;   Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);&#xA;   you may not use this file except in compliance with the License.&#xA;   You may obtain a copy of the License at&#xA;&#xA;       http://www.apache.org/licenses/LICENSE-2.0&#xA;&#xA;   Unless required by applicable law or agreed to in writing, software&#xA;   distributed under the License is distributed on an &quot;AS IS&quot; BASIS,&#xA;   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&#xA;   See the License for the specific language governing permissions and&#xA;   limitations under the License.">
+                                        <attributes>
+                                            <font key="NSFont" name="HelveticaNeue" family="Helvetica Neue" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </textView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="Back_button" destination="260" id="name-outlet-260"/>
+                        <outlet property="Next_button" destination="257" id="name-outlet-257"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="212" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="-20"/>
+        </scene>
+        <scene sceneID="299">
+            <objects>
+                <viewController id="300" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="297"/>
+                        <viewControllerLayoutGuide type="bottom" id="298"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="301">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="407" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" textAlignment="center" placeholder="Password">
+                                <rect key="frame" x="20" y="165" width="339" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="408" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" textAlignment="center" placeholder="Re enter">
+                                <rect key="frame" x="20" y="220" width="339" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="410" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="88" y="315" width="203" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.984313725490196" green="0.97647058823529409" blue="0.9882352941176471" alpha="1"/>
+                                <state key="normal" title="Create backup code">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="758" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="282" y="738" width="77" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.984313725490196" green="0.97647058823529409" blue="0.9882352941176471" alpha="1"/>
+                                <state key="normal" title="→">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue id="866" destination="414" kind="show"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="761" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="197" y="738" width="77" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.984313725490196" green="0.97647058823529409" blue="0.9882352941176471" alpha="1"/>
+                                <state key="normal" title="←">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue id="800" destination="210" kind="show"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="Psw_textbox" destination="407" id="name-outlet-407"/>
+                        <outlet property="PswReEnter_textbox" destination="408" id="name-outlet-408"/>
+                        <outlet property="CreateBackupCode_button" destination="410" id="name-outlet-410"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="302" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1430" y="-40"/>
+        </scene>
+        <scene sceneID="413">
+            <objects>
+                <viewController id="414" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="411"/>
+                        <viewControllerLayoutGuide type="bottom" id="412"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="415">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="680" fixedFrame="YES">
+                                <rect key="frame" x="20" y="367" width="339" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="0" green="0.68627450980392157" blue="0.9882352941176471" alpha="1"/>
+                                <color key="progressTintColor" colorSpace="calibratedRGB" red="0" green="0.68627450980392157" blue="0.9882352941176471" alpha="1"/>
+                                <color key="trackTintColor" colorSpace="calibratedRGB" red="0" green="1" blue="0.25882352941176473" alpha="1"/>
+                            </progressView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="Activate_ progressbar" destination="680" id="name-outlet-680"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="416" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2019" y="-40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="28619065_2028334414121451_2964661326206763919_o.jpg" width="1458" height="1458"/>
+    </resources>
+</document>
