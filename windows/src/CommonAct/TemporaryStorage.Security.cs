@@ -4,9 +4,16 @@
     {
         internal struct Security
         {
-            internal string AuthenticationPsw {  get;  set; }
+            internal static string AuthenticationPsw {  get;  set; }
 
-            internal string EncryptionPsw { get; set; }
+            internal static string EncryptionPsw { get; set; }
+        }
+
+        internal void Clear()
+        {
+            Security.AuthenticationPsw = null;
+
+            Security.EncryptionPsw = null;
         }
     }
 }
