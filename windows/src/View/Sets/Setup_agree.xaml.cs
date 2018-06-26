@@ -13,27 +13,27 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SCLIP
+namespace SCLIP.View.Sets
 {
     /// <summary>
-    /// MainWindow.xaml の相互作用ロジック
+    /// Setup_agree.xaml の相互作用ロジック
     /// </summary>
-    public partial class MainWindow 
+    public partial class Setup_agree : Page
     {
-        public MainWindow()
+        public Setup_agree()
         {
             InitializeComponent();
-
-            View.Sets.Setup setup = new View.Sets.Setup();
-
-            setup.Show();
-            
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Next_Button_Click(object sender, RoutedEventArgs e)
         {
+            if(Agree_Check.IsChecked == false)
+            {
+                MessageBox.Show("It can not be used unless you agree with the OSS license.");
+                return;
+            }
 
-           
+            NavigationService.Navigate(new Setup_psw());
         }
     }
 }

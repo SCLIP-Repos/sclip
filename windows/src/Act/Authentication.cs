@@ -10,6 +10,5 @@ namespace SCLIP.Act
     {
         internal bool Login() { return false; }
 
-        private string _LoadFile() { return null; }
     }
 }

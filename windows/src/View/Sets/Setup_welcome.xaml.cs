@@ -13,16 +13,22 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SCLIP.Controls.Authentication
+namespace SCLIP.View.Sets
 {
     /// <summary>
-    /// Login.xaml の相互作用ロジック
+    /// Setup_welcome.xaml の相互作用ロジック
     /// </summary>
-    public partial class Login : UserControl
+    public partial class Setup_welcome : Page
     {
-        public Login()
+        public Setup_welcome()
         {
             InitializeComponent();
+        }
+
+        private void Next_Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Setup_agree());
+
         }
     }
 }

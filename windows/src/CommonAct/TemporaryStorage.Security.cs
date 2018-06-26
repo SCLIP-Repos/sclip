@@ -8,12 +8,6 @@
 
             internal static string EncryptionPsw { get; set; }
         }
-
-        internal void Clear()
-        {
-            Security.AuthenticationPsw = null;
-
-            Security.EncryptionPsw = null;
-        }
+        
     }
 }

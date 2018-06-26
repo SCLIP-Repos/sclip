@@ -17,19 +17,5 @@
             internal static string Memo { get; set; }
         }
 
-        internal static void Clear()
-        {
-            Item.ServiceName = null;
-
-            Item.URL = null;
-
-            Item.Nicname = null;
-
-            Item.Id = null;
-
-            Item.Password = null;
-
-            Item.Memo = null;
-        }
     }
 }

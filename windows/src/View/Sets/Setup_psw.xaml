@@ -1,0 +1,21 @@
+﻿<Page x:Class="SCLIP.View.Sets.Setup_psw"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SCLIP.View.Sets"
+      mc:Ignorable="d" 
+        d:DesignHeight="616" d:DesignWidth="407"    
+      Title="Setup_psw">
+
+    <Grid>
+        <Button x:Name="Next03_Button" Content="Next" HorizontalAlignment="Left" Margin="336,580,0,0" VerticalAlignment="Top" Width="71" Background="{x:Null}" BorderBrush="#FF2558C5" Height="36" Click="Next_Button_Click"/>
+        <Button x:Name="Back03_Button" Content="Back" HorizontalAlignment="Left" Margin="260,580,0,0" VerticalAlignment="Top" Width="71" Background="{x:Null}" BorderBrush="#FF2558C5" Height="36" Click="Back03_Button_Click"/>
+        <PasswordBox x:Name="Psw_PasswordBox" HorizontalAlignment="Left" Margin="79,136,0,0" VerticalAlignment="Top" Width="304"/>
+        <PasswordBox x:Name="PswRe_PasswordBox" HorizontalAlignment="Left" Margin="79,189,0,0" VerticalAlignment="Top" Width="304"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="13,131,0,0" VerticalAlignment="Top"/>
+        <Label Content="Re enter" HorizontalAlignment="Left" Margin="19,185,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="CreateBackupcode_Button" Content="Create backup code" HorizontalAlignment="Left" Margin="263,218,0,0" VerticalAlignment="Top" Width="120" Background="{x:Null}" BorderBrush="Red" Click="CreateBackupcode_Button_Click"/>
+
+    </Grid>
+</Page>

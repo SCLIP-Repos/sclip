@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SCLIP"
         mc:Ignorable="d"
-        Title="SCLIP" Height="777.017" Width="1181.667">
+        Title="SCLIP" Height="777.017" Width="1181.667" Loaded="Window_Loaded" ResizeMode="NoResize">
     <Grid>
         <ListView x:Name="Item_ListView" HorizontalAlignment="Left" Height="746" VerticalAlignment="Top" Width="209">
             <ListView.View>

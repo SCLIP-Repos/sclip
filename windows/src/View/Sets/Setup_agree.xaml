@@ -1,0 +1,17 @@
+﻿<Page x:Class="SCLIP.View.Sets.Setup_agree"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SCLIP.View.Sets"
+      mc:Ignorable="d" 
+        d:DesignHeight="616" d:DesignWidth="407"    
+      Title="Setup_agree">
+
+    <Grid>
+        <Button x:Name="Next02_Button" Content="Next" HorizontalAlignment="Left" Margin="336,580,0,0" VerticalAlignment="Top" Width="71" Background="{x:Null}" BorderBrush="#FF2558C5" Height="36" Click="Next_Button_Click"/>
+        <WebBrowser Source="https://raw.githubusercontent.com/SCLIP-Repos/sclip/master/LICENSE" HorizontalAlignment="Left" Height="575" VerticalAlignment="Top" Width="407" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.CanContentScroll="True"/>
+        <CheckBox x:Name="Agree_Check" Content="Agree" HorizontalAlignment="Left" Margin="260,591,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

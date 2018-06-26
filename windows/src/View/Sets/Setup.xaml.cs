@@ -13,16 +13,18 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SCLIP.Controls
+namespace SCLIP.View.Sets
 {
     /// <summary>
-    /// View.xaml の相互作用ロジック
+    /// Setup.xaml の相互作用ロジック
     /// </summary>
-    public partial class View : UserControl
+    public partial class Setup : NavigationWindow
     {
-        public View()
+        public Setup()
         {
             InitializeComponent();
+
+            this.ShowsNavigationUI = false;
         }
     }
 }
