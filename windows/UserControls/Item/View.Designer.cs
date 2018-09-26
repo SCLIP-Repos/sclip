@@ -46,7 +46,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("MS UI Gothic", 14F);
             this.textBox1.Location = new System.Drawing.Point(172, 23);
@@ -56,7 +56,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("MS UI Gothic", 10F);
             this.textBox2.Location = new System.Drawing.Point(172, 102);
@@ -66,7 +66,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox3.BackColor = System.Drawing.Color.White;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("MS UI Gothic", 10F);
             this.textBox3.Location = new System.Drawing.Point(172, 160);
@@ -76,7 +76,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox4.BackColor = System.Drawing.Color.White;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("MS UI Gothic", 10F);
             this.textBox4.Location = new System.Drawing.Point(172, 219);
@@ -86,7 +86,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox5.BackColor = System.Drawing.Color.White;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Font = new System.Drawing.Font("MS UI Gothic", 10F);
             this.textBox5.Location = new System.Drawing.Point(172, 279);
@@ -97,6 +97,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("ＭＳ Ｐゴシック", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label1.Location = new System.Drawing.Point(68, 26);
             this.label1.Name = "label1";
@@ -107,6 +108,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("MS UI Gothic", 10F);
             this.label2.Location = new System.Drawing.Point(122, 105);
             this.label2.Name = "label2";
@@ -117,6 +119,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("MS UI Gothic", 10F);
             this.label3.Location = new System.Drawing.Point(136, 163);
             this.label3.Name = "label3";
@@ -127,6 +130,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("MS UI Gothic", 10F);
             this.label4.Location = new System.Drawing.Point(116, 222);
             this.label4.Name = "label4";
@@ -137,6 +141,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("MS UI Gothic", 10F);
             this.label5.Location = new System.Drawing.Point(93, 282);
             this.label5.Name = "label5";
@@ -147,6 +152,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("MS UI Gothic", 10F);
             this.label6.Location = new System.Drawing.Point(126, 321);
             this.label6.Name = "label6";
@@ -156,7 +162,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.richTextBox1.BackColor = System.Drawing.Color.White;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Location = new System.Drawing.Point(172, 319);
             this.richTextBox1.Name = "richTextBox1";
@@ -166,26 +172,31 @@
             // 
             // Close_button
             // 
+            this.Close_button.BackColor = System.Drawing.Color.White;
+            this.Close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Close_button.Location = new System.Drawing.Point(654, 481);
             this.Close_button.Name = "Close_button";
             this.Close_button.Size = new System.Drawing.Size(75, 23);
             this.Close_button.TabIndex = 13;
             this.Close_button.Text = "閉じる";
-            this.Close_button.UseVisualStyleBackColor = true;
+            this.Close_button.UseVisualStyleBackColor = false;
             // 
             // QRView_button
             // 
+            this.QRView_button.BackColor = System.Drawing.Color.White;
+            this.QRView_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.QRView_button.Location = new System.Drawing.Point(573, 481);
             this.QRView_button.Name = "QRView_button";
             this.QRView_button.Size = new System.Drawing.Size(75, 23);
             this.QRView_button.TabIndex = 14;
             this.QRView_button.Text = "QRコードを表示";
-            this.QRView_button.UseVisualStyleBackColor = true;
+            this.QRView_button.UseVisualStyleBackColor = false;
             // 
             // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.QRView_button);
             this.Controls.Add(this.Close_button);
             this.Controls.Add(this.richTextBox1);

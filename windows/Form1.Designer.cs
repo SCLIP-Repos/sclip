@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.追加ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.編集ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.削除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ItemAdd_button = new System.Windows.Forms.ToolStripMenuItem();
+            this.ItemEdit_button = new System.Windows.Forms.ToolStripMenuItem();
+            this.ItemDelete_button = new System.Windows.Forms.ToolStripMenuItem();
+            this.ItemSets_button = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.Base_panel = new System.Windows.Forms.Panel();
             this.Item_listBox = new System.Windows.Forms.ListBox();
             this.toolStrip1.SuspendLayout();
@@ -43,9 +43,10 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.Color.White;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripComboBox1,
-            this.toolStripButton2,
+            this.ItemSets_button,
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -57,30 +58,39 @@
             // 
             this.toolStripComboBox1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripComboBox1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.追加ToolStripMenuItem,
-            this.編集ToolStripMenuItem,
-            this.削除ToolStripMenuItem});
+            this.ItemAdd_button,
+            this.ItemEdit_button,
+            this.ItemDelete_button});
             this.toolStripComboBox1.Name = "toolStripComboBox1";
             this.toolStripComboBox1.Size = new System.Drawing.Size(56, 22);
             this.toolStripComboBox1.Text = "アイテム";
             // 
-            // 追加ToolStripMenuItem
+            // ItemAdd_button
             // 
-            this.追加ToolStripMenuItem.Name = "追加ToolStripMenuItem";
-            this.追加ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.追加ToolStripMenuItem.Text = "追加";
+            this.ItemAdd_button.Name = "ItemAdd_button";
+            this.ItemAdd_button.Size = new System.Drawing.Size(180, 22);
+            this.ItemAdd_button.Text = "追加";
             // 
-            // 編集ToolStripMenuItem
+            // ItemEdit_button
             // 
-            this.編集ToolStripMenuItem.Name = "編集ToolStripMenuItem";
-            this.編集ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.編集ToolStripMenuItem.Text = "編集";
+            this.ItemEdit_button.Name = "ItemEdit_button";
+            this.ItemEdit_button.Size = new System.Drawing.Size(180, 22);
+            this.ItemEdit_button.Text = "編集";
             // 
-            // 削除ToolStripMenuItem
+            // ItemDelete_button
             // 
-            this.削除ToolStripMenuItem.Name = "削除ToolStripMenuItem";
-            this.削除ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.削除ToolStripMenuItem.Text = "削除";
+            this.ItemDelete_button.Name = "ItemDelete_button";
+            this.ItemDelete_button.Size = new System.Drawing.Size(180, 22);
+            this.ItemDelete_button.Text = "削除";
+            // 
+            // ItemSets_button
+            // 
+            this.ItemSets_button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.ItemSets_button.Image = ((System.Drawing.Image)(resources.GetObject("ItemSets_button.Image")));
+            this.ItemSets_button.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ItemSets_button.Name = "ItemSets_button";
+            this.ItemSets_button.Size = new System.Drawing.Size(35, 22);
+            this.ItemSets_button.Text = "設定";
             // 
             // toolStripButton1
             // 
@@ -92,17 +102,9 @@
             this.toolStripButton1.Size = new System.Drawing.Size(55, 22);
             this.toolStripButton1.Text = "ログアウト";
             // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(35, 22);
-            this.toolStripButton2.Text = "設定";
-            // 
             // Base_panel
             // 
+            this.Base_panel.BackColor = System.Drawing.Color.White;
             this.Base_panel.Dock = System.Windows.Forms.DockStyle.Right;
             this.Base_panel.Location = new System.Drawing.Point(134, 25);
             this.Base_panel.Name = "Base_panel";
@@ -111,7 +113,7 @@
             // 
             // Item_listBox
             // 
-            this.Item_listBox.BackColor = System.Drawing.SystemColors.Control;
+            this.Item_listBox.BackColor = System.Drawing.Color.White;
             this.Item_listBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Item_listBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.Item_listBox.FormattingEnabled = true;
@@ -125,6 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(866, 532);
             this.Controls.Add(this.Item_listBox);
             this.Controls.Add(this.Base_panel);
@@ -146,10 +149,10 @@
 
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripDropDownButton toolStripComboBox1;
-        private System.Windows.Forms.ToolStripMenuItem 追加ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 編集ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 削除ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripMenuItem ItemAdd_button;
+        private System.Windows.Forms.ToolStripMenuItem ItemEdit_button;
+        private System.Windows.Forms.ToolStripMenuItem ItemDelete_button;
+        private System.Windows.Forms.ToolStripButton ItemSets_button;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.Panel Base_panel;
         private System.Windows.Forms.ListBox Item_listBox;

@@ -16,5 +16,7 @@ namespace SCLIP.UserControls.Item
         {
             InitializeComponent();
         }
+
+        
     }
 }
