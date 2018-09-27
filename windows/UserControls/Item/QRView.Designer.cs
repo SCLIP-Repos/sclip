@@ -34,6 +34,23 @@
             QR_webBrowser = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
+            // QR_webBrowser
+            // 
+            QR_webBrowser.AllowWebBrowserDrop = false;
+            QR_webBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            QR_webBrowser.CausesValidation = false;
+            QR_webBrowser.IsWebBrowserContextMenuEnabled = false;
+            QR_webBrowser.Location = new System.Drawing.Point(168, 59);
+            QR_webBrowser.MinimumSize = new System.Drawing.Size(20, 20);
+            QR_webBrowser.Name = "QR_webBrowser";
+            QR_webBrowser.ScrollBarsEnabled = false;
+            QR_webBrowser.Size = new System.Drawing.Size(390, 342);
+            QR_webBrowser.TabIndex = 16;
+            QR_webBrowser.TabStop = false;
+            QR_webBrowser.Url = new System.Uri("", System.UriKind.Relative);
+            // 
             // Close_button
             // 
             this.Close_button.BackColor = System.Drawing.Color.White;
@@ -55,24 +72,6 @@
             this.Back_button.TabIndex = 15;
             this.Back_button.Text = "戻る";
             this.Back_button.UseVisualStyleBackColor = false;
-            // 
-            // QR_webBrowser
-            // 
-            QR_webBrowser.AllowWebBrowserDrop = false;
-            QR_webBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            QR_webBrowser.CausesValidation = false;
-            QR_webBrowser.IsWebBrowserContextMenuEnabled = false;
-            QR_webBrowser.Location = new System.Drawing.Point(168, 59);
-            QR_webBrowser.MinimumSize = new System.Drawing.Size(20, 20);
-            QR_webBrowser.Name = "QR_webBrowser";
-            QR_webBrowser.ScrollBarsEnabled = false;
-            QR_webBrowser.Size = new System.Drawing.Size(390, 342);
-            QR_webBrowser.TabIndex = 16;
-            QR_webBrowser.TabStop = false;
-            QR_webBrowser.Url = new System.Uri("https://chart.googleapis.com/chart?cht=qr&chl=https://facebook.com&chs=300x300&ch" +
-        "ld=H|1", System.UriKind.Absolute);
             // 
             // QRView
             // 

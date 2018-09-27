@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,7 +32,23 @@ namespace SCLIP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Switch(SelectControls.QRView);
+            
+            if(Directory.Exists(Paths.Dirs[1]))
+            {
+                SetupForm setupForm = new SetupForm();
+
+                setupForm.ShowDialog();
+            }
+
+
+            if (Directory.Exists(Paths.Dirs[0]))
+                Directory.CreateDirectory(Paths.Dirs[0]);
+
+
+            //Login
+            LoginForm loginForm = new LoginForm();
+
+            loginForm.ShowDialog();
         }
 
         internal static void Switch(Enum @enum)
@@ -79,6 +96,29 @@ namespace SCLIP
             Base_panel.Controls.Add(editControl);
 
             Base_panel.Controls.Add(qrviewControl);
+        }
+
+
+        //Item
+        private void ItemAdd_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ItemEdit_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ItemDelete_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //Sets
+        private void Sets_button_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
