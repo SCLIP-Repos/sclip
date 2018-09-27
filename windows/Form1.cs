@@ -32,22 +32,7 @@ namespace SCLIP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if(!Directory.Exists(Paths.Dirs[1]))
-            {
-                SetupForm setupForm = new SetupForm();
-
-                setupForm.ShowDialog();
-            }
-
-
-            if (Directory.Exists(Paths.Dirs[0]))
-                Directory.CreateDirectory(Paths.Dirs[0]);
-
-
-            //Login
-            LoginForm loginForm = new LoginForm();
-
-            loginForm.ShowDialog();
+           
         }
 
         internal static void Switch(Enum @enum)
