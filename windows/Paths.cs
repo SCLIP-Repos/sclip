@@ -8,20 +8,24 @@ namespace SCLIP
 {
     internal class Paths
     {
-        public static readonly string[] Dirs =
+        public static  string[] Dirs =
         {
             appdata + @"save\",
 
             appdata + @"conf\"
         };
 
-        public static readonly string[] Files =
+        public static  string[] Files =
         {
             //psw(authentication),itemlock,backupcode,
-            Dirs[1] + "sclip",
+            Dirs[1] + "aut",
+            Dirs[1] + "il",
+            Dirs[1] + "bc",
             Dirs[1] + "log.txt"
         };
 
-        private static readonly string appdata = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\SCLIP\";
+        public static readonly string appdata = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\SCLIP\";
+
+        
     }
 }

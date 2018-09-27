@@ -32,8 +32,7 @@ namespace SCLIP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-            if(Directory.Exists(Paths.Dirs[1]))
+            if(!Directory.Exists(Paths.Dirs[1]))
             {
                 SetupForm setupForm = new SetupForm();
 

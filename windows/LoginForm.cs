@@ -16,5 +16,20 @@ namespace SCLIP
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Act.Sets.Authentication authentication = new Act.Sets.Authentication();
+
+            bool bl = authentication.Match(textBox1.Text);
+
+            if(!bl)
+            {
+                MessageBox.Show("パスワードが一致しません。");
+                return;
+            }
+
+            this.Close();
+        }
     }
 }
